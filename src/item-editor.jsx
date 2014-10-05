@@ -73,7 +73,7 @@ var ItemEditor = React.createClass({
                                 onClick={this.props.onCheckAnswer}
                                 value="Check Answer" />
                             {this.props.wasAnswered &&
-                                <img src="./images/face-smiley.png"
+                                <img src="images/face-smiley.png"
                                     className="smiley" />}
                             {this.props.gradeMessage &&
                                 <span>{this.props.gradeMessage}</span>}

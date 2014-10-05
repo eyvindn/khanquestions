@@ -935,12 +935,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var React = __webpack_require__(43);
 	var Renderer = __webpack_require__(11);
-	var QuestionParagraph = __webpack_require__(47);
-	var WidgetContainer = __webpack_require__(46);
+	var QuestionParagraph = __webpack_require__(44);
+	var WidgetContainer = __webpack_require__(45);
 	var Widgets = __webpack_require__(5);
 
 	var Util = __webpack_require__(4);
-	var EnabledFeatures = __webpack_require__(45);
+	var EnabledFeatures = __webpack_require__(46);
 	var ApiOptions = __webpack_require__(13).Options;
 
 	var SINGLE_ITEM_WIDGET_ID = "answer-area";
@@ -2034,9 +2034,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	/** @jsx React.DOM */
 
 	var React = __webpack_require__(43);
-	var CombinedHintsEditor = __webpack_require__(51);
-	var EnabledFeatures = __webpack_require__(45);
-	var ItemEditor = __webpack_require__(52);
+	var CombinedHintsEditor = __webpack_require__(47);
+	var EnabledFeatures = __webpack_require__(46);
+	var ItemEditor = __webpack_require__(48);
 	var ItemRenderer = __webpack_require__(10);
 	var PropCheckBox = __webpack_require__(53);
 	var ApiOptions = __webpack_require__(13).Options;
@@ -2329,11 +2329,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var React = __webpack_require__(43);
 	var AnswerAreaRenderer = __webpack_require__(7);
-	var HintRenderer = __webpack_require__(44);
+	var HintRenderer = __webpack_require__(49);
 	var Renderer = __webpack_require__(11);
 	var Util = __webpack_require__(4);
 	var ApiOptions = __webpack_require__(13).Options;
-	var EnabledFeatures = __webpack_require__(45);
+	var EnabledFeatures = __webpack_require__(46);
 
 	var HintsRenderer = React.createClass({displayName: 'HintsRenderer',
 	    render: function() {
@@ -2681,13 +2681,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var React = __webpack_require__(43);
 	var TeX = __webpack_require__(80);
-	var WidgetContainer = __webpack_require__(46);
+	var WidgetContainer = __webpack_require__(45);
 	var Widgets = __webpack_require__(5);
-	var QuestionParagraph = __webpack_require__(47);
-	var PerseusMarkdown = __webpack_require__(48);
+	var QuestionParagraph = __webpack_require__(44);
+	var PerseusMarkdown = __webpack_require__(50);
 
 	var Util = __webpack_require__(4);
-	var EnabledFeatures = __webpack_require__(45);
+	var EnabledFeatures = __webpack_require__(46);
 	var ApiOptions = __webpack_require__(13).Options;
 
 	var mapObject = function(obj, lambda) {
@@ -3573,8 +3573,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	// Responsible for combining the text diffs from text-diff and the widget
 	// diffs from widget-differ.
 
-	var TextDiff = __webpack_require__(70);
-	var WidgetDiff = __webpack_require__(71);
+	var TextDiff = __webpack_require__(67);
+	var WidgetDiff = __webpack_require__(68);
 
 	// Deeply look up a property in an object,
 	// -> getPath(obj, ["a", "b", "c"]) === obj["a"]["b"]["c"]
@@ -3690,14 +3690,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	/** @jsx React.DOM */
 
 	var React = __webpack_require__(43);
-	var Changeable = __webpack_require__(67);
-	var EditorJsonify = __webpack_require__(68);
-	var WidgetJsonifyDeprecated = __webpack_require__(69);
+	var Changeable = __webpack_require__(70);
+	var EditorJsonify = __webpack_require__(69);
+	var WidgetJsonifyDeprecated = __webpack_require__(71);
 
 	var InfoTip = __webpack_require__(81);
 	var PropCheckBox = __webpack_require__(53);
 	var Renderer = __webpack_require__(11);
-	var TextListEditor = __webpack_require__(54);
+	var TextListEditor = __webpack_require__(56);
 	var Util = __webpack_require__(4);
 
 	var Categorizer = React.createClass({displayName: 'Categorizer',
@@ -3908,10 +3908,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var React = __webpack_require__(43);
 	var InfoTip = __webpack_require__(81);
-	var FancySelect = __webpack_require__(55);
+	var FancySelect = __webpack_require__(54);
 	var FancyOption = FancySelect.Option;
 
-	var EditorJsonify = __webpack_require__(68);
+	var EditorJsonify = __webpack_require__(69);
 	var ApiClassNames = __webpack_require__(13).ClassNames;
 	var ApiOptions = __webpack_require__(13).Options;
 
@@ -4181,8 +4181,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 */
 
 	var React = __webpack_require__(43);
-	var Changeable = __webpack_require__(67);
-	var EditorJsonify = __webpack_require__(68);
+	var Changeable = __webpack_require__(70);
+	var EditorJsonify = __webpack_require__(69);
 
 	var TextInput = React.createClass({displayName: 'TextInput',
 	    render: function() {
@@ -4372,11 +4372,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var React = __webpack_require__(43);
 	var Util = __webpack_require__(4);
-	var Changeable = __webpack_require__(67);
-	var EditorJsonify = __webpack_require__(68);
-	var WidgetJsonifyDeprecated = __webpack_require__(69);
+	var Changeable = __webpack_require__(70);
+	var EditorJsonify = __webpack_require__(69);
+	var WidgetJsonifyDeprecated = __webpack_require__(71);
 
-	var Graphie = __webpack_require__(56);
+	var Graphie = __webpack_require__(55);
 	var MovablePoint = Graphie.MovablePoint;
 
 	var knumber = KhanUtil.knumber;
@@ -4566,23 +4566,23 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var React = __webpack_require__(43);
 	var InfoTip = __webpack_require__(81);
-	var Tooltip = __webpack_require__(82);
+	var Tooltip = __webpack_require__(84);
 
-	var Changeable = __webpack_require__(67);
-	var EditorJsonify = __webpack_require__(68);
-	var WidgetJsonifyDeprecated = __webpack_require__(69);
+	var Changeable = __webpack_require__(70);
+	var EditorJsonify = __webpack_require__(69);
+	var WidgetJsonifyDeprecated = __webpack_require__(71);
 	var ApiOptions = __webpack_require__(13).Options;
 
-	var EnabledFeatures = __webpack_require__(45);
+	var EnabledFeatures = __webpack_require__(46);
 	var PropCheckBox = __webpack_require__(53);
 
-	var InputWithExamples = __webpack_require__(57);
-	var MathInput = __webpack_require__(58);
+	var InputWithExamples = __webpack_require__(58);
+	var MathInput = __webpack_require__(59);
 	var TeX = __webpack_require__(80); // OldExpression only
-	var TexButtons = __webpack_require__(59);
+	var TexButtons = __webpack_require__(60);
 
 	var cx = React.addons.classSet;
-	var EnabledFeatures = __webpack_require__(45);
+	var EnabledFeatures = __webpack_require__(46);
 
 	var ERROR_MESSAGE = $._("Sorry, I don't understand that!");
 
@@ -5292,15 +5292,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	/** @jsx React.DOM */
 
 	var InfoTip          = __webpack_require__(81);
-	var Interactive2     = __webpack_require__(49);
-	var MultiButtonGroup = __webpack_require__(83);
-	var ButtonGroup      = __webpack_require__(84);
-	var GraphSettings    = __webpack_require__(60);
+	var Interactive2     = __webpack_require__(51);
+	var MultiButtonGroup = __webpack_require__(82);
+	var ButtonGroup      = __webpack_require__(83);
+	var GraphSettings    = __webpack_require__(57);
 	var Util             = __webpack_require__(4);
 	var knumber          = KhanUtil.knumber;
 
 	/* Graphie and relevant components. */
-	var Graphie      = __webpack_require__(56);
+	var Graphie      = __webpack_require__(55);
 	var MovablePoint = Graphie.MovablePoint;
 	var Plot         = Graphie.Plot;
 	var MovableLine  = Graphie.MovableLine;
@@ -5309,7 +5309,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var kpoint = KhanUtil.kpoint;
 
 	/* Mixins. */
-	var Changeable   = __webpack_require__(67);
+	var Changeable   = __webpack_require__(70);
 
 	/* Utility objects and functions. */
 	var defaultBoxSize = 400;
@@ -6338,9 +6338,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	var React = __webpack_require__(43);
 
 	var BlurInput    = __webpack_require__(85);
-	var Changeable = __webpack_require__(67);
-	var EditorJsonify = __webpack_require__(68);
-	var WidgetJsonifyDeprecated = __webpack_require__(69);
+	var Changeable = __webpack_require__(70);
+	var EditorJsonify = __webpack_require__(69);
+	var WidgetJsonifyDeprecated = __webpack_require__(71);
 	var updateQueryString = __webpack_require__(4).updateQueryString;
 
 
@@ -6605,11 +6605,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	var BlurInput    = __webpack_require__(85);
 	var InfoTip      = __webpack_require__(81);
 
-	var Changeable   = __webpack_require__(67);
-	var EditorJsonify = __webpack_require__(68);
-	var WidgetJsonifyDeprecated = __webpack_require__(69);
+	var Changeable   = __webpack_require__(70);
+	var EditorJsonify = __webpack_require__(69);
+	var WidgetJsonifyDeprecated = __webpack_require__(71);
 
-	var Graphie      = __webpack_require__(56);
+	var Graphie      = __webpack_require__(55);
 	var RangeInput   = __webpack_require__(61);
 
 	var defaultBoxSize = 400;
@@ -6934,12 +6934,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	var BlurInput         = __webpack_require__(85);
 	var InfoTip           = __webpack_require__(81);
 	var Renderer          = __webpack_require__(11);
-	var InputWithExamples = __webpack_require__(57);
-	var ParseTex          = __webpack_require__(50).parseTex;
+	var InputWithExamples = __webpack_require__(58);
+	var ParseTex          = __webpack_require__(52).parseTex;
 
 	var ApiOptions = __webpack_require__(13).Options;
 	var Util = __webpack_require__(4);
-	var EnabledFeatures = __webpack_require__(45);
+	var EnabledFeatures = __webpack_require__(46);
 
 	var toNumericString = KhanUtil.toNumericString;
 
@@ -7308,19 +7308,19 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	/** @jsx React.DOM */
 
-	var Changeable   = __webpack_require__(67);
-	var EditorJsonify = __webpack_require__(68);
-	var WidgetJsonifyDeprecated = __webpack_require__(69);
+	var Changeable   = __webpack_require__(70);
+	var EditorJsonify = __webpack_require__(69);
+	var WidgetJsonifyDeprecated = __webpack_require__(71);
 
 	var ArrowPicker = __webpack_require__(72);
-	var ButtonGroup = __webpack_require__(84);
+	var ButtonGroup = __webpack_require__(83);
 	var ColorPicker = __webpack_require__(73);
 	var ConstraintEditor = __webpack_require__(74);
 	var DashPicker = __webpack_require__(75);
 	var ElementContainer = __webpack_require__(76);
-	var Graphie = __webpack_require__(56);
-	var GraphSettings = __webpack_require__(60);
-	var MathInput = __webpack_require__(58);
+	var Graphie = __webpack_require__(55);
+	var GraphSettings = __webpack_require__(57);
+	var MathInput = __webpack_require__(59);
 	var NumberInput = __webpack_require__(62);
 	var TeX = __webpack_require__(80);
 
@@ -8474,9 +8474,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var React         = __webpack_require__(43);
 	var Graph         = __webpack_require__(64);
-	var GraphSettings = __webpack_require__(60);
+	var GraphSettings = __webpack_require__(57);
 	var InfoTip       = __webpack_require__(81);
-	var Interactive2  = __webpack_require__(49);
+	var Interactive2  = __webpack_require__(51);
 	var NumberInput   = __webpack_require__(62);
 	var Util          = __webpack_require__(4);
 
@@ -10998,9 +10998,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	/** @jsx React.DOM */
 
 	var React = __webpack_require__(43);
-	var Changeable = __webpack_require__(67);
-	var EditorJsonify = __webpack_require__(68);
-	var WidgetJsonifyDeprecated = __webpack_require__(69);
+	var Changeable = __webpack_require__(70);
+	var EditorJsonify = __webpack_require__(69);
+	var WidgetJsonifyDeprecated = __webpack_require__(71);
 
 	var NumberInput = __webpack_require__(62);
 	var PropCheckBox = __webpack_require__(53);
@@ -11465,8 +11465,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	/** @jsx React.DOM */
 
 	var React = __webpack_require__(43);
-	var Changeable = __webpack_require__(67);
-	var EditorJsonify = __webpack_require__(68);
+	var Changeable = __webpack_require__(70);
+	var EditorJsonify = __webpack_require__(69);
 
 	var Editor = __webpack_require__(8);
 	var NumberInput = __webpack_require__(62);
@@ -11899,7 +11899,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var PropCheckBox   = __webpack_require__(53);
 	var Renderer       = __webpack_require__(11);
 	var Sortable       = __webpack_require__(65);
-	var TextListEditor = __webpack_require__(54);
+	var TextListEditor = __webpack_require__(56);
 
 	var shuffle = __webpack_require__(4).shuffle;
 	var seededRNG = __webpack_require__(4).seededRNG;
@@ -12146,8 +12146,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	/** @jsx React.DOM */
 
 	var React        = __webpack_require__(43);
-	var Changeable   = __webpack_require__(67);
-	var EditorJsonify = __webpack_require__(68);
+	var Changeable   = __webpack_require__(70);
+	var EditorJsonify = __webpack_require__(69);
 
 	var InfoTip       = __webpack_require__(81);
 	var NumberInput   = __webpack_require__(62);
@@ -12513,17 +12513,17 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var React = __webpack_require__(43);
 
-	var Changeable   = __webpack_require__(67);
-	var EditorJsonify = __webpack_require__(68);
+	var Changeable   = __webpack_require__(70);
+	var EditorJsonify = __webpack_require__(69);
 
-	var ButtonGroup  = __webpack_require__(84);
+	var ButtonGroup  = __webpack_require__(83);
 	var InfoTip      = __webpack_require__(81);
-	var Interactive2 = __webpack_require__(49);
+	var Interactive2 = __webpack_require__(51);
 	var NumberInput  = __webpack_require__(62);
 	var PropCheckBox = __webpack_require__(53);
 	var RangeInput   = __webpack_require__(61);
 
-	var Graphie = __webpack_require__(56);
+	var Graphie = __webpack_require__(55);
 	var MovablePoint = Graphie.MovablePoint;
 	var Line = Graphie.Line;
 	var Label = Graphie.Label;
@@ -13383,19 +13383,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	/** @jsx React.DOM */
 
 	var React         = __webpack_require__(43);
-	var Changeable    = __webpack_require__(67);
-	var EditorJsonify = __webpack_require__(68);
+	var Changeable    = __webpack_require__(70);
+	var EditorJsonify = __webpack_require__(69);
 
 	var InfoTip = __webpack_require__(81);
 	var PropCheckBox = __webpack_require__(53);
 	var NumberInput = __webpack_require__(62);
-	var ButtonGroup = __webpack_require__(84);
-	var MultiButtonGroup = __webpack_require__(83);
-	var InputWithExamples = __webpack_require__(57);
-	var ParseTex = __webpack_require__(50).parseTex;
+	var ButtonGroup = __webpack_require__(83);
+	var MultiButtonGroup = __webpack_require__(82);
+	var InputWithExamples = __webpack_require__(58);
+	var ParseTex = __webpack_require__(52).parseTex;
 
 	var ApiOptions      = __webpack_require__(13).Options;
-	var EnabledFeatures = __webpack_require__(45);
+	var EnabledFeatures = __webpack_require__(46);
 
 	var Editor = __webpack_require__(8);
 
@@ -13952,7 +13952,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var Util           = __webpack_require__(4);
 	var Renderer       = __webpack_require__(11);
-	var TextListEditor = __webpack_require__(54);
+	var TextListEditor = __webpack_require__(56);
 
 	var ApiClassNames = __webpack_require__(13).ClassNames;
 
@@ -14631,16 +14631,16 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	/** @jsx React.DOM */
 
-	var Changeable   = __webpack_require__(67);
-	var EditorJsonify = __webpack_require__(68);
-	var WidgetJsonifyDeprecated = __webpack_require__(69);
+	var Changeable   = __webpack_require__(70);
+	var EditorJsonify = __webpack_require__(69);
+	var WidgetJsonifyDeprecated = __webpack_require__(71);
 
 	var Editor = __webpack_require__(8);
 	var Renderer = __webpack_require__(11);
 	var InfoTip = __webpack_require__(81);
 	var PropCheckBox  = __webpack_require__(53);
 	var PassageMarkdown = __webpack_require__(78);
-	var TextListEditor = __webpack_require__(54);
+	var TextListEditor = __webpack_require__(56);
 
 	var Util = __webpack_require__(4);
 
@@ -14915,9 +14915,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	/** @jsx React.DOM */
 
-	var Changeable   = __webpack_require__(67);
-	var EditorJsonify = __webpack_require__(68);
-	var WidgetJsonifyDeprecated = __webpack_require__(69);
+	var Changeable   = __webpack_require__(70);
+	var EditorJsonify = __webpack_require__(69);
+	var WidgetJsonifyDeprecated = __webpack_require__(71);
 	var NumberInput = __webpack_require__(62);
 
 	var EN_DASH = "\u2013";
@@ -15066,9 +15066,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	/** @jsx React.DOM */
 
-	var Changeable   = __webpack_require__(67);
-	var EditorJsonify = __webpack_require__(68);
-	var WidgetJsonifyDeprecated = __webpack_require__(69);
+	var Changeable   = __webpack_require__(70);
+	var EditorJsonify = __webpack_require__(69);
+	var WidgetJsonifyDeprecated = __webpack_require__(71);
 	var Renderer = __webpack_require__(11);
 
 	var PassageRefTarget = React.createClass({displayName: 'PassageRefTarget',
@@ -15162,7 +15162,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var React = __webpack_require__(43);
 	var InfoTip = __webpack_require__(81);
 	var NumberInput = __webpack_require__(62);
-	var TextListEditor = __webpack_require__(54);
+	var TextListEditor = __webpack_require__(56);
 	var RangeInput = __webpack_require__(61);
 
 	var ApiClassNames = __webpack_require__(13).ClassNames;
@@ -16175,7 +16175,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	/** @jsx React.DOM */
 
 	var React = __webpack_require__(43);
-	var Changeable = __webpack_require__(67);
+	var Changeable = __webpack_require__(70);
 	var ApiClassNames = __webpack_require__(13).ClassNames;
 
 	var Editor = __webpack_require__(8);
@@ -16768,13 +16768,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var InfoTip      = __webpack_require__(81);
 
-	var Changeable   = __webpack_require__(67);
-	var EditorJsonify = __webpack_require__(68);
+	var Changeable   = __webpack_require__(70);
+	var EditorJsonify = __webpack_require__(69);
 
 	var ApiOptions = __webpack_require__(13).Options;
 	var assert = __webpack_require__(77).assert;
 
-	var Graphie = __webpack_require__(56);
+	var Graphie = __webpack_require__(55);
 	var $__0=
 	    
 	    
@@ -17566,10 +17566,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	/** @jsx React.DOM */
 
 	var React = __webpack_require__(43);
-	var Changeable = __webpack_require__(67);
-	var EditorJsonify = __webpack_require__(68);
+	var Changeable = __webpack_require__(70);
+	var EditorJsonify = __webpack_require__(69);
 
-	var PerseusMarkdown = __webpack_require__(48);
+	var PerseusMarkdown = __webpack_require__(50);
 	var mdParse = PerseusMarkdown.parse;
 	var mdOutput = PerseusMarkdown.testOutput;
 
@@ -17728,7 +17728,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var InfoTip        = __webpack_require__(81);
 	var PropCheckBox   = __webpack_require__(53);
 	var Sortable       = __webpack_require__(65);
-	var TextListEditor = __webpack_require__(54);
+	var TextListEditor = __webpack_require__(56);
 
 	var shuffle = __webpack_require__(4).shuffle;
 
@@ -18338,7 +18338,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var React = __webpack_require__(43);
 	var Graph         = __webpack_require__(64);
-	var GraphSettings = __webpack_require__(60);
+	var GraphSettings = __webpack_require__(57);
 	var InfoTip       = __webpack_require__(81);
 	var NumberInput   = __webpack_require__(62);
 	var MathOutput    = __webpack_require__(66);
@@ -21121,53 +21121,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	/** @jsx React.DOM */
 
 	var React = __webpack_require__(43);
-	var Renderer = __webpack_require__(11);
+	var cx = React.addons.classSet;
 
-	/* Renders just a hint preview */
-	var HintRenderer = React.createClass({displayName: 'HintRenderer',
+	var QuestionParagraph = React.createClass({displayName: 'QuestionParagraph',
 	    render: function() {
-	        var shouldBold = this.props.bold;
-	        var hint = this.props.hint;
-	        var classNames;
-	        if (shouldBold) {
-	            classNames = "perseus-hint-renderer last-hint";
-	        } else {
-	            classNames = "perseus-hint-renderer";
-	        }
-	        return React.DOM.div({className: classNames}, 
-	            Renderer({
-	                widgets: this.props.hint.widgets, 
-	                content: this.props.hint.content || "", 
-	                images: this.props.hint.images})
+	        return React.DOM.div({className: "paragraph"}, 
+	            this.props.children
 	        );
 	    }
 	});
 
-	module.exports = HintRenderer;
+	module.exports = QuestionParagraph;
 
 
 /***/ },
 /* 45 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var React = __webpack_require__(43);
-
-	module.exports = {
-	    propTypes: React.PropTypes.shape({
-	        toolTipFormats: React.PropTypes.bool.isRequired,
-	        useMathQuill: React.PropTypes.bool.isRequired
-	    }).isRequired,
-
-	    defaults: {
-	        // TODO(jack): Remove this two options
-	        toolTipFormats: true,
-	        useMathQuill: false
-	    }
-	};
-
-
-/***/ },
-/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */
@@ -21242,387 +21210,27 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 47 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */
 
 	var React = __webpack_require__(43);
-	var cx = React.addons.classSet;
-
-	var QuestionParagraph = React.createClass({displayName: 'QuestionParagraph',
-	    render: function() {
-	        return React.DOM.div({className: "paragraph"}, 
-	            this.props.children
-	        );
-	    }
-	});
-
-	module.exports = QuestionParagraph;
-
-
-/***/ },
-/* 48 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */
-	var _ = __webpack_require__(93);
-
-	var SimpleMarkdown = __webpack_require__(86);
-	var TeX = __webpack_require__(80);
-	var Util = __webpack_require__(4);
-
-	/**
-	 * This "regex" matches math in `$`s, such as:
-	 *
-	 * $y = x + 1$
-	 *
-	 * It functions roughly like the following real regex:
-	 * /\$([^\$]*)\$/
-	 *
-	 * Unfortunately, math may have other `$`s inside it, as
-	 * long as they are inside `{` braces `}`, mostly for
-	 * `\text{ $math$ }`.
-	 *
-	 * To parse this, we can't use a real regex, since we
-	 * should support arbitrary nesting (even though
-	 * MathJax actually only supports two levels of nesting
-	 * here, which we *could* parse with a regex).
-	 *
-	 * So instead, we make an object that pretends to be
-	 * a regex by having an `exec` method that parses the
-	 * `$` and `{}`s in mathy text.
-	 *
-	 * All simple-markdown relies on is the `exec` method of
-	 * the regex, so this is safe. ish.
-	 */
-	var fakeMathRegex = {
-	    exec: function(source)  {
-	        var length = source.length;
-	        // our source must start with a "$"
-	        if (length === 0 || source[0] !== "$") {
-	            return null;
-	        }
-	        var index = 1;
-	        var braceLevel = 0;
-
-	        // Loop through the source, looking for a closing '$'
-	        // closing '$'s only count if they are not escaped with
-	        // a `\`, and we are not in nested `{}` braces.
-	        while (index < length) {
-	            var character = source[index];
-
-	            if (character === "\\") {
-	                // Consume both the `\` and the escaped char as a single
-	                // token.
-	                // This is so that the second `$` in `$\\$` closes
-	                // the math expression, since the first `\` is escaping
-	                // the second `\`, but the second `\` is not escaping
-	                // the second `$`.
-	                // This also handles the case of escaping `$`s or
-	                // braces `\{`
-	                index++;
-
-	            } else if (braceLevel <= 0 &&
-	                    character === "$") {
-	                
-	                // Return an array that looks like the results of a
-	                // regex's .exec function:
-	                // capture[0] is the whole string
-	                // capture[1] is the first "paren" match, which is the
-	                //   content of the math here, as if we wrote the regex
-	                //   /\$([^\$]*)\$/
-	                return [
-	                    source.substring(0, index + 1),
-	                    source.substring(1, index)
-	                ];
-
-	            } else if (character === "{") {
-	                braceLevel++;
-
-	            } else if (character === "}") {
-	                braceLevel--;
-
-	            } else if (character === "\n" &&
-	                    source[index - 1] === "\n") {
-	                // This is a weird case we supported in the old
-	                // math implementation--double newlines break
-	                // math. I'm preserving it for now because content
-	                // creators might have questions with single '$'s
-	                // in paragraphs...
-	                return null;
-	            }
-
-	            index++;
-	        }
-
-	        // we didn't find a closing `$`
-	        return null;
-	    }
-	};
-
-	var rules = _.extend({}, SimpleMarkdown.defaultRules, {
-	    widget: {
-	        regex: Util.rWidgetRule,
-	        parse: function(capture, parse, state)  {
-	            return {
-	                id: capture[1],
-	                widgetType: capture[2]
-	            };
-	        },
-	        output: function(node, output)  {
-	            // The actual output is handled in the renderer, where
-	            // we know the current widget props/state. This is
-	            // just a stub for testing.
-	            return React.DOM.em(null, "[Widget: ", node.id, "]");
-	        }
-	    },
-	    math: {
-	        regex: fakeMathRegex,
-	        parse: function(capture, parse, state)  {
-	            return {
-	                content: capture[1]
-	            };
-	        },
-	        output: function(node, output)  {
-	            // The actual output is handled in the renderer, because
-	            // it needs to pass in an `onRender` callback prop. This
-	            // is just a stub for testing.
-	            return TeX(null, node.content);
-	        }
-	    }
-	});
-
-	// Naively inject our rules before links so that our `[[`s take precedence
-	var linkRuleIndex = SimpleMarkdown.defaultPriorities.indexOf("link");
-	if (linkRuleIndex < 0) {
-	    // assert that 'text' is the last rule
-	    throw new Error(
-	        "could not find link rule in simple-markdown to place " +
-	        "widget and math rules before"
-	    );
-	}
-
-	var priorities = _.clone(SimpleMarkdown.defaultPriorities);
-	priorities.splice(
-	    linkRuleIndex,
-	    0,
-	    "widget",
-	    "math"
-	);
-
-	var builtParser = SimpleMarkdown.parserFor(rules, priorities);
-	var parse = function(source)  {
-	    var paragraphedSource = source + "\n\n";
-	    return builtParser(paragraphedSource);
-	};
 
 	module.exports = {
-	    parse: parse,
-	    outputFor: SimpleMarkdown.outputFor,
-	    ruleOutput: SimpleMarkdown.ruleOutput(rules),
-	    testOutput: SimpleMarkdown.outputFor(SimpleMarkdown.ruleOutput(rules))
-	};
+	    propTypes: React.PropTypes.shape({
+	        toolTipFormats: React.PropTypes.bool.isRequired,
+	        useMathQuill: React.PropTypes.bool.isRequired
+	    }).isRequired,
 
-
-
-/***/ },
-/* 49 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var Movable = __webpack_require__(87);
-	var MovablePoint = __webpack_require__(88);
-	var MovableLine = __webpack_require__(89);
-
-	var Interactive2 = {
-	    MovablePoint: MovablePoint,
-	    addMovablePoint: function(graphie, options) {
-	        var movable = new Movable(graphie, {});
-	        return new MovablePoint(graphie, movable, options);
-	    },
-	    MovableLine: MovableLine,
-	    addMovableLine: function(graphie, options) {
-	        var movable = new Movable(graphie, {});
-	        return new MovableLine(graphie, movable, options);
+	    defaults: {
+	        // TODO(jack): Remove this two options
+	        toolTipFormats: true,
+	        useMathQuill: false
 	    }
-	};
-
-	module.exports = Interactive2;
-
-
-/***/ },
-/* 50 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/*
-	 * In this file, an `expression` is some portion of valid TeX enclosed in
-	 * curly brackets.
-	 */
-
-	 /*
-	  * Find the index at which an expression ends, i.e., has an unmatched
-	  * closing curly bracket. This method assumes that we start with a non-open
-	  * bracket character and end when we've seen more left than right brackets
-	  * (rather than assuming that we start with a bracket character and wait for
-	  * bracket equality).
-	  */
-	function findEndpoint(tex, currentIndex) {
-	    var bracketDepth = 0;
-	    var rightEndpoint;
-
-	    for (var i = currentIndex, len = tex.length; i < len; i++) {
-	        var c = tex[i];
-
-	        if (c === '{') {
-	            bracketDepth++;
-	        } else if (c === '}') {
-	            bracketDepth--;
-	        }
-
-	        if (bracketDepth < 0) {
-	            return i;
-	        }
-	    }
-	    // If we never see unbalanced curly brackets, default to the
-	    // entire string
-	    return tex.length;
-	}
-
-
-	/*
-	 * Parses an individual set of curly brackets into TeX.
-	 */
-	function parseNextExpression(tex, currentIndex, handler) {
-	    // Find the first '{' and grab subsequent TeX
-	    // Ex) tex: '{3}{7}', and we want the '3'
-	    var openBracketIndex = tex.indexOf('{', currentIndex);
-	    var nextExpIndex = openBracketIndex + 1;
-
-	    // Truncate to only contain remaining TeX
-	    var endpoint = findEndpoint(tex, nextExpIndex);
-	    var expressionTeX = tex.substring(nextExpIndex, endpoint);
-	    var parsedExp = walkTex(expressionTeX, handler);
-
-	    return {
-	        endpoint: endpoint,
-	        expression: parsedExp
-	    };
-	}
-
-
-	function getNextFracIndex(tex, currentIndex) {
-	    var dfrac = "\\dfrac";
-	    var frac = "\\frac";
-
-	    var nextFrac = tex.indexOf(frac, currentIndex);
-	    var nextDFrac = tex.indexOf(dfrac, currentIndex);
-
-	    if (nextFrac > -1 && nextDFrac > -1) {
-	        return Math.min(nextFrac, nextDFrac);
-	    } else if (nextFrac > -1) {
-	        return nextFrac;
-	    } else if (nextDFrac > -1) {
-	        return nextDFrac;
-	    } else {
-	        return -1;
-	    }
-	}
-
-
-	function walkTex(tex, handler) {
-	    // Ex) tex: '2 \dfrac {3}{7}'
-	    var parsedString = "";
-	    var currentIndex = 0;
-	    var nextFrac = getNextFracIndex(tex, currentIndex);
-
-	    // For each \dfrac, find the two expressions (wrapped in {}) and recur
-	    while (nextFrac > -1) {
-	        // Gather first fragment, preceding \dfrac
-	        // Ex) parsedString: '2 '
-	        parsedString += tex.substring(currentIndex, nextFrac);
-
-	        // Remove everything preceding \dfrac, which has been parsed
-	        currentIndex = nextFrac;
-
-	        // Parse first expression and move index past it
-	        // Ex) firstParsedExpression.expression: '3'
-	        var firstParsedExpression = parseNextExpression(
-	            tex, currentIndex, handler
-	        );
-	        currentIndex = firstParsedExpression.endpoint + 1;
-
-	        // Parse second expression
-	        // Ex) secondParsedExpression.expression: '7'
-	        var secondParsedExpression = parseNextExpression(
-	            tex, currentIndex, handler
-	        );
-	        currentIndex = secondParsedExpression.endpoint + 1;
-
-	        // Add expressions to running total of parsed expressions
-	        if (parsedString.length) {
-	            parsedString += " ";
-	        }
-
-	        // Apply a custom handler based on the parsed subexpressions
-	        parsedString += handler(firstParsedExpression.expression,
-	            secondParsedExpression.expression);
-
-	        // Find next DFrac, relative to currentIndex
-	        nextFrac = getNextFracIndex(tex, currentIndex);
-	    }
-
-	    // Add remaining TeX, which is \dfrac-free
-	    var rightEndpoint = findEndpoint(
-	        tex, currentIndex
-	    );
-	    parsedString += tex.substring(currentIndex, rightEndpoint);
-
-	    return parsedString;
-	}
-
-	/*
-	 * Modify a TeX expression, returning another TeX expression. The resulting
-	 * expression will have its innermost fractions stubbed out with \fracs
-	 * (as opposed to \dfracs). All other content will remain untouched.
-	 */
-	function modifyTex(tex) {
-	    function isNestedFraction(tex) {
-	        return tex.indexOf("\\frac") > -1 || tex.indexOf("\\dfrac") > -1;
-	    }
-	    var handler = function(exp1, exp2) {
-	        var prefix;
-	        if (isNestedFraction(exp1) || isNestedFraction(exp2)) {
-	            prefix = "\\dfrac";
-	        } else {
-	            prefix = "\\frac";
-	        }
-	        return prefix + " {" + exp1 + "}{" + exp2 + "}";
-	    };
-	    return walkTex(tex, handler);
-	}
-
-	/*
-	 * Parse a TeX expression into something interpretable by input-number.
-	 * The process is exclusively concerned with parsing fractions, i.e., \dfracs.
-	 * The basic algorithm splits on \dfracs and then recurs on the subsequent
-	 * "expressions", i.e., the {} pairs that follow \dfrac. The recursion is to
-	 * allow for nested \dfrac elements.
-	 */
-	function parseTex(tex) {
-	    var handler = function(exp1, exp2) {
-	        return exp1 + "/" + exp2;
-	    };
-	    return walkTex(tex, handler);
-	}
-
-	module.exports = {
-	    parseTex: parseTex,
-	    modifyTex: modifyTex
 	};
 
 
 /***/ },
-/* 51 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */
@@ -21633,7 +21241,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var React = __webpack_require__(43);
 	var Editor = __webpack_require__(8);
-	var HintRenderer = __webpack_require__(44);
+	var HintRenderer = __webpack_require__(49);
 	var InfoTip = __webpack_require__(81);
 
 	/* Renders a hint editor box
@@ -21860,13 +21468,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 52 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */
 
 	var React = __webpack_require__(43);
-	var AnswerAreaEditor = __webpack_require__(90);
+	var AnswerAreaEditor = __webpack_require__(87);
 	var Editor = __webpack_require__(8);
 	var ITEM_DATA_VERSION = __webpack_require__(6).itemDataVersion;
 
@@ -21936,7 +21544,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                                onClick: this.props.onCheckAnswer, 
 	                                value: "Check Answer"}), 
 	                            this.props.wasAnswered &&
-	                                React.DOM.img({src: "./images/face-smiley.png", 
+	                                React.DOM.img({src: "images/face-smiley.png", 
 	                                    className: "smiley"}), 
 	                            this.props.gradeMessage &&
 	                                React.DOM.span(null, this.props.gradeMessage)
@@ -21977,6 +21585,398 @@ return /******/ (function(modules) { // webpackBootstrap
 	});
 
 	module.exports = ItemEditor;
+
+
+/***/ },
+/* 49 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */
+
+	var React = __webpack_require__(43);
+	var Renderer = __webpack_require__(11);
+
+	/* Renders just a hint preview */
+	var HintRenderer = React.createClass({displayName: 'HintRenderer',
+	    render: function() {
+	        var shouldBold = this.props.bold;
+	        var hint = this.props.hint;
+	        var classNames;
+	        if (shouldBold) {
+	            classNames = "perseus-hint-renderer last-hint";
+	        } else {
+	            classNames = "perseus-hint-renderer";
+	        }
+	        return React.DOM.div({className: classNames}, 
+	            Renderer({
+	                widgets: this.props.hint.widgets, 
+	                content: this.props.hint.content || "", 
+	                images: this.props.hint.images})
+	        );
+	    }
+	});
+
+	module.exports = HintRenderer;
+
+
+/***/ },
+/* 50 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */
+	var _ = __webpack_require__(96);
+
+	var SimpleMarkdown = __webpack_require__(86);
+	var TeX = __webpack_require__(80);
+	var Util = __webpack_require__(4);
+
+	/**
+	 * This "regex" matches math in `$`s, such as:
+	 *
+	 * $y = x + 1$
+	 *
+	 * It functions roughly like the following real regex:
+	 * /\$([^\$]*)\$/
+	 *
+	 * Unfortunately, math may have other `$`s inside it, as
+	 * long as they are inside `{` braces `}`, mostly for
+	 * `\text{ $math$ }`.
+	 *
+	 * To parse this, we can't use a real regex, since we
+	 * should support arbitrary nesting (even though
+	 * MathJax actually only supports two levels of nesting
+	 * here, which we *could* parse with a regex).
+	 *
+	 * So instead, we make an object that pretends to be
+	 * a regex by having an `exec` method that parses the
+	 * `$` and `{}`s in mathy text.
+	 *
+	 * All simple-markdown relies on is the `exec` method of
+	 * the regex, so this is safe. ish.
+	 */
+	var fakeMathRegex = {
+	    exec: function(source)  {
+	        var length = source.length;
+	        // our source must start with a "$"
+	        if (length === 0 || source[0] !== "$") {
+	            return null;
+	        }
+	        var index = 1;
+	        var braceLevel = 0;
+
+	        // Loop through the source, looking for a closing '$'
+	        // closing '$'s only count if they are not escaped with
+	        // a `\`, and we are not in nested `{}` braces.
+	        while (index < length) {
+	            var character = source[index];
+
+	            if (character === "\\") {
+	                // Consume both the `\` and the escaped char as a single
+	                // token.
+	                // This is so that the second `$` in `$\\$` closes
+	                // the math expression, since the first `\` is escaping
+	                // the second `\`, but the second `\` is not escaping
+	                // the second `$`.
+	                // This also handles the case of escaping `$`s or
+	                // braces `\{`
+	                index++;
+
+	            } else if (braceLevel <= 0 &&
+	                    character === "$") {
+	                
+	                // Return an array that looks like the results of a
+	                // regex's .exec function:
+	                // capture[0] is the whole string
+	                // capture[1] is the first "paren" match, which is the
+	                //   content of the math here, as if we wrote the regex
+	                //   /\$([^\$]*)\$/
+	                return [
+	                    source.substring(0, index + 1),
+	                    source.substring(1, index)
+	                ];
+
+	            } else if (character === "{") {
+	                braceLevel++;
+
+	            } else if (character === "}") {
+	                braceLevel--;
+
+	            } else if (character === "\n" &&
+	                    source[index - 1] === "\n") {
+	                // This is a weird case we supported in the old
+	                // math implementation--double newlines break
+	                // math. I'm preserving it for now because content
+	                // creators might have questions with single '$'s
+	                // in paragraphs...
+	                return null;
+	            }
+
+	            index++;
+	        }
+
+	        // we didn't find a closing `$`
+	        return null;
+	    }
+	};
+
+	var rules = _.extend({}, SimpleMarkdown.defaultRules, {
+	    widget: {
+	        regex: Util.rWidgetRule,
+	        parse: function(capture, parse, state)  {
+	            return {
+	                id: capture[1],
+	                widgetType: capture[2]
+	            };
+	        },
+	        output: function(node, output)  {
+	            // The actual output is handled in the renderer, where
+	            // we know the current widget props/state. This is
+	            // just a stub for testing.
+	            return React.DOM.em(null, "[Widget: ", node.id, "]");
+	        }
+	    },
+	    math: {
+	        regex: fakeMathRegex,
+	        parse: function(capture, parse, state)  {
+	            return {
+	                content: capture[1]
+	            };
+	        },
+	        output: function(node, output)  {
+	            // The actual output is handled in the renderer, because
+	            // it needs to pass in an `onRender` callback prop. This
+	            // is just a stub for testing.
+	            return TeX(null, node.content);
+	        }
+	    }
+	});
+
+	// Naively inject our rules before links so that our `[[`s take precedence
+	var linkRuleIndex = SimpleMarkdown.defaultPriorities.indexOf("link");
+	if (linkRuleIndex < 0) {
+	    // assert that 'text' is the last rule
+	    throw new Error(
+	        "could not find link rule in simple-markdown to place " +
+	        "widget and math rules before"
+	    );
+	}
+
+	var priorities = _.clone(SimpleMarkdown.defaultPriorities);
+	priorities.splice(
+	    linkRuleIndex,
+	    0,
+	    "widget",
+	    "math"
+	);
+
+	var builtParser = SimpleMarkdown.parserFor(rules, priorities);
+	var parse = function(source)  {
+	    var paragraphedSource = source + "\n\n";
+	    return builtParser(paragraphedSource);
+	};
+
+	module.exports = {
+	    parse: parse,
+	    outputFor: SimpleMarkdown.outputFor,
+	    ruleOutput: SimpleMarkdown.ruleOutput(rules),
+	    testOutput: SimpleMarkdown.outputFor(SimpleMarkdown.ruleOutput(rules))
+	};
+
+
+
+/***/ },
+/* 51 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Movable = __webpack_require__(88);
+	var MovablePoint = __webpack_require__(89);
+	var MovableLine = __webpack_require__(90);
+
+	var Interactive2 = {
+	    MovablePoint: MovablePoint,
+	    addMovablePoint: function(graphie, options) {
+	        var movable = new Movable(graphie, {});
+	        return new MovablePoint(graphie, movable, options);
+	    },
+	    MovableLine: MovableLine,
+	    addMovableLine: function(graphie, options) {
+	        var movable = new Movable(graphie, {});
+	        return new MovableLine(graphie, movable, options);
+	    }
+	};
+
+	module.exports = Interactive2;
+
+
+/***/ },
+/* 52 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/*
+	 * In this file, an `expression` is some portion of valid TeX enclosed in
+	 * curly brackets.
+	 */
+
+	 /*
+	  * Find the index at which an expression ends, i.e., has an unmatched
+	  * closing curly bracket. This method assumes that we start with a non-open
+	  * bracket character and end when we've seen more left than right brackets
+	  * (rather than assuming that we start with a bracket character and wait for
+	  * bracket equality).
+	  */
+	function findEndpoint(tex, currentIndex) {
+	    var bracketDepth = 0;
+	    var rightEndpoint;
+
+	    for (var i = currentIndex, len = tex.length; i < len; i++) {
+	        var c = tex[i];
+
+	        if (c === '{') {
+	            bracketDepth++;
+	        } else if (c === '}') {
+	            bracketDepth--;
+	        }
+
+	        if (bracketDepth < 0) {
+	            return i;
+	        }
+	    }
+	    // If we never see unbalanced curly brackets, default to the
+	    // entire string
+	    return tex.length;
+	}
+
+
+	/*
+	 * Parses an individual set of curly brackets into TeX.
+	 */
+	function parseNextExpression(tex, currentIndex, handler) {
+	    // Find the first '{' and grab subsequent TeX
+	    // Ex) tex: '{3}{7}', and we want the '3'
+	    var openBracketIndex = tex.indexOf('{', currentIndex);
+	    var nextExpIndex = openBracketIndex + 1;
+
+	    // Truncate to only contain remaining TeX
+	    var endpoint = findEndpoint(tex, nextExpIndex);
+	    var expressionTeX = tex.substring(nextExpIndex, endpoint);
+	    var parsedExp = walkTex(expressionTeX, handler);
+
+	    return {
+	        endpoint: endpoint,
+	        expression: parsedExp
+	    };
+	}
+
+
+	function getNextFracIndex(tex, currentIndex) {
+	    var dfrac = "\\dfrac";
+	    var frac = "\\frac";
+
+	    var nextFrac = tex.indexOf(frac, currentIndex);
+	    var nextDFrac = tex.indexOf(dfrac, currentIndex);
+
+	    if (nextFrac > -1 && nextDFrac > -1) {
+	        return Math.min(nextFrac, nextDFrac);
+	    } else if (nextFrac > -1) {
+	        return nextFrac;
+	    } else if (nextDFrac > -1) {
+	        return nextDFrac;
+	    } else {
+	        return -1;
+	    }
+	}
+
+
+	function walkTex(tex, handler) {
+	    // Ex) tex: '2 \dfrac {3}{7}'
+	    var parsedString = "";
+	    var currentIndex = 0;
+	    var nextFrac = getNextFracIndex(tex, currentIndex);
+
+	    // For each \dfrac, find the two expressions (wrapped in {}) and recur
+	    while (nextFrac > -1) {
+	        // Gather first fragment, preceding \dfrac
+	        // Ex) parsedString: '2 '
+	        parsedString += tex.substring(currentIndex, nextFrac);
+
+	        // Remove everything preceding \dfrac, which has been parsed
+	        currentIndex = nextFrac;
+
+	        // Parse first expression and move index past it
+	        // Ex) firstParsedExpression.expression: '3'
+	        var firstParsedExpression = parseNextExpression(
+	            tex, currentIndex, handler
+	        );
+	        currentIndex = firstParsedExpression.endpoint + 1;
+
+	        // Parse second expression
+	        // Ex) secondParsedExpression.expression: '7'
+	        var secondParsedExpression = parseNextExpression(
+	            tex, currentIndex, handler
+	        );
+	        currentIndex = secondParsedExpression.endpoint + 1;
+
+	        // Add expressions to running total of parsed expressions
+	        if (parsedString.length) {
+	            parsedString += " ";
+	        }
+
+	        // Apply a custom handler based on the parsed subexpressions
+	        parsedString += handler(firstParsedExpression.expression,
+	            secondParsedExpression.expression);
+
+	        // Find next DFrac, relative to currentIndex
+	        nextFrac = getNextFracIndex(tex, currentIndex);
+	    }
+
+	    // Add remaining TeX, which is \dfrac-free
+	    var rightEndpoint = findEndpoint(
+	        tex, currentIndex
+	    );
+	    parsedString += tex.substring(currentIndex, rightEndpoint);
+
+	    return parsedString;
+	}
+
+	/*
+	 * Modify a TeX expression, returning another TeX expression. The resulting
+	 * expression will have its innermost fractions stubbed out with \fracs
+	 * (as opposed to \dfracs). All other content will remain untouched.
+	 */
+	function modifyTex(tex) {
+	    function isNestedFraction(tex) {
+	        return tex.indexOf("\\frac") > -1 || tex.indexOf("\\dfrac") > -1;
+	    }
+	    var handler = function(exp1, exp2) {
+	        var prefix;
+	        if (isNestedFraction(exp1) || isNestedFraction(exp2)) {
+	            prefix = "\\dfrac";
+	        } else {
+	            prefix = "\\frac";
+	        }
+	        return prefix + " {" + exp1 + "}{" + exp2 + "}";
+	    };
+	    return walkTex(tex, handler);
+	}
+
+	/*
+	 * Parse a TeX expression into something interpretable by input-number.
+	 * The process is exclusively concerned with parsing fractions, i.e., \dfracs.
+	 * The basic algorithm splits on \dfracs and then recurs on the subsequent
+	 * "expressions", i.e., the {} pairs that follow \dfrac. The recursion is to
+	 * allow for nested \dfrac elements.
+	 */
+	function parseTex(tex) {
+	    var handler = function(exp1, exp2) {
+	        return exp1 + "/" + exp2;
+	    };
+	    return walkTex(tex, handler);
+	}
+
+	module.exports = {
+	    parseTex: parseTex,
+	    modifyTex: modifyTex
+	};
 
 
 /***/ },
@@ -22047,140 +22047,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 54 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */
-
-	var textWidthCache = {};
-	function getTextWidth(text) {
-	    if (!textWidthCache[text]) {
-	        // Hacky way to guess the width of an input box
-	        var $test = $("<span>").text(text).appendTo("body");
-	        textWidthCache[text] = $test.width() + 5;
-	        $test.remove();
-	    }
-	    return textWidthCache[text];
-	}
-
-
-	var TextListEditor = React.createClass({displayName: 'TextListEditor',
-	    propTypes: {
-	        options: React.PropTypes.array,
-	        layout: React.PropTypes.string,
-	        onChange: React.PropTypes.func.isRequired
-	    },
-
-	    getDefaultProps: function() {
-	        return {
-	            options: [],
-	            layout: "horizontal"
-	        };
-	    },
-
-	    getInitialState: function() {
-	        return {
-	            items: this.props.options.concat("")
-	        };
-	    },
-
-	    componentWillReceiveProps: function(nextProps) {
-	        this.setState({
-	            items: nextProps.options.concat("")
-	        });
-	    },
-
-	    render: function() {
-	        var className = [
-	            "perseus-text-list-editor",
-	            "ui-helper-clearfix",
-	            "layout-" + this.props.layout
-	        ].join(" ");
-
-	        var inputs = _.map(this.state.items, function(item, i) {
-	            return React.DOM.li({key: i}, 
-	                React.DOM.input({
-	                    ref: "input_" + i, 
-	                    type: "text", 
-	                    value: item, 
-	                    onChange: this.onChange.bind(this, i), 
-	                    onKeyDown: this.onKeyDown.bind(this, i), 
-	                    style: {width: getTextWidth(item)}})
-	            );
-	        }, this);
-
-	        return React.DOM.ul({className: className}, inputs);
-	    },
-
-	    onChange: function(index, event) {
-	        var items = _.clone(this.state.items);
-	        items[index] = event.target.value;
-
-	        if (index === items.length - 1) {
-	            items = items.concat("");
-	        }
-
-	        this.setState({items: items});
-	        this.props.onChange(_.compact(items));
-	    },
-
-	    onKeyDown: function(index, event) {
-	        var which = event.nativeEvent.keyCode;
-
-	        // Backspace deletes an empty input...
-	        if (which === 8 /* backspace */ && this.state.items[index] === "") {
-	            event.preventDefault();
-
-	            var items = _.clone(this.state.items);
-	            var focusIndex = (index === 0) ? 0 : index - 1;
-
-	            if (index === items.length - 1 &&
-	                    (index === 0 || items[focusIndex] !== "")) {
-	                // ...except for the last one, iff it is the only empty
-	                // input at the end.
-	                this.refs["input_" + focusIndex].getDOMNode().focus();
-	            } else {
-	                items.splice(index, 1);
-	                this.setState({items: items}, function() {
-	                    this.refs["input_" + focusIndex].getDOMNode().focus();
-	                });                
-	            }
-
-	        // Deleting the last character in the second-to-last input removes it
-	        } else if (which === 8 /* backspace */ &&
-	                this.state.items[index].length === 1 &&
-	                index === this.state.items.length - 2) {
-	            event.preventDefault();
-
-	            var items = _.clone(this.state.items);
-	            items.splice(index, 1);
-	            this.setState({items: items});
-	            this.props.onChange(_.compact(items));
-
-	        // Enter adds an option below the current one...
-	        } else if (which === 13 /* enter */) {
-	            event.preventDefault();
-
-	            var items = _.clone(this.state.items);
-	            var focusIndex = index + 1;
-
-	            if (index === items.length - 2) {
-	                // ...unless the empty input is just below.
-	                this.refs["input_" + focusIndex].getDOMNode().focus();
-	            } else {
-	                items.splice(focusIndex, 0, "");
-	                this.setState({items: items}, function() {
-	                    this.refs["input_" + focusIndex].getDOMNode().focus();
-	                });
-	            }
-	        }
-	    }
-	});
-
-	module.exports = TextListEditor;
-
-
-/***/ },
-/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */
@@ -22427,7 +22293,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 56 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */
@@ -22727,600 +22593,149 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
+/* 56 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */
+
+	var textWidthCache = {};
+	function getTextWidth(text) {
+	    if (!textWidthCache[text]) {
+	        // Hacky way to guess the width of an input box
+	        var $test = $("<span>").text(text).appendTo("body");
+	        textWidthCache[text] = $test.width() + 5;
+	        $test.remove();
+	    }
+	    return textWidthCache[text];
+	}
+
+
+	var TextListEditor = React.createClass({displayName: 'TextListEditor',
+	    propTypes: {
+	        options: React.PropTypes.array,
+	        layout: React.PropTypes.string,
+	        onChange: React.PropTypes.func.isRequired
+	    },
+
+	    getDefaultProps: function() {
+	        return {
+	            options: [],
+	            layout: "horizontal"
+	        };
+	    },
+
+	    getInitialState: function() {
+	        return {
+	            items: this.props.options.concat("")
+	        };
+	    },
+
+	    componentWillReceiveProps: function(nextProps) {
+	        this.setState({
+	            items: nextProps.options.concat("")
+	        });
+	    },
+
+	    render: function() {
+	        var className = [
+	            "perseus-text-list-editor",
+	            "ui-helper-clearfix",
+	            "layout-" + this.props.layout
+	        ].join(" ");
+
+	        var inputs = _.map(this.state.items, function(item, i) {
+	            return React.DOM.li({key: i}, 
+	                React.DOM.input({
+	                    ref: "input_" + i, 
+	                    type: "text", 
+	                    value: item, 
+	                    onChange: this.onChange.bind(this, i), 
+	                    onKeyDown: this.onKeyDown.bind(this, i), 
+	                    style: {width: getTextWidth(item)}})
+	            );
+	        }, this);
+
+	        return React.DOM.ul({className: className}, inputs);
+	    },
+
+	    onChange: function(index, event) {
+	        var items = _.clone(this.state.items);
+	        items[index] = event.target.value;
+
+	        if (index === items.length - 1) {
+	            items = items.concat("");
+	        }
+
+	        this.setState({items: items});
+	        this.props.onChange(_.compact(items));
+	    },
+
+	    onKeyDown: function(index, event) {
+	        var which = event.nativeEvent.keyCode;
+
+	        // Backspace deletes an empty input...
+	        if (which === 8 /* backspace */ && this.state.items[index] === "") {
+	            event.preventDefault();
+
+	            var items = _.clone(this.state.items);
+	            var focusIndex = (index === 0) ? 0 : index - 1;
+
+	            if (index === items.length - 1 &&
+	                    (index === 0 || items[focusIndex] !== "")) {
+	                // ...except for the last one, iff it is the only empty
+	                // input at the end.
+	                this.refs["input_" + focusIndex].getDOMNode().focus();
+	            } else {
+	                items.splice(index, 1);
+	                this.setState({items: items}, function() {
+	                    this.refs["input_" + focusIndex].getDOMNode().focus();
+	                });                
+	            }
+
+	        // Deleting the last character in the second-to-last input removes it
+	        } else if (which === 8 /* backspace */ &&
+	                this.state.items[index].length === 1 &&
+	                index === this.state.items.length - 2) {
+	            event.preventDefault();
+
+	            var items = _.clone(this.state.items);
+	            items.splice(index, 1);
+	            this.setState({items: items});
+	            this.props.onChange(_.compact(items));
+
+	        // Enter adds an option below the current one...
+	        } else if (which === 13 /* enter */) {
+	            event.preventDefault();
+
+	            var items = _.clone(this.state.items);
+	            var focusIndex = index + 1;
+
+	            if (index === items.length - 2) {
+	                // ...unless the empty input is just below.
+	                this.refs["input_" + focusIndex].getDOMNode().focus();
+	            } else {
+	                items.splice(focusIndex, 0, "");
+	                this.setState({items: items}, function() {
+	                    this.refs["input_" + focusIndex].getDOMNode().focus();
+	                });
+	            }
+	        }
+	    }
+	});
+
+	module.exports = TextListEditor;
+
+
+/***/ },
 /* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */
 
 	var React = __webpack_require__(43);
-	var Tooltip = __webpack_require__(82);
-	var ApiClassNames = __webpack_require__(13).ClassNames;
+	var Changeable  = __webpack_require__(70);
 
-	var MathInput  = __webpack_require__(58);
-	var Renderer   = __webpack_require__(11);
-	var TextInput  = __webpack_require__(63);
-	var MathOutput = __webpack_require__(66);
-
-	var captureScratchpadTouchStart =
-	        __webpack_require__(4).captureScratchpadTouchStart;
-
-	var MATH = "math";
-	var TEXT = "text";
-	var TEX = "tex";
-
-	var InputWithExamples = React.createClass({displayName: 'InputWithExamples',
-	    propTypes: {
-	        type: React.PropTypes.oneOf([MATH, TEXT, TEX]),
-	        value: React.PropTypes.string,
-	        onChange: React.PropTypes.func.isRequired,
-	        className: React.PropTypes.string,
-	        examples: React.PropTypes.arrayOf(React.PropTypes.string).isRequired,
-	        shouldShowExamples: React.PropTypes.bool,
-	        convertDotToTimes: React.PropTypes.bool,
-	        buttonSet: React.PropTypes.string,
-	        buttonsVisible: React.PropTypes.oneOf(['always', 'never', 'focused']),
-	        onFocus: React.PropTypes.func,
-	        onBlur: React.PropTypes.func
-	    },
-
-	    getDefaultProps: function() {
-	        return {
-	            type: TEXT,
-	            shouldShowExamples: true,
-	            onFocus: function() { },
-	            onBlur: function() { }
-	        };
-	    },
-
-	    getInitialState: function() {
-	        return {
-	            focused: false,
-	            showExamples: false
-	        };
-	    },
-
-	    _getInputClassName: function() {
-	        // <MathOutput> is a special component that manages its own class and
-	        // state, as it's a <span> that wants to act like an <input>.
-	        if (this.props.type === TEX) {
-	            return this.props.className;
-	        }
-
-	        // Otherwise, we need to add these INPUT and FOCUSED tags here.
-	        var className = ApiClassNames.INPUT;
-	        if (this.state.focused) {
-	            className += " " + ApiClassNames.FOCUSED;
-	        }
-	        if (this.props.className) {
-	            className += " " + this.props.className;
-	        }
-	        return className;
-	    },
-
-	    _getPropsForInputType: function() {
-	        // Minimal set of props, used by each input type
-	        var inputProps = {
-	            ref: "input",
-	            className: this._getInputClassName(),
-	            value: this.props.value,
-	            onFocus: this._handleFocus,
-	            onBlur: this._handleBlur
-	        };
-
-	        if (this.props.type === TEX) {
-	            return inputProps;
-	        }
-
-	        // Add useful props required for MATH and TEXT modes
-	        _.extend(inputProps, {
-	            buttonSet: this.props.buttonSet,
-	            buttonsVisible: this.props.buttonsVisible,
-	            onChange: this.props.onChange,
-	            onTouchStart: captureScratchpadTouchStart
-	        });
-
-	        // And add final props that are MATH- and TEXT-specific
-	        if (this.props.type === MATH) {
-	            return _.extend({
-	                convertDotToTimes: this.props.convertDotToTimes,
-	            }, inputProps);
-	        } else if (this.props.type === TEXT) {
-	            return _.extend({
-	                autoCapitalize: "off",
-	                autoComplete: "off",
-	                autoCorrect: "off",
-	                spellCheck: "false",
-	            }, inputProps);
-	        }
-	    },
-
-	    _getComponentForInputType: function() {
-	        switch (this.props.type) {
-	            case TEX:
-	                return MathOutput;
-
-	            case MATH:
-	                return MathInput;
-
-	            case TEXT:
-	                return TextInput;
-
-	            default:
-	                return null;
-	        }
-	    },
-
-	    _renderInput: function() {
-	        var inputProps = this._getPropsForInputType();
-	        var inputComponent = this._getComponentForInputType();
-	        return inputComponent(Object.assign({}, inputProps));
-	    },
-
-	    render: function() {
-	        var input = this._renderInput();
-
-	        // Static rendering, which doesn't include the 'tooltip' logic that the
-	        // other types require, and is hence handled separately.
-	        if (this.props.type === TEX) {
-	            return input;
-	        }
-
-	        // Else, we need to be able to show examples
-	        var examplesContent = _.map(this.props.examples, function(example)  {
-	            return "- " + example;
-	        }).join("\n");
-
-	        var showExamples = this.props.shouldShowExamples &&
-	                this.state.showExamples;
-
-	        return Tooltip({
-	                ref: "tooltip", 
-	                className: "perseus-formats-tooltip", 
-	                horizontalPosition: "left", 
-	                horizontalAlign: "left", 
-	                verticalPosition: "bottom", 
-	                arrowSize: 10, 
-	                borderColor: "#ccc", 
-	                show: showExamples}, 
-	            input, 
-	            Renderer({content: examplesContent})
-	        );
-	    },
-
-	    _handleFocus: function() {
-	        this.props.onFocus();
-	        this.setState({
-	            focused: true,
-	            showExamples: true
-	        });
-	    },
-
-	    show: function() {
-	        this.setState({showExamples: true});
-	    },
-
-	    hide: function() {
-	        this.setState({showExamples: false});
-	    },
-
-	    _handleBlur: function() {
-	        this.props.onBlur();
-	        this.setState({
-	            focused: false,
-	            showExamples: false
-	        });
-	    },
-
-	    focus: function() {
-	        this.refs.input.focus();
-	    },
-
-	    blur: function() {
-	        this.refs.input.blur();
-	    },
-
-	    handleChange: function(e) {
-	        this.props.onChange(e.target.value);
-	    }
-	});
-
-	module.exports = InputWithExamples;
-
-
-/***/ },
-/* 58 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */
-
-	// TODO(alex): Package MathQuill
-	var MathQuill = window.MathQuill;
-	var React     = __webpack_require__(43);
-	var _         = __webpack_require__(93);
-	var cx        = React.addons.classSet;
-	var PT = React.PropTypes;
-	var TexButtons = __webpack_require__(59);
-
-	// A WYSIWYG math input that calls `onChange(LaTeX-string)`
-	var MathInput = React.createClass({displayName: 'MathInput',
-	    propTypes: {
-	        value: PT.string,
-	        onChange: PT.func.isRequired,
-	        convertDotToTimes: PT.bool,
-	        buttonsVisible: PT.oneOf(['always', 'never', 'focused']),
-	        buttonSets: TexButtons.buttonSetsType.isRequired,
-	        onFocus: PT.func,
-	        onBlur: PT.func
-	    },
-
-	    render: function() {
-	        var className = cx({
-	            "perseus-math-input": true,
-
-	            // mathquill usually adds these itself but react removes them when
-	            // updating the component.
-	            "mq-editable-field": true,
-	            "mq-math-mode": true
-	        });
-
-	        var buttons = null;
-	        if (this._shouldShowButtons()) {
-	            buttons = TexButtons({
-	                sets: this.props.buttonSets, 
-	                className: "math-input-buttons absolute", 
-	                convertDotToTimes: this.props.convertDotToTimes, 
-	                onInsert: this.insert});
-	        }
-
-	        return React.DOM.div({style: {display: "inline-block"}}, 
-	            React.DOM.div({style: {display: 'inline-block'}}, 
-	                React.DOM.span({className: className, 
-	                      ref: "mathinput", 
-	                      onFocus: this.handleFocus, 
-	                      onBlur: this.handleBlur})
-	            ), 
-	            React.DOM.div({style: {position: "relative"}}, 
-	                buttons
-	            )
-	        );
-	    },
-
-	    // handlers:
-	    // keep track of two related bits of state:
-	    // * this.state.focused - whether the buttons are currently shown
-	    // * this.mouseDown - whether a mouse click is active that started in the
-	    //   buttons div
-
-	    handleFocus: function() {
-	        this.setState({ focused: true });
-	        // TODO(joel) fix properly - we should probably allow onFocus handlers
-	        // to this property, but we need to work correctly with them.
-	        // if (this.props.onFocus) {
-	        //     this.props.onFocus();
-	        // }
-	    },
-
-	    handleMouseDown: function(event) {
-	        var focused = this.getDOMNode().contains(event.target);
-	        this.mouseDown = focused;
-	        if (!focused) {
-	            this.setState({ focused: false });
-	        }
-	    },
-
-	    handleMouseUp: function() {
-	        // this mouse click started in the buttons div so we should focus the
-	        // input
-	        if (this.mouseDown) {
-	            this.focus();
-	        }
-	        this.mouseDown = false;
-	    },
-
-	    handleBlur: function() {
-	        if (!this.mouseDown) {
-	            this.setState({ focused: false });
-	        }
-	    },
-
-	    _shouldShowButtons: function() {
-	        if (this.props.buttonsVisible === 'always') {
-	            return true;
-	        } else if (this.props.buttonsVisible === 'never') {
-	            return false;
-	        } else {
-	            return this.state.focused;
-	        }
-	    },
-
-	    getDefaultProps: function() {
-	        return {
-	            value: "",
-	            convertDotToTimes: false,
-	            buttonsVisible: 'focused'
-	        };
-	    },
-
-	    getInitialState: function() {
-	        return { focused: false };
-	    },
-
-	    insert: function(value) {
-	        var input = this.mathField();
-	        if (_(value).isFunction()) {
-	            value(input);
-	        } else if (value[0] === '\\') {
-	            input.cmd(value).focus();
-	        } else {
-	            input.write(value).focus();
-	        }
-	        input.focus();
-	    },
-
-	    mathField: function(options) {
-	        // MathQuill.MathField takes a DOM node, MathQuill-ifies it if it's
-	        // seeing that node for the first time, then returns the associated
-	        // MathQuill object for that node. It is stable - will always return
-	        // the same object when called on the same DOM node.
-	        return MathQuill.MathField(this.refs.mathinput.getDOMNode(), options);
-	    },
-
-	    componentWillUnmount: function() {
-	        window.removeEventListener("mousedown", this.handleMouseDown);
-	        window.removeEventListener("mouseup", this.handleMouseUp);
-	    },
-
-	    componentDidMount: function() {
-	        window.addEventListener("mousedown", this.handleMouseDown);
-	        window.addEventListener("mouseup", this.handleMouseUp);
-
-	        // These options can currently only be set globally. (Hopefully this
-	        // will change at some point.) They appear safe to set multiple times.
-
-	        // LaTeX commands that, when typed, are immediately replaced by the
-	        // appropriate symbol. This does not include ln, log, or any of the
-	        // trig functions; those are always interpreted as commands.
-	        MathQuill.addAutoCommands("pi theta phi sqrt");
-
-	        // Pop the cursor out of super/subscripts on arithmetic operators or
-	        // (in)equalities.
-	        MathQuill.addCharsThatBreakOutOfSupSub("+-*/=<>≠≤≥");
-
-	        // Prevent excessive super/subscripts or fractions from being created
-	        // without operands, e.g. when somebody holds down a key
-	        MathQuill.disableCharsWithoutOperand("^_/");
-
-	        var initialized = false;
-
-	        // Initialize MathQuill.MathField instance
-	        this.mathField({
-	            // The name of this option is somewhat misleading, as tabbing in
-	            // MathQuill breaks you out of a nested context (fraction/script)
-	            // if you're in one, but moves focus to the next input if you're
-	            // not. Spaces (with this option enabled) are just ignored in the
-	            // latter case.
-	            //
-	            // TODO(alex): In order to allow inputting mixed numbers, we will
-	            // have to accept spaces in certain cases. The desired behavior is
-	            // still to escape nested contexts if currently in one, but to
-	            // insert a space if not (we don't expect mixed numbers in nested
-	            // contexts). We should also limit to one consecutive space.
-	            spaceBehavesLikeTab: true,
-
-	            handlers: {
-	                edited: function(mathField)  {
-	                    // This handler is guaranteed to be called on change, but
-	                    // unlike React it sometimes generates false positives.
-	                    // One of these is on initialization (with an empty string
-	                    // value), so we have to guard against that below.
-	                    var value = mathField.latex();
-
-	                    // Provide a MathQuill-compatible way to generate the
-	                    // not-equals sign without pasting unicode or typing TeX
-	                    value = value.replace(/<>/g, "\\ne");
-
-	                    // Use the specified symbol to represent multiplication
-	                    // TODO(alex): Add an option to disallow variables, in
-	                    // which case 'x' should get converted to '\\times'
-	                    if (this.props.convertDotToTimes) {
-	                        value = value.replace(/\\cdot/g, "\\times");
-	                    } else {
-	                        value = value.replace(/\\times/g, "\\cdot");
-	                    }
-
-	                    if (initialized && this.props.value !== value) {
-	                        this.props.onChange(value);
-	                    }
-	                }.bind(this),
-	                enter: function()  {
-	                    // This handler is called when the user presses the enter
-	                    // key. Since this isn't an actual <input> element, we have
-	                    // to manually trigger the usually automatic form submit.
-	                    $(this.refs.mathinput.getDOMNode()).submit();
-	                }.bind(this),
-	                upOutOf: function(mathField)  {
-	                    // This handler is called when the user presses the up
-	                    // arrow key, but there is nowhere in the expression to go
-	                    // up to (no numerator or exponent). For ease of use,
-	                    // interpret this as an attempt to create an exponent.
-	                    mathField.typedText("^");
-	                }
-	            }
-	        });
-
-	        // Ideally, we would be able to pass an initial value directly into
-	        // the constructor above
-	        this.mathField().latex(this.props.value);
-
-	        initialized = true;
-	    },
-
-	    componentDidUpdate: function() {
-	        if (!_.isEqual(this.mathField().latex(), this.props.value)) {
-	            this.mathField().latex(this.props.value);
-	        }
-	    },
-
-	    focus: function() {
-	        this.mathField().focus();
-	        this.setState({ focused: true });
-	    },
-
-	    blur: function() {
-	        this.mathField().blur();
-	        this.setState({ focused: false });
-	    }
-	});
-
-	module.exports = MathInput;
-
-
-/***/ },
-/* 59 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */
-
-	var React     = __webpack_require__(43);
-	var TeX       = __webpack_require__(80);
-	var clone     = React.addons.cloneWithProps;
-
-	var prettyBig = { fontSize: "150%" };
-	var slightlyBig = { fontSize: "120%" };
-	var trigStyle = { marginLeft: -4 };
-	var symbStyle = { fontSize: "130%" };
-
-	// These are functions because we want to generate a new component for each use
-	// on the page rather than reusing an instance (which will cause an error).
-	// Also, it's useful for things which might look different depending on the
-	// props.
-
-	var buttonSets = {
-	    basic: [
-	        function()  {return [React.DOM.span({style: slightlyBig}, "+"), "+"];},
-	        function()  {return [React.DOM.span({style: prettyBig}, "-"), "-"];},
-
-	        // TODO(joel) - display as \cdot when appropriate
-	        function(props)  {
-	            if (props.convertDotToTimes) {
-	                return [TeX({style: prettyBig}, "\\times"), "\\times"];
-	            } else {
-	                return [TeX({style: prettyBig}, "\\cdot"), "\\cdot"];
-	            }
-	        },
-	        function()  {return [
-	            TeX({style: prettyBig}, "\\frac{□}{□}"),
-
-	            // If there's something in the input that can become part of a
-	            // fraction, typing "/" puts it in the numerator. If not, typing
-	            // "/" does nothing. In that case, enter a \frac.
-	            function(input)  {
-	                var contents = input.latex();
-	                input.typedText("/");
-	                if (input.latex() === contents) {
-	                    input.cmd("\\frac");
-	                }
-	            }
-	        ];}
-	    ],
-
-	    /*
-	    relations: [
-	        // [<TeX>{"="}</TeX>, "\\eq"],
-	        () => [<TeX>\neq</TeX>, "\\neq"],
-	        () => [<TeX>\leq</TeX>, "\\leq"],
-	        () => [<TeX>\geq</TeX>, "\\geq"],
-	        () => [<TeX>\lt</TeX>, "\\lt"],
-	        () => [<TeX>\gt</TeX>, "\\gt"],
-	    ],
-	    */
-
-	    trig: [
-	        function()  {return [TeX(null, "\\sin"), "\\sin"];},
-	        function()  {return [TeX(null, "\\cos"), "\\cos"];},
-	        function()  {return [TeX(null, "\\tan"), "\\tan"];},
-	        function()  {return [TeX({style: symbStyle}, "\\theta"), "\\theta"];},
-	        function()  {return [TeX({style: symbStyle}, "\\phi"), "\\phi"];}
-	    ],
-
-	    prealgebra: [
-	        function()  {return [TeX(null, "\\sqrt{x}"), "\\sqrt"];},
-	        // TODO(joel) - how does desmos do this?
-	        // ["\\sqrt[3]{x}", "\\sqrt[3]{x}"],
-	        function()  {return [
-	            TeX({style: slightlyBig}, "□^a"),
-	            function(input)  {
-	                var contents = input.latex();
-	                input.keystroke("Up");
-	                if (input.latex() === contents) {
-	                    input.typedText("a^b");
-	                }
-	            }
-	        ];},
-	        function()  {return [TeX({style: slightlyBig}, "\\pi"), "\\pi"];}
-	    ],
-
-	    logarithms: [
-	        function()  {return [TeX(null, "\\log"), "\\log"];},
-	        function()  {return [TeX(null, "\\ln"), "\\ln"];}
-	    ]
-	};
-
-	var buttonSetsType = React.PropTypes.arrayOf(
-	        React.PropTypes.oneOf(_(buttonSets).keys())
-	    );
-
-	var TexButtons = React.createClass({displayName: 'TexButtons',
-	    propTypes: {
-	        sets: buttonSetsType.isRequired,
-	        onInsert: React.PropTypes.func.isRequired
-	    },
-
-	    render: function() {
-	        var buttons = _(this.props.sets).map(function(setName)  {return buttonSets[setName];});
-
-	        var buttonRows = _(buttons).map(function(row)  {return row.map(function(symbGen)  {
-	            // create a (component, thing we should send to mathquill) pair
-	            var symbol = symbGen(this.props);
-	            return React.DOM.button({onClick: function()  {return this.props.onInsert(symbol[1]);}.bind(this), 
-	                           className: "tex-button", 
-	                           tabIndex: -1, 
-	                           type: "button"}, 
-	                symbol[0]
-	            );
-	        }.bind(this));}.bind(this));
-
-	        var buttonPopup = _(buttonRows).map(function(row, i)  {
-	            return React.DOM.div({className: "clearfix tex-button-row", 
-	                        key: this.props.sets[i]}, 
-	                row
-	            );
-	        }.bind(this));
-
-	        return React.DOM.div({className: this.props.className}, 
-	            buttonPopup
-	        );
-	    },
-
-	    statics: {
-	        buttonSets:buttonSets,
-	        buttonSetsType:buttonSetsType
-	    }
-	});
-
-	module.exports = TexButtons;
-
-
-/***/ },
-/* 60 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */
-
-	var React = __webpack_require__(43);
-	var Changeable  = __webpack_require__(67);
-
-	var ButtonGroup = __webpack_require__(84);
+	var ButtonGroup = __webpack_require__(83);
 	var InfoTip = __webpack_require__(81);
 	var NumberInput = __webpack_require__(62);
 	var PropCheckBox = __webpack_require__(53);
@@ -23813,6 +23228,591 @@ return /******/ (function(modules) { // webpackBootstrap
 	});
 
 	module.exports = GraphSettings;
+
+
+/***/ },
+/* 58 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */
+
+	var React = __webpack_require__(43);
+	var Tooltip = __webpack_require__(84);
+	var ApiClassNames = __webpack_require__(13).ClassNames;
+
+	var MathInput  = __webpack_require__(59);
+	var Renderer   = __webpack_require__(11);
+	var TextInput  = __webpack_require__(63);
+	var MathOutput = __webpack_require__(66);
+
+	var captureScratchpadTouchStart =
+	        __webpack_require__(4).captureScratchpadTouchStart;
+
+	var MATH = "math";
+	var TEXT = "text";
+	var TEX = "tex";
+
+	var InputWithExamples = React.createClass({displayName: 'InputWithExamples',
+	    propTypes: {
+	        type: React.PropTypes.oneOf([MATH, TEXT, TEX]),
+	        value: React.PropTypes.string,
+	        onChange: React.PropTypes.func.isRequired,
+	        className: React.PropTypes.string,
+	        examples: React.PropTypes.arrayOf(React.PropTypes.string).isRequired,
+	        shouldShowExamples: React.PropTypes.bool,
+	        convertDotToTimes: React.PropTypes.bool,
+	        buttonSet: React.PropTypes.string,
+	        buttonsVisible: React.PropTypes.oneOf(['always', 'never', 'focused']),
+	        onFocus: React.PropTypes.func,
+	        onBlur: React.PropTypes.func
+	    },
+
+	    getDefaultProps: function() {
+	        return {
+	            type: TEXT,
+	            shouldShowExamples: true,
+	            onFocus: function() { },
+	            onBlur: function() { }
+	        };
+	    },
+
+	    getInitialState: function() {
+	        return {
+	            focused: false,
+	            showExamples: false
+	        };
+	    },
+
+	    _getInputClassName: function() {
+	        // <MathOutput> is a special component that manages its own class and
+	        // state, as it's a <span> that wants to act like an <input>.
+	        if (this.props.type === TEX) {
+	            return this.props.className;
+	        }
+
+	        // Otherwise, we need to add these INPUT and FOCUSED tags here.
+	        var className = ApiClassNames.INPUT;
+	        if (this.state.focused) {
+	            className += " " + ApiClassNames.FOCUSED;
+	        }
+	        if (this.props.className) {
+	            className += " " + this.props.className;
+	        }
+	        return className;
+	    },
+
+	    _getPropsForInputType: function() {
+	        // Minimal set of props, used by each input type
+	        var inputProps = {
+	            ref: "input",
+	            className: this._getInputClassName(),
+	            value: this.props.value,
+	            onFocus: this._handleFocus,
+	            onBlur: this._handleBlur
+	        };
+
+	        if (this.props.type === TEX) {
+	            return inputProps;
+	        }
+
+	        // Add useful props required for MATH and TEXT modes
+	        _.extend(inputProps, {
+	            buttonSet: this.props.buttonSet,
+	            buttonsVisible: this.props.buttonsVisible,
+	            onChange: this.props.onChange,
+	            onTouchStart: captureScratchpadTouchStart
+	        });
+
+	        // And add final props that are MATH- and TEXT-specific
+	        if (this.props.type === MATH) {
+	            return _.extend({
+	                convertDotToTimes: this.props.convertDotToTimes,
+	            }, inputProps);
+	        } else if (this.props.type === TEXT) {
+	            return _.extend({
+	                autoCapitalize: "off",
+	                autoComplete: "off",
+	                autoCorrect: "off",
+	                spellCheck: "false",
+	            }, inputProps);
+	        }
+	    },
+
+	    _getComponentForInputType: function() {
+	        switch (this.props.type) {
+	            case TEX:
+	                return MathOutput;
+
+	            case MATH:
+	                return MathInput;
+
+	            case TEXT:
+	                return TextInput;
+
+	            default:
+	                return null;
+	        }
+	    },
+
+	    _renderInput: function() {
+	        var inputProps = this._getPropsForInputType();
+	        var inputComponent = this._getComponentForInputType();
+	        return inputComponent(Object.assign({}, inputProps));
+	    },
+
+	    render: function() {
+	        var input = this._renderInput();
+
+	        // Static rendering, which doesn't include the 'tooltip' logic that the
+	        // other types require, and is hence handled separately.
+	        if (this.props.type === TEX) {
+	            return input;
+	        }
+
+	        // Else, we need to be able to show examples
+	        var examplesContent = _.map(this.props.examples, function(example)  {
+	            return "- " + example;
+	        }).join("\n");
+
+	        var showExamples = this.props.shouldShowExamples &&
+	                this.state.showExamples;
+
+	        return Tooltip({
+	                ref: "tooltip", 
+	                className: "perseus-formats-tooltip", 
+	                horizontalPosition: "left", 
+	                horizontalAlign: "left", 
+	                verticalPosition: "bottom", 
+	                arrowSize: 10, 
+	                borderColor: "#ccc", 
+	                show: showExamples}, 
+	            input, 
+	            Renderer({content: examplesContent})
+	        );
+	    },
+
+	    _handleFocus: function() {
+	        this.props.onFocus();
+	        this.setState({
+	            focused: true,
+	            showExamples: true
+	        });
+	    },
+
+	    show: function() {
+	        this.setState({showExamples: true});
+	    },
+
+	    hide: function() {
+	        this.setState({showExamples: false});
+	    },
+
+	    _handleBlur: function() {
+	        this.props.onBlur();
+	        this.setState({
+	            focused: false,
+	            showExamples: false
+	        });
+	    },
+
+	    focus: function() {
+	        this.refs.input.focus();
+	    },
+
+	    blur: function() {
+	        this.refs.input.blur();
+	    },
+
+	    handleChange: function(e) {
+	        this.props.onChange(e.target.value);
+	    }
+	});
+
+	module.exports = InputWithExamples;
+
+
+/***/ },
+/* 59 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */
+
+	// TODO(alex): Package MathQuill
+	var MathQuill = window.MathQuill;
+	var React     = __webpack_require__(43);
+	var _         = __webpack_require__(96);
+	var cx        = React.addons.classSet;
+	var PT = React.PropTypes;
+	var TexButtons = __webpack_require__(60);
+
+	// A WYSIWYG math input that calls `onChange(LaTeX-string)`
+	var MathInput = React.createClass({displayName: 'MathInput',
+	    propTypes: {
+	        value: PT.string,
+	        onChange: PT.func.isRequired,
+	        convertDotToTimes: PT.bool,
+	        buttonsVisible: PT.oneOf(['always', 'never', 'focused']),
+	        buttonSets: TexButtons.buttonSetsType.isRequired,
+	        onFocus: PT.func,
+	        onBlur: PT.func
+	    },
+
+	    render: function() {
+	        var className = cx({
+	            "perseus-math-input": true,
+
+	            // mathquill usually adds these itself but react removes them when
+	            // updating the component.
+	            "mq-editable-field": true,
+	            "mq-math-mode": true
+	        });
+
+	        var buttons = null;
+	        if (this._shouldShowButtons()) {
+	            buttons = TexButtons({
+	                sets: this.props.buttonSets, 
+	                className: "math-input-buttons absolute", 
+	                convertDotToTimes: this.props.convertDotToTimes, 
+	                onInsert: this.insert});
+	        }
+
+	        return React.DOM.div({style: {display: "inline-block"}}, 
+	            React.DOM.div({style: {display: 'inline-block'}}, 
+	                React.DOM.span({className: className, 
+	                      ref: "mathinput", 
+	                      onFocus: this.handleFocus, 
+	                      onBlur: this.handleBlur})
+	            ), 
+	            React.DOM.div({style: {position: "relative"}}, 
+	                buttons
+	            )
+	        );
+	    },
+
+	    // handlers:
+	    // keep track of two related bits of state:
+	    // * this.state.focused - whether the buttons are currently shown
+	    // * this.mouseDown - whether a mouse click is active that started in the
+	    //   buttons div
+
+	    handleFocus: function() {
+	        this.setState({ focused: true });
+	        // TODO(joel) fix properly - we should probably allow onFocus handlers
+	        // to this property, but we need to work correctly with them.
+	        // if (this.props.onFocus) {
+	        //     this.props.onFocus();
+	        // }
+	    },
+
+	    handleMouseDown: function(event) {
+	        var focused = this.getDOMNode().contains(event.target);
+	        this.mouseDown = focused;
+	        if (!focused) {
+	            this.setState({ focused: false });
+	        }
+	    },
+
+	    handleMouseUp: function() {
+	        // this mouse click started in the buttons div so we should focus the
+	        // input
+	        if (this.mouseDown) {
+	            this.focus();
+	        }
+	        this.mouseDown = false;
+	    },
+
+	    handleBlur: function() {
+	        if (!this.mouseDown) {
+	            this.setState({ focused: false });
+	        }
+	    },
+
+	    _shouldShowButtons: function() {
+	        if (this.props.buttonsVisible === 'always') {
+	            return true;
+	        } else if (this.props.buttonsVisible === 'never') {
+	            return false;
+	        } else {
+	            return this.state.focused;
+	        }
+	    },
+
+	    getDefaultProps: function() {
+	        return {
+	            value: "",
+	            convertDotToTimes: false,
+	            buttonsVisible: 'focused'
+	        };
+	    },
+
+	    getInitialState: function() {
+	        return { focused: false };
+	    },
+
+	    insert: function(value) {
+	        var input = this.mathField();
+	        if (_(value).isFunction()) {
+	            value(input);
+	        } else if (value[0] === '\\') {
+	            input.cmd(value).focus();
+	        } else {
+	            input.write(value).focus();
+	        }
+	        input.focus();
+	    },
+
+	    mathField: function(options) {
+	        // MathQuill.MathField takes a DOM node, MathQuill-ifies it if it's
+	        // seeing that node for the first time, then returns the associated
+	        // MathQuill object for that node. It is stable - will always return
+	        // the same object when called on the same DOM node.
+	        return MathQuill.MathField(this.refs.mathinput.getDOMNode(), options);
+	    },
+
+	    componentWillUnmount: function() {
+	        window.removeEventListener("mousedown", this.handleMouseDown);
+	        window.removeEventListener("mouseup", this.handleMouseUp);
+	    },
+
+	    componentDidMount: function() {
+	        window.addEventListener("mousedown", this.handleMouseDown);
+	        window.addEventListener("mouseup", this.handleMouseUp);
+
+	        // These options can currently only be set globally. (Hopefully this
+	        // will change at some point.) They appear safe to set multiple times.
+
+	        // LaTeX commands that, when typed, are immediately replaced by the
+	        // appropriate symbol. This does not include ln, log, or any of the
+	        // trig functions; those are always interpreted as commands.
+	        MathQuill.addAutoCommands("pi theta phi sqrt");
+
+	        // Pop the cursor out of super/subscripts on arithmetic operators or
+	        // (in)equalities.
+	        MathQuill.addCharsThatBreakOutOfSupSub("+-*/=<>≠≤≥");
+
+	        // Prevent excessive super/subscripts or fractions from being created
+	        // without operands, e.g. when somebody holds down a key
+	        MathQuill.disableCharsWithoutOperand("^_/");
+
+	        var initialized = false;
+
+	        // Initialize MathQuill.MathField instance
+	        this.mathField({
+	            // The name of this option is somewhat misleading, as tabbing in
+	            // MathQuill breaks you out of a nested context (fraction/script)
+	            // if you're in one, but moves focus to the next input if you're
+	            // not. Spaces (with this option enabled) are just ignored in the
+	            // latter case.
+	            //
+	            // TODO(alex): In order to allow inputting mixed numbers, we will
+	            // have to accept spaces in certain cases. The desired behavior is
+	            // still to escape nested contexts if currently in one, but to
+	            // insert a space if not (we don't expect mixed numbers in nested
+	            // contexts). We should also limit to one consecutive space.
+	            spaceBehavesLikeTab: true,
+
+	            handlers: {
+	                edited: function(mathField)  {
+	                    // This handler is guaranteed to be called on change, but
+	                    // unlike React it sometimes generates false positives.
+	                    // One of these is on initialization (with an empty string
+	                    // value), so we have to guard against that below.
+	                    var value = mathField.latex();
+
+	                    // Provide a MathQuill-compatible way to generate the
+	                    // not-equals sign without pasting unicode or typing TeX
+	                    value = value.replace(/<>/g, "\\ne");
+
+	                    // Use the specified symbol to represent multiplication
+	                    // TODO(alex): Add an option to disallow variables, in
+	                    // which case 'x' should get converted to '\\times'
+	                    if (this.props.convertDotToTimes) {
+	                        value = value.replace(/\\cdot/g, "\\times");
+	                    } else {
+	                        value = value.replace(/\\times/g, "\\cdot");
+	                    }
+
+	                    if (initialized && this.props.value !== value) {
+	                        this.props.onChange(value);
+	                    }
+	                }.bind(this),
+	                enter: function()  {
+	                    // This handler is called when the user presses the enter
+	                    // key. Since this isn't an actual <input> element, we have
+	                    // to manually trigger the usually automatic form submit.
+	                    $(this.refs.mathinput.getDOMNode()).submit();
+	                }.bind(this),
+	                upOutOf: function(mathField)  {
+	                    // This handler is called when the user presses the up
+	                    // arrow key, but there is nowhere in the expression to go
+	                    // up to (no numerator or exponent). For ease of use,
+	                    // interpret this as an attempt to create an exponent.
+	                    mathField.typedText("^");
+	                }
+	            }
+	        });
+
+	        // Ideally, we would be able to pass an initial value directly into
+	        // the constructor above
+	        this.mathField().latex(this.props.value);
+
+	        initialized = true;
+	    },
+
+	    componentDidUpdate: function() {
+	        if (!_.isEqual(this.mathField().latex(), this.props.value)) {
+	            this.mathField().latex(this.props.value);
+	        }
+	    },
+
+	    focus: function() {
+	        this.mathField().focus();
+	        this.setState({ focused: true });
+	    },
+
+	    blur: function() {
+	        this.mathField().blur();
+	        this.setState({ focused: false });
+	    }
+	});
+
+	module.exports = MathInput;
+
+
+/***/ },
+/* 60 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */
+
+	var React     = __webpack_require__(43);
+	var TeX       = __webpack_require__(80);
+	var clone     = React.addons.cloneWithProps;
+
+	var prettyBig = { fontSize: "150%" };
+	var slightlyBig = { fontSize: "120%" };
+	var trigStyle = { marginLeft: -4 };
+	var symbStyle = { fontSize: "130%" };
+
+	// These are functions because we want to generate a new component for each use
+	// on the page rather than reusing an instance (which will cause an error).
+	// Also, it's useful for things which might look different depending on the
+	// props.
+
+	var buttonSets = {
+	    basic: [
+	        function()  {return [React.DOM.span({style: slightlyBig}, "+"), "+"];},
+	        function()  {return [React.DOM.span({style: prettyBig}, "-"), "-"];},
+
+	        // TODO(joel) - display as \cdot when appropriate
+	        function(props)  {
+	            if (props.convertDotToTimes) {
+	                return [TeX({style: prettyBig}, "\\times"), "\\times"];
+	            } else {
+	                return [TeX({style: prettyBig}, "\\cdot"), "\\cdot"];
+	            }
+	        },
+	        function()  {return [
+	            TeX({style: prettyBig}, "\\frac{□}{□}"),
+
+	            // If there's something in the input that can become part of a
+	            // fraction, typing "/" puts it in the numerator. If not, typing
+	            // "/" does nothing. In that case, enter a \frac.
+	            function(input)  {
+	                var contents = input.latex();
+	                input.typedText("/");
+	                if (input.latex() === contents) {
+	                    input.cmd("\\frac");
+	                }
+	            }
+	        ];}
+	    ],
+
+	    /*
+	    relations: [
+	        // [<TeX>{"="}</TeX>, "\\eq"],
+	        () => [<TeX>\neq</TeX>, "\\neq"],
+	        () => [<TeX>\leq</TeX>, "\\leq"],
+	        () => [<TeX>\geq</TeX>, "\\geq"],
+	        () => [<TeX>\lt</TeX>, "\\lt"],
+	        () => [<TeX>\gt</TeX>, "\\gt"],
+	    ],
+	    */
+
+	    trig: [
+	        function()  {return [TeX(null, "\\sin"), "\\sin"];},
+	        function()  {return [TeX(null, "\\cos"), "\\cos"];},
+	        function()  {return [TeX(null, "\\tan"), "\\tan"];},
+	        function()  {return [TeX({style: symbStyle}, "\\theta"), "\\theta"];},
+	        function()  {return [TeX({style: symbStyle}, "\\phi"), "\\phi"];}
+	    ],
+
+	    prealgebra: [
+	        function()  {return [TeX(null, "\\sqrt{x}"), "\\sqrt"];},
+	        // TODO(joel) - how does desmos do this?
+	        // ["\\sqrt[3]{x}", "\\sqrt[3]{x}"],
+	        function()  {return [
+	            TeX({style: slightlyBig}, "□^a"),
+	            function(input)  {
+	                var contents = input.latex();
+	                input.keystroke("Up");
+	                if (input.latex() === contents) {
+	                    input.typedText("a^b");
+	                }
+	            }
+	        ];},
+	        function()  {return [TeX({style: slightlyBig}, "\\pi"), "\\pi"];}
+	    ],
+
+	    logarithms: [
+	        function()  {return [TeX(null, "\\log"), "\\log"];},
+	        function()  {return [TeX(null, "\\ln"), "\\ln"];}
+	    ]
+	};
+
+	var buttonSetsType = React.PropTypes.arrayOf(
+	        React.PropTypes.oneOf(_(buttonSets).keys())
+	    );
+
+	var TexButtons = React.createClass({displayName: 'TexButtons',
+	    propTypes: {
+	        sets: buttonSetsType.isRequired,
+	        onInsert: React.PropTypes.func.isRequired
+	    },
+
+	    render: function() {
+	        var buttons = _(this.props.sets).map(function(setName)  {return buttonSets[setName];});
+
+	        var buttonRows = _(buttons).map(function(row)  {return row.map(function(symbGen)  {
+	            // create a (component, thing we should send to mathquill) pair
+	            var symbol = symbGen(this.props);
+	            return React.DOM.button({onClick: function()  {return this.props.onInsert(symbol[1]);}.bind(this), 
+	                           className: "tex-button", 
+	                           tabIndex: -1, 
+	                           type: "button"}, 
+	                symbol[0]
+	            );
+	        }.bind(this));}.bind(this));
+
+	        var buttonPopup = _(buttonRows).map(function(row, i)  {
+	            return React.DOM.div({className: "clearfix tex-button-row", 
+	                        key: this.props.sets[i]}, 
+	                row
+	            );
+	        }.bind(this));
+
+	        return React.DOM.div({className: this.props.className}, 
+	            buttonPopup
+	        );
+	    },
+
+	    statics: {
+	        buttonSets:buttonSets,
+	        buttonSetsType:buttonSetsType
+	    }
+	});
+
+	module.exports = TexButtons;
 
 
 /***/ },
@@ -24995,8 +24995,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	var React         = __webpack_require__(43);
 	var TeX           = __webpack_require__(80);
 	var ApiClassNames = __webpack_require__(13).ClassNames;
-	var Tooltip       = __webpack_require__(82);
-	var ModifyTex     = __webpack_require__(50).modifyTex;
+	var Tooltip       = __webpack_require__(84);
+	var ModifyTex     = __webpack_require__(52).modifyTex;
 
 	var MathOutput = React.createClass({displayName: 'MathOutput',
 	    propTypes: {
@@ -25115,149 +25115,8 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */
-	/**
-	 * Changeable
-	 *
-	 * Adds a this.change() function to a component
-	 *
-	 * This.change takes prop changes as parameters, and calls
-	 * this.props.onChange with the modified props.
-	 */
 
-	var WIDGET_PROP_BLACKLIST = __webpack_require__(99);
-
-	var USAGE = "Usage:\n" +
-	            "  this.change({propName: 5}, callback);\n" +
-	            "  this.change(\"propName\", 5, callback);\n" +
-	            "  this.change(\"propName\")";
-
-	/**
-	 * Primary helper function for this.change()
-	 *
-	 * Takes the parameters in a consistent style, once this.change() has
-	 * figured out which way it was called.
-	 */
-	var _changeMultiple = function(component, newProps, callback) {
-	    // Omit "default" props:
-	    // ref and key come from react, and don't actually represent
-	    //   the conceptual state of our component
-	    // onChange comes from our parent to allow this modification,
-	    //   and doesn't conceptually represent the state of our component
-	    var currProps = _.omit(component.props, WIDGET_PROP_BLACKLIST);
-	    var nextProps = _.extend(currProps, newProps);
-	    component.props.onChange(nextProps, callback);
-	};
-
-	/**
-	 * Helper function for changing a single prop
-	 */
-	var _changeSingle = function(component, propName, value, callback) {
-	    if (value === undefined) {
-	        // If called with a single prop name, return a lambda to change
-	        // a single prop on the current object
-	        return _.partial(_changeSingle, component, propName);
-	    } else {
-	        // If called with two values, change a single prop of the
-	        // current object
-	        var newProps = {};
-	        newProps[propName] = value;
-	        _changeMultiple(component, newProps, callback);
-	    }
-	};
-
-	/**
-	 * this.change()
-	 *
-	 * Can be called as follows:
-	 * this.change(newProps, callback);
-	 *
-	 * this.change(propName, propValue, callback);
-	 *
-	 * this.change(propName) -> returns a lambda that takes a prop value to
-	 * set and a callback to call after having set that value.
-	 */
-	var change = function(newPropsOrSinglePropName,
-	                      propValue,
-	                      callback) {
-
-	    if (_.isObject(newPropsOrSinglePropName) &&
-	            callback === undefined) {
-	        // Called with an object of multiple props to change
-	        callback = propValue;
-	        return _changeMultiple(
-	            this,
-	            newPropsOrSinglePropName,  // object newProps
-	            callback
-	        );
-
-	    } else if (_.isString(newPropsOrSinglePropName)) {
-	        // Called with a string propName of a single prop to change
-	        return _changeSingle(
-	            this,
-	            newPropsOrSinglePropName,  // string propName
-	            propValue,
-	            callback
-	        );
-
-	    } else {
-	        throw new Error("Invalid types sent to this.change(): " +
-	                _.toArray(arguments).join() + "\n" + USAGE);
-	    }
-	};
-
-	var Changeable = {
-	    propTypes: {
-	        onChange: React.PropTypes.func.isRequired
-	    },
-	    change: change
-	};
-
-	module.exports = Changeable;
-
-
-/***/ },
-/* 68 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var WIDGET_PROP_BLACKLIST = __webpack_require__(99);
-
-	var EditorJsonify = {
-	    serialize: function() {
-	        // Omit props that get passed to all widgets
-	        return _.omit(this.props, WIDGET_PROP_BLACKLIST);
-	    }
-	};
-
-	module.exports = EditorJsonify;
-
-
-/***/ },
-/* 69 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* Free implementation of getUserInput. This should be used sparingly, since it
-	 * just returns all the widget's props rather than picking out those which were
-	 * input by the user.
-	 */
-	var WIDGET_PROP_BLACKLIST = __webpack_require__(99);
-
-	var WidgetJsonifyDeprecated = {
-	    getUserInput: function() {
-	        // Omit props that get passed to all widgets
-	        return _.omit(this.props, WIDGET_PROP_BLACKLIST);
-	    }
-	};
-
-	module.exports = WidgetJsonifyDeprecated;
-
-
-/***/ },
-/* 70 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */
-
-	var diff = __webpack_require__(100);
+	var diff = __webpack_require__(99);
 	var splitDiff = __webpack_require__(94);
 	var stringArrayDiff = __webpack_require__(95);
 
@@ -25421,13 +25280,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 71 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */
 
 	var cx = React.addons.classSet;
-	var performDiff = __webpack_require__(96);
+	var performDiff = __webpack_require__(93);
 
 	var indentationFromDepth = function(depth) {
 	    return (depth - 1) * 20;
@@ -25621,12 +25480,153 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
+/* 69 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var WIDGET_PROP_BLACKLIST = __webpack_require__(100);
+
+	var EditorJsonify = {
+	    serialize: function() {
+	        // Omit props that get passed to all widgets
+	        return _.omit(this.props, WIDGET_PROP_BLACKLIST);
+	    }
+	};
+
+	module.exports = EditorJsonify;
+
+
+/***/ },
+/* 70 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */
+	/**
+	 * Changeable
+	 *
+	 * Adds a this.change() function to a component
+	 *
+	 * This.change takes prop changes as parameters, and calls
+	 * this.props.onChange with the modified props.
+	 */
+
+	var WIDGET_PROP_BLACKLIST = __webpack_require__(100);
+
+	var USAGE = "Usage:\n" +
+	            "  this.change({propName: 5}, callback);\n" +
+	            "  this.change(\"propName\", 5, callback);\n" +
+	            "  this.change(\"propName\")";
+
+	/**
+	 * Primary helper function for this.change()
+	 *
+	 * Takes the parameters in a consistent style, once this.change() has
+	 * figured out which way it was called.
+	 */
+	var _changeMultiple = function(component, newProps, callback) {
+	    // Omit "default" props:
+	    // ref and key come from react, and don't actually represent
+	    //   the conceptual state of our component
+	    // onChange comes from our parent to allow this modification,
+	    //   and doesn't conceptually represent the state of our component
+	    var currProps = _.omit(component.props, WIDGET_PROP_BLACKLIST);
+	    var nextProps = _.extend(currProps, newProps);
+	    component.props.onChange(nextProps, callback);
+	};
+
+	/**
+	 * Helper function for changing a single prop
+	 */
+	var _changeSingle = function(component, propName, value, callback) {
+	    if (value === undefined) {
+	        // If called with a single prop name, return a lambda to change
+	        // a single prop on the current object
+	        return _.partial(_changeSingle, component, propName);
+	    } else {
+	        // If called with two values, change a single prop of the
+	        // current object
+	        var newProps = {};
+	        newProps[propName] = value;
+	        _changeMultiple(component, newProps, callback);
+	    }
+	};
+
+	/**
+	 * this.change()
+	 *
+	 * Can be called as follows:
+	 * this.change(newProps, callback);
+	 *
+	 * this.change(propName, propValue, callback);
+	 *
+	 * this.change(propName) -> returns a lambda that takes a prop value to
+	 * set and a callback to call after having set that value.
+	 */
+	var change = function(newPropsOrSinglePropName,
+	                      propValue,
+	                      callback) {
+
+	    if (_.isObject(newPropsOrSinglePropName) &&
+	            callback === undefined) {
+	        // Called with an object of multiple props to change
+	        callback = propValue;
+	        return _changeMultiple(
+	            this,
+	            newPropsOrSinglePropName,  // object newProps
+	            callback
+	        );
+
+	    } else if (_.isString(newPropsOrSinglePropName)) {
+	        // Called with a string propName of a single prop to change
+	        return _changeSingle(
+	            this,
+	            newPropsOrSinglePropName,  // string propName
+	            propValue,
+	            callback
+	        );
+
+	    } else {
+	        throw new Error("Invalid types sent to this.change(): " +
+	                _.toArray(arguments).join() + "\n" + USAGE);
+	    }
+	};
+
+	var Changeable = {
+	    propTypes: {
+	        onChange: React.PropTypes.func.isRequired
+	    },
+	    change: change
+	};
+
+	module.exports = Changeable;
+
+
+/***/ },
+/* 71 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* Free implementation of getUserInput. This should be used sparingly, since it
+	 * just returns all the widget's props rather than picking out those which were
+	 * input by the user.
+	 */
+	var WIDGET_PROP_BLACKLIST = __webpack_require__(100);
+
+	var WidgetJsonifyDeprecated = {
+	    getUserInput: function() {
+	        // Omit props that get passed to all widgets
+	        return _.omit(this.props, WIDGET_PROP_BLACKLIST);
+	    }
+	};
+
+	module.exports = WidgetJsonifyDeprecated;
+
+
+/***/ },
 /* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */
 
-	var ButtonGroup = __webpack_require__(84);
+	var ButtonGroup = __webpack_require__(83);
 
 	var ArrowPicker = React.createClass({displayName: 'ArrowPicker',
 	    propTypes: {
@@ -25664,7 +25664,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	/** @jsx React.DOM */
 
-	var ButtonGroup = __webpack_require__(84);
+	var ButtonGroup = __webpack_require__(83);
 
 	var ColorPicker = React.createClass({displayName: 'ColorPicker',
 	    COLORS: [KhanUtil.BLACK, KhanUtil.BLUE, KhanUtil.GREEN, KhanUtil.PINK,
@@ -25706,9 +25706,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	/** @jsx React.DOM */
 
-	var ButtonGroup = __webpack_require__(84);
-	var Changeable = __webpack_require__(67);
-	var MathInput = __webpack_require__(58);
+	var ButtonGroup = __webpack_require__(83);
+	var Changeable = __webpack_require__(70);
+	var MathInput = __webpack_require__(59);
 	var NumberInput = __webpack_require__(62);
 	var TeX = __webpack_require__(80);
 
@@ -25780,7 +25780,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	/** @jsx React.DOM */
 
-	var ButtonGroup = __webpack_require__(84);
+	var ButtonGroup = __webpack_require__(83);
 
 	var DashPicker = React.createClass({displayName: 'DashPicker',
 	    propTypes: {
@@ -25970,7 +25970,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */
-	var _ = __webpack_require__(93);
+	var _ = __webpack_require__(96);
 
 	var SimpleMarkdown = __webpack_require__(86);
 
@@ -26332,8 +26332,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	/** @jsx React.DOM */
 
 	var React = __webpack_require__(43);
-	var RCSS = __webpack_require__(104);
-	var _ = __webpack_require__(93);
+	var RCSS = __webpack_require__(103);
+	var _ = __webpack_require__(96);
 
 	var colors = {
 	    grayLight: '#aaa',
@@ -26458,7 +26458,208 @@ return /******/ (function(modules) { // webpackBootstrap
 	/** @jsx React.DOM */
 
 	var React = __webpack_require__(43);
-	var _ = __webpack_require__(93);
+	var RCSS = __webpack_require__(103);
+	var _ = __webpack_require__(96);
+	var styles = __webpack_require__(98);
+
+	var buttonStyle = styles.button.buttonStyle;
+	var selectedStyle = styles.button.selectedStyle;
+
+	RCSS.createClass(buttonStyle);
+	RCSS.createClass(selectedStyle);
+
+	/* MultiButtonGroup is an aesthetically pleasing group of buttons,
+	 * which allows multiple buttons to be selected at the same time.
+	 *
+	 * The class requires these properties:
+	 *   buttons - an array of objects with keys:
+	 *     "value": this is the value returned when the button is selected
+	 *     "content": this is the JSX shown within the button, typically a string
+	 *         that gets rendered as the button's display text
+	 *     "title": this is the title-text shown on hover
+	 *   onChange - a function that is provided with an array of the updated
+	 *     values (which it then is responsible for updating)
+	 *
+	 * The class has these optional properties:
+	 *   values - an array of the initial values of the buttons selected.
+	 *
+	 * Requires stylesheets/perseus-admin-package/editor.less to look nice.
+	 */
+
+	var MultiButtonGroup = React.createClass({displayName: 'MultiButtonGroup',
+	    propTypes: {
+	        values: React.PropTypes.arrayOf(React.PropTypes.any),
+	        buttons: React.PropTypes.arrayOf(React.PropTypes.shape({
+	            value: React.PropTypes.any.isRequired,
+	            content: React.PropTypes.renderable,
+	            title: React.PropTypes.string
+	        })).isRequired,
+	        onChange: React.PropTypes.func.isRequired,
+	        allowEmpty: React.PropTypes.bool
+	    },
+
+	    getDefaultProps: function() {
+	        return {
+	            values: [],
+	            allowEmpty: true
+	        };
+	    },
+
+	    render: function() {
+	        var values = this.props.values;
+	        var buttons = _(this.props.buttons).map(function(button, i)  {
+	            var maybeSelected = _.contains(values, button.value) ?
+	                selectedStyle.className : "";
+	            return React.DOM.button({title: button.title, 
+	                    type: "button", 
+	                    id: "" + i, 
+	                    key: "" + i, 
+	                    ref: "button" + i, 
+	                    className: (buttonStyle.className + " " + maybeSelected), 
+	                    onClick: this.toggleSelect.bind(this, button.value)}, 
+	                button.content || "" + button.value
+	            );
+	        }.bind(this));
+
+	        var outerStyle = {
+	            display: 'inline-block'
+	        };
+	        return React.DOM.div({style: outerStyle}, 
+	            buttons
+	        );
+	    },
+
+	    focus: function() {
+	        this.getDOMNode().focus();
+	        return true;
+	    },
+
+	    toggleSelect: function(newValue) {
+	        var values = this.props.values;
+	        var allowEmpty = this.props.allowEmpty;
+
+	        if (_.contains(values, newValue) &&
+	                (values.length > 1 || allowEmpty)) {
+	            // If the value is already selected, unselect it
+	            this.props.onChange(_.without(values, newValue));
+	        } else {
+	            // Otherwise merge with other values and return
+	            this.props.onChange(_.union(values, [newValue]));
+	        }
+	    }
+	});
+
+	module.exports = MultiButtonGroup;
+
+
+/***/ },
+/* 83 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */
+
+	var React = __webpack_require__(43);
+	var RCSS = __webpack_require__(103);
+	var _ = __webpack_require__(96);
+	var styles = __webpack_require__(98);
+
+	var buttonStyle = styles.button.buttonStyle;
+	var selectedStyle = styles.button.selectedStyle;
+
+	RCSS.createClass(buttonStyle);
+	RCSS.createClass(selectedStyle);
+
+	/* ButtonGroup is an aesthetically pleasing group of buttons.
+	 *
+	 * The class requires these properties:
+	 *   buttons - an array of objects with keys:
+	 *     "value": this is the value returned when the button is selected
+	 *     "content": this is the JSX shown within the button, typically a string
+	 *         that gets rendered as the button's display text
+	 *     "title": this is the title-text shown on hover
+	 *   onChange - a function that is provided with the updated value
+	 *     (which it then is responsible for updating)
+	 *
+	 * The class has these optional properties:
+	 *   value - the initial value of the button selected, defaults to null.
+	 *   allowEmpty - if false, exactly one button _must_ be selected; otherwise
+	 *     it defaults to true and _at most_ one button (0 or 1) may be selected.
+	 *
+	 * Requires stylesheets/perseus-admin-package/editor.less to look nice.
+	 */
+
+	var ButtonGroup = React.createClass({displayName: 'ButtonGroup',
+	    propTypes: {
+	        value: React.PropTypes.any,
+	        buttons: React.PropTypes.arrayOf(React.PropTypes.shape({
+	            value: React.PropTypes.any.isRequired,
+	            content: React.PropTypes.renderable,
+	            title: React.PropTypes.string
+	        })).isRequired,
+	        onChange: React.PropTypes.func.isRequired,
+	        allowEmpty: React.PropTypes.bool
+	    },
+
+	    getDefaultProps: function() {
+	        return {
+	            value: null,
+	            allowEmpty: true
+	        };
+	    },
+
+	    render: function() {
+	        var value = this.props.value;
+	        var buttons = _(this.props.buttons).map(function(button, i)  {
+	                var maybeSelected = button.value === value ?
+	                        selectedStyle.className :
+	                        "";
+	                return React.DOM.button({title: button.title, 
+	                        type: "button", 
+	                        id: "" + i, 
+	                        ref: "button" + i, 
+	                        key: "" + i, 
+	                        className: (buttonStyle.className + " " + maybeSelected), 
+	                        onClick: this.toggleSelect.bind(this, button.value)}, 
+	                    button.content || "" + button.value
+	                );
+	            }.bind(this));
+
+	        var outerStyle = {
+	            display: 'inline-block',
+	        };
+	        return React.DOM.div({style: outerStyle}, 
+	            buttons
+	        );
+	    },
+
+	    focus: function() {
+	        this.getDOMNode().focus();
+	        return true;
+	    },
+
+	    toggleSelect: function(newValue) {
+	        var value = this.props.value;
+
+	        if (this.props.allowEmpty) {
+	            // Select the new button or unselect if it's already selected
+	            this.props.onChange(value !== newValue ? newValue : null);
+	        } else {
+	            this.props.onChange(newValue);
+	        }
+	    }
+	});
+
+	module.exports = ButtonGroup;
+
+
+/***/ },
+/* 84 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */
+
+	var React = __webpack_require__(43);
+	var _ = __webpack_require__(96);
 
 	// TODO(joel/jack) fix z-index issues https://s3.amazonaws.com/uploads.hipchat.com/6574/29028/yOApjwmgiMhEZYJ/Screen%20Shot%202014-05-30%20at%203.34.18%20PM.png
 	// z-index: 3 on perseus-formats-tooltip seemed to work
@@ -26827,207 +27028,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 83 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */
-
-	var React = __webpack_require__(43);
-	var RCSS = __webpack_require__(104);
-	var _ = __webpack_require__(93);
-	var styles = __webpack_require__(98);
-
-	var buttonStyle = styles.button.buttonStyle;
-	var selectedStyle = styles.button.selectedStyle;
-
-	RCSS.createClass(buttonStyle);
-	RCSS.createClass(selectedStyle);
-
-	/* MultiButtonGroup is an aesthetically pleasing group of buttons,
-	 * which allows multiple buttons to be selected at the same time.
-	 *
-	 * The class requires these properties:
-	 *   buttons - an array of objects with keys:
-	 *     "value": this is the value returned when the button is selected
-	 *     "content": this is the JSX shown within the button, typically a string
-	 *         that gets rendered as the button's display text
-	 *     "title": this is the title-text shown on hover
-	 *   onChange - a function that is provided with an array of the updated
-	 *     values (which it then is responsible for updating)
-	 *
-	 * The class has these optional properties:
-	 *   values - an array of the initial values of the buttons selected.
-	 *
-	 * Requires stylesheets/perseus-admin-package/editor.less to look nice.
-	 */
-
-	var MultiButtonGroup = React.createClass({displayName: 'MultiButtonGroup',
-	    propTypes: {
-	        values: React.PropTypes.arrayOf(React.PropTypes.any),
-	        buttons: React.PropTypes.arrayOf(React.PropTypes.shape({
-	            value: React.PropTypes.any.isRequired,
-	            content: React.PropTypes.renderable,
-	            title: React.PropTypes.string
-	        })).isRequired,
-	        onChange: React.PropTypes.func.isRequired,
-	        allowEmpty: React.PropTypes.bool
-	    },
-
-	    getDefaultProps: function() {
-	        return {
-	            values: [],
-	            allowEmpty: true
-	        };
-	    },
-
-	    render: function() {
-	        var values = this.props.values;
-	        var buttons = _(this.props.buttons).map(function(button, i)  {
-	            var maybeSelected = _.contains(values, button.value) ?
-	                selectedStyle.className : "";
-	            return React.DOM.button({title: button.title, 
-	                    type: "button", 
-	                    id: "" + i, 
-	                    key: "" + i, 
-	                    ref: "button" + i, 
-	                    className: (buttonStyle.className + " " + maybeSelected), 
-	                    onClick: this.toggleSelect.bind(this, button.value)}, 
-	                button.content || "" + button.value
-	            );
-	        }.bind(this));
-
-	        var outerStyle = {
-	            display: 'inline-block'
-	        };
-	        return React.DOM.div({style: outerStyle}, 
-	            buttons
-	        );
-	    },
-
-	    focus: function() {
-	        this.getDOMNode().focus();
-	        return true;
-	    },
-
-	    toggleSelect: function(newValue) {
-	        var values = this.props.values;
-	        var allowEmpty = this.props.allowEmpty;
-
-	        if (_.contains(values, newValue) &&
-	                (values.length > 1 || allowEmpty)) {
-	            // If the value is already selected, unselect it
-	            this.props.onChange(_.without(values, newValue));
-	        } else {
-	            // Otherwise merge with other values and return
-	            this.props.onChange(_.union(values, [newValue]));
-	        }
-	    }
-	});
-
-	module.exports = MultiButtonGroup;
-
-
-/***/ },
-/* 84 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */
-
-	var React = __webpack_require__(43);
-	var RCSS = __webpack_require__(104);
-	var _ = __webpack_require__(93);
-	var styles = __webpack_require__(98);
-
-	var buttonStyle = styles.button.buttonStyle;
-	var selectedStyle = styles.button.selectedStyle;
-
-	RCSS.createClass(buttonStyle);
-	RCSS.createClass(selectedStyle);
-
-	/* ButtonGroup is an aesthetically pleasing group of buttons.
-	 *
-	 * The class requires these properties:
-	 *   buttons - an array of objects with keys:
-	 *     "value": this is the value returned when the button is selected
-	 *     "content": this is the JSX shown within the button, typically a string
-	 *         that gets rendered as the button's display text
-	 *     "title": this is the title-text shown on hover
-	 *   onChange - a function that is provided with the updated value
-	 *     (which it then is responsible for updating)
-	 *
-	 * The class has these optional properties:
-	 *   value - the initial value of the button selected, defaults to null.
-	 *   allowEmpty - if false, exactly one button _must_ be selected; otherwise
-	 *     it defaults to true and _at most_ one button (0 or 1) may be selected.
-	 *
-	 * Requires stylesheets/perseus-admin-package/editor.less to look nice.
-	 */
-
-	var ButtonGroup = React.createClass({displayName: 'ButtonGroup',
-	    propTypes: {
-	        value: React.PropTypes.any,
-	        buttons: React.PropTypes.arrayOf(React.PropTypes.shape({
-	            value: React.PropTypes.any.isRequired,
-	            content: React.PropTypes.renderable,
-	            title: React.PropTypes.string
-	        })).isRequired,
-	        onChange: React.PropTypes.func.isRequired,
-	        allowEmpty: React.PropTypes.bool
-	    },
-
-	    getDefaultProps: function() {
-	        return {
-	            value: null,
-	            allowEmpty: true
-	        };
-	    },
-
-	    render: function() {
-	        var value = this.props.value;
-	        var buttons = _(this.props.buttons).map(function(button, i)  {
-	                var maybeSelected = button.value === value ?
-	                        selectedStyle.className :
-	                        "";
-	                return React.DOM.button({title: button.title, 
-	                        type: "button", 
-	                        id: "" + i, 
-	                        ref: "button" + i, 
-	                        key: "" + i, 
-	                        className: (buttonStyle.className + " " + maybeSelected), 
-	                        onClick: this.toggleSelect.bind(this, button.value)}, 
-	                    button.content || "" + button.value
-	                );
-	            }.bind(this));
-
-	        var outerStyle = {
-	            display: 'inline-block',
-	        };
-	        return React.DOM.div({style: outerStyle}, 
-	            buttons
-	        );
-	    },
-
-	    focus: function() {
-	        this.getDOMNode().focus();
-	        return true;
-	    },
-
-	    toggleSelect: function(newValue) {
-	        var value = this.props.value;
-
-	        if (this.props.allowEmpty) {
-	            // Select the new button or unselect if it's already selected
-	            this.props.onChange(value !== newValue ? newValue : null);
-	        } else {
-	            this.props.onChange(newValue);
-	        }
-	    }
-	});
-
-	module.exports = ButtonGroup;
-
-
-/***/ },
 /* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -27137,7 +27137,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	};
 
-	var _ = find("_") || __webpack_require__(93);
+	var _ = find("_") || __webpack_require__(96);
 	var React = find("React") || __webpack_require__(43);
 
 	/**
@@ -27884,6 +27884,106 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/** @jsx React.DOM */
+
+	var React = __webpack_require__(43);
+	var Editor = __webpack_require__(8);
+	var InfoTip = __webpack_require__(81);
+	var Widgets = __webpack_require__(5);
+
+	var AnswerAreaEditor = React.createClass({displayName: 'AnswerAreaEditor',
+	    getDefaultProps: function() {
+	        return {
+	            type: "input-number",
+	            options: {},
+	            calculator: false
+	        };
+	    },
+
+	    render: function() {
+	        var cls;
+	        if (this.props.type === "multiple") {
+	            cls = Editor;
+	        } else {
+	            cls = Widgets.getEditor(this.props.type);
+	        }
+
+	        var editor = cls(Object.assign({
+	            ref: "editor", 
+	            placeholder: "This answer area is being deprecated. " +
+	            "Please use the widgets in the question area for your answer.", 
+	            onChange: function(newProps, cb)  {
+	                var options = _.extend({}, this.props.options, newProps);
+	                this.props.onChange({options: options}, cb);
+	            }.bind(this)}, this.props.options));
+
+	        return React.DOM.div({className: "perseus-answer-editor"}, 
+	            React.DOM.div({className: "perseus-answer-options"}, 
+	            React.DOM.div(null, React.DOM.label(null, 
+	                ' ', "Show calculator:", ' ', 
+	                React.DOM.input({type: "checkbox", checked: this.props.calculator, 
+	                    onChange: function(e)  {
+	                        this.props.onChange({calculator: e.target.checked});
+	                    }.bind(this)})
+	            ), 
+	            InfoTip(null, 
+	                React.DOM.p(null, "Use the calculator when completing difficult calculations is" + ' ' +
+	                "NOT the intent of the question. DON’T use the calculator when" + ' ' +
+	                "testing the student’s ability to complete different types of" + ' ' +
+	                "computations.")
+	            )
+	            ), 
+	            React.DOM.div(null, React.DOM.label(null, 
+	                ' ', "Answer type:", ' ', 
+	                React.DOM.select({value: this.props.type, 
+	                        onChange: function(e)  {
+	                            this.props.onChange({
+	                                type: e.target.value,
+	                                options: {}
+	                            }, function()  {
+	                                this.refs.editor.focus();
+	                            }.bind(this));
+	                        }.bind(this)}, 
+	                    React.DOM.option({value: "radio"}, "Multiple choice"), 
+	                    React.DOM.option({value: "table"}, "Table of values"), 
+	                    React.DOM.option({value: "input-number"}, "Text input (number)"), 
+	                    React.DOM.option({value: "expression"}, "Expression / Equation"), 
+	                    React.DOM.option({value: "multiple"}, "Custom format")
+	                )
+	            ), 
+	            InfoTip(null, 
+	                React.DOM.p(null, "Use the custom format if the question is in the question" + ' ' +
+	                "area, and tell the students how to complete the problem.")
+	            ))
+	            ), 
+	            React.DOM.div({className: cls !== Editor ? "perseus-answer-widget" : ""}, 
+	                editor
+	            )
+	        );
+	    },
+
+	    getSaveWarnings: function() {
+	        var issuesFunc = this.refs.editor.getSaveWarnings();
+	        return issuesFunc ? issuesFunc() : [];
+	    },
+
+	    serialize: function() {
+	        // could be _.pick(this.props, "type", "options", "calculator");
+	        return {
+	            type: this.props.type,
+	            options: this.refs.editor.serialize(),
+	            calculator: this.props.calculator
+	        };
+	    }
+	});
+
+	module.exports = AnswerAreaEditor;
+
+
+/***/ },
+/* 88 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/**
 	 * Movable
 	 *
@@ -28150,7 +28250,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 88 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28493,14 +28593,14 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 89 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * MovableLine
 	 */
 
-	var MovableLineOptions = __webpack_require__(103);
+	var MovableLineOptions = __webpack_require__(104);
 	var InteractiveUtil = __webpack_require__(77);
 	var objective_ = __webpack_require__(102);
 	var assert = InteractiveUtil.assert;
@@ -28781,106 +28881,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 90 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @jsx React.DOM */
-
-	var React = __webpack_require__(43);
-	var Editor = __webpack_require__(8);
-	var InfoTip = __webpack_require__(81);
-	var Widgets = __webpack_require__(5);
-
-	var AnswerAreaEditor = React.createClass({displayName: 'AnswerAreaEditor',
-	    getDefaultProps: function() {
-	        return {
-	            type: "input-number",
-	            options: {},
-	            calculator: false
-	        };
-	    },
-
-	    render: function() {
-	        var cls;
-	        if (this.props.type === "multiple") {
-	            cls = Editor;
-	        } else {
-	            cls = Widgets.getEditor(this.props.type);
-	        }
-
-	        var editor = cls(Object.assign({
-	            ref: "editor", 
-	            placeholder: "This answer area is being deprecated. " +
-	            "Please use the widgets in the question area for your answer.", 
-	            onChange: function(newProps, cb)  {
-	                var options = _.extend({}, this.props.options, newProps);
-	                this.props.onChange({options: options}, cb);
-	            }.bind(this)}, this.props.options));
-
-	        return React.DOM.div({className: "perseus-answer-editor"}, 
-	            React.DOM.div({className: "perseus-answer-options"}, 
-	            React.DOM.div(null, React.DOM.label(null, 
-	                ' ', "Show calculator:", ' ', 
-	                React.DOM.input({type: "checkbox", checked: this.props.calculator, 
-	                    onChange: function(e)  {
-	                        this.props.onChange({calculator: e.target.checked});
-	                    }.bind(this)})
-	            ), 
-	            InfoTip(null, 
-	                React.DOM.p(null, "Use the calculator when completing difficult calculations is" + ' ' +
-	                "NOT the intent of the question. DON’T use the calculator when" + ' ' +
-	                "testing the student’s ability to complete different types of" + ' ' +
-	                "computations.")
-	            )
-	            ), 
-	            React.DOM.div(null, React.DOM.label(null, 
-	                ' ', "Answer type:", ' ', 
-	                React.DOM.select({value: this.props.type, 
-	                        onChange: function(e)  {
-	                            this.props.onChange({
-	                                type: e.target.value,
-	                                options: {}
-	                            }, function()  {
-	                                this.refs.editor.focus();
-	                            }.bind(this));
-	                        }.bind(this)}, 
-	                    React.DOM.option({value: "radio"}, "Multiple choice"), 
-	                    React.DOM.option({value: "table"}, "Table of values"), 
-	                    React.DOM.option({value: "input-number"}, "Text input (number)"), 
-	                    React.DOM.option({value: "expression"}, "Expression / Equation"), 
-	                    React.DOM.option({value: "multiple"}, "Custom format")
-	                )
-	            ), 
-	            InfoTip(null, 
-	                React.DOM.p(null, "Use the custom format if the question is in the question" + ' ' +
-	                "area, and tell the students how to complete the problem.")
-	            ))
-	            ), 
-	            React.DOM.div({className: cls !== Editor ? "perseus-answer-widget" : ""}, 
-	                editor
-	            )
-	        );
-	    },
-
-	    getSaveWarnings: function() {
-	        var issuesFunc = this.refs.editor.getSaveWarnings();
-	        return issuesFunc ? issuesFunc() : [];
-	    },
-
-	    serialize: function() {
-	        // could be _.pick(this.props, "type", "options", "calculator");
-	        return {
-	            type: this.props.type,
-	            options: this.refs.editor.serialize(),
-	            calculator: this.props.calculator
-	        };
-	    }
-	});
-
-	module.exports = AnswerAreaEditor;
-
-
-/***/ },
 /* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -29049,7 +29049,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	var GraphieClasses = __webpack_require__(91);
-	var Interactive2 = __webpack_require__(49);
+	var Interactive2 = __webpack_require__(51);
 	var InteractiveUtil = __webpack_require__(77);
 
 	var assert = InteractiveUtil.assert;
@@ -29202,28 +29202,74 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* This note applies to rcss, react, and underscore.
-	 *
-	 * We're faking a node module for this package by just exporting the global.
-	 * There are a few complications which led us to this solution as a temporary
-	 * fix.
-	 *
-	 * - Browserify can slow down a lot when you include the other packages (and
-	 *   their dependency graphs). We were also battling general browserify
-	 *   slowness at this time - browserify 3.4.0 is "good" but later versions
-	 *   (3.53 if I remember correctly) are terribly slow (on the order of 20x
-	 *   slower).
-	 *
-	 * - I'm not clear on the details of packaging this so we don't duplicate
-	 *   dependencies anywhere. For instance when packaging perseus for webapp we
-	 *   need to be careful not to include packages like underscore from our
-	 *   dependencies or from the packages we depend on. (note: this is a very good
-	 *   opportunity to either explain how existing tools solve the problem or
-	 *   create a new tool to solve it)
-	 *
-	 * - Joel (and Jack)
-	 */
-	module.exports = window._;
+	var UNCHANGED = "unchanged";
+	var CHANGED = "changed";
+	var ADDED = "added";
+	var REMOVED = "removed";
+
+	// For values which do not have further values nested within them (strings,
+	// numbers, and booleans)
+	var valueEntry = function(before, after, key) {
+	    var status;
+	    if (before === after) {
+	        status = UNCHANGED;
+	    } else if (before === undefined) {
+	        status = ADDED;
+	    } else if (after === undefined) {
+	        status = REMOVED;
+	    } else {
+	        status = CHANGED;
+	    }
+
+	    return {
+	        after: JSON.stringify(after),
+	        before: JSON.stringify(before),
+	        children: [],
+	        key: key,
+	        status: status
+	    };
+	};
+
+	// For values which require a more granular diff (objects and arrays)
+	var objectEntry = function(before, after, key) {
+	    var beforeKeys = (_.isObject(before)) ? _(before).keys() : [];
+	    var afterKeys = (_.isObject(after)) ? _(after).keys() : [];
+	    var keys = _.union(beforeKeys, afterKeys);
+
+	    var children = _.map(keys, function(key) {
+	        return performDiff((before || {})[key], (after || {})[key], key);
+	    });
+
+	    var status;
+	    if (before === undefined) {
+	        status = ADDED;
+	    } else if (after === undefined) {
+	        status = REMOVED;
+	    } else {
+	        var changed = _.any(children, function(child) {
+	            return child.status !== UNCHANGED;
+	        });
+	        status = changed ? CHANGED : UNCHANGED;
+	    }
+
+	    return {
+	        after: "",
+	        before: "",
+	        children: children,
+	        key: key,
+	        status: status
+	    };
+	};
+
+	var performDiff = function(before, after, /* optional */ key) {
+	    if (typeof before === "object" || typeof after === "object") {
+	        return objectEntry(before, after, key);
+	    } else {
+	        return valueEntry(before, after, key);
+	    }
+	};
+
+	module.exports = performDiff;
 
 
 /***/ },
@@ -29264,7 +29310,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var jsdiff = __webpack_require__(100);
+	var jsdiff = __webpack_require__(99);
 
 	var statusFor = function(chunk) {
 	    if (chunk.added) {
@@ -29338,74 +29384,28 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var UNCHANGED = "unchanged";
-	var CHANGED = "changed";
-	var ADDED = "added";
-	var REMOVED = "removed";
-
-	// For values which do not have further values nested within them (strings,
-	// numbers, and booleans)
-	var valueEntry = function(before, after, key) {
-	    var status;
-	    if (before === after) {
-	        status = UNCHANGED;
-	    } else if (before === undefined) {
-	        status = ADDED;
-	    } else if (after === undefined) {
-	        status = REMOVED;
-	    } else {
-	        status = CHANGED;
-	    }
-
-	    return {
-	        after: JSON.stringify(after),
-	        before: JSON.stringify(before),
-	        children: [],
-	        key: key,
-	        status: status
-	    };
-	};
-
-	// For values which require a more granular diff (objects and arrays)
-	var objectEntry = function(before, after, key) {
-	    var beforeKeys = (_.isObject(before)) ? _(before).keys() : [];
-	    var afterKeys = (_.isObject(after)) ? _(after).keys() : [];
-	    var keys = _.union(beforeKeys, afterKeys);
-
-	    var children = _.map(keys, function(key) {
-	        return performDiff((before || {})[key], (after || {})[key], key);
-	    });
-
-	    var status;
-	    if (before === undefined) {
-	        status = ADDED;
-	    } else if (after === undefined) {
-	        status = REMOVED;
-	    } else {
-	        var changed = _.any(children, function(child) {
-	            return child.status !== UNCHANGED;
-	        });
-	        status = changed ? CHANGED : UNCHANGED;
-	    }
-
-	    return {
-	        after: "",
-	        before: "",
-	        children: children,
-	        key: key,
-	        status: status
-	    };
-	};
-
-	var performDiff = function(before, after, /* optional */ key) {
-	    if (typeof before === "object" || typeof after === "object") {
-	        return objectEntry(before, after, key);
-	    } else {
-	        return valueEntry(before, after, key);
-	    }
-	};
-
-	module.exports = performDiff;
+	/* This note applies to rcss, react, and underscore.
+	 *
+	 * We're faking a node module for this package by just exporting the global.
+	 * There are a few complications which led us to this solution as a temporary
+	 * fix.
+	 *
+	 * - Browserify can slow down a lot when you include the other packages (and
+	 *   their dependency graphs). We were also battling general browserify
+	 *   slowness at this time - browserify 3.4.0 is "good" but later versions
+	 *   (3.53 if I remember correctly) are terribly slow (on the order of 20x
+	 *   slower).
+	 *
+	 * - I'm not clear on the details of packaging this so we don't duplicate
+	 *   dependencies anywhere. For instance when packaging perseus for webapp we
+	 *   need to be careful not to include packages like underscore from our
+	 *   dependencies or from the packages we depend on. (note: this is a very good
+	 *   opportunity to either explain how existing tools solve the problem or
+	 *   create a new tool to solve it)
+	 *
+	 * - Joel (and Jack)
+	 */
+	module.exports = window._;
 
 
 /***/ },
@@ -29562,26 +29562,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 99 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = [
-	    // standard props "added" by react
-	    // (technically the renderer still adds them)
-	    "key",
-	    "ref",
-	    // added by src/renderer.jsx
-	    "widgetId",
-	    "onChange",
-	    "problemNum",
-	    "enabledFeatures",
-	    "apiOptions",
-	    "questionCompleted",
-	    "interWidgets"
-	];
-
-
-/***/ },
-/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -29988,6 +29968,26 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
+/* 100 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = [
+	    // standard props "added" by react
+	    // (technically the renderer still adds them)
+	    "key",
+	    "ref",
+	    // added by src/renderer.jsx
+	    "widgetId",
+	    "onChange",
+	    "problemNum",
+	    "enabledFeatures",
+	    "apiOptions",
+	    "questionCompleted",
+	    "interWidgets"
+	];
+
+
+/***/ },
 /* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -30171,6 +30171,139 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 103 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var assign = __webpack_require__(107);
+
+	var styleRuleValidator = __webpack_require__(105);
+	var styleRuleConverter = __webpack_require__(106);
+	var mediaQueryValidator = __webpack_require__(108);
+
+	var existingClasses = {};
+	var styleTag = createStyleTag();
+
+	var classNameId = 0;
+	var randomSuffix = Math.random().toString(36).slice(-5);
+
+	function generateValidCSSClassName() {
+	  // CSS classNames can't start with a number.
+	  return 'c' + (classNameId++) + '-' + randomSuffix;
+	}
+
+	function objToCSS(style) {
+	  var serialized = '';
+	  for (var propName in style) {
+	    // we put that ourselves
+	    if (propName == 'className') continue;
+
+	    var cssPropName = styleRuleConverter.hyphenateProp(propName);
+	    if (!styleRuleValidator.isValidProp(cssPropName)) {
+	      console.warn(
+	        '%s (transformed into %s) is not a valid CSS property name.', propName, cssPropName
+	      );
+	      continue;
+	    }
+
+	    var styleValue = style[propName];
+	    if (!styleRuleValidator.isValidValue(styleValue)) continue;
+
+	    if (styleValue !== null) {
+	      serialized += cssPropName + ':';
+	      serialized += styleRuleConverter.escapeValueForProp(styleValue,
+	        cssPropName) + ';';
+	    }
+	  }
+	  return serialized || null;
+	}
+
+	function createStyleTag() {
+	  var tag = document.createElement('style');
+	  document.getElementsByTagName('head')[0].appendChild(tag);
+	  return tag;
+	}
+
+	function styleToCSS(style) {
+	  var styleStr = '.' + style.className + '{';
+	  styleStr += objToCSS(style.value);
+	  styleStr += '}';
+
+	  if (style.media) {
+	    if (!mediaQueryValidator(style.media)) {
+	      console.log('%s is not a valid media query.', style.media);
+	    }
+	    styleStr = style.media + '{' + styleStr + '}';
+	  }
+
+	  return styleStr;
+	}
+
+	// TODO: support media queries
+	function parseStyles(className, styleObj) {
+	  var mainStyle = {
+	    className: className,
+	    value: {}
+	  };
+	  var styles = [mainStyle];
+
+	  Object.keys(styleObj).forEach(function(k){
+	    // pseudo-selector, insert a new rule
+	    if (k[0] === ':') {
+	      styles.push({
+	        className: className+k,
+	        value: styleObj[k]
+	      });
+	      return;
+	    } else if (k.substring(0, 6) === '@media') {
+	      styles.push({
+	        className: className,
+	        value: styleObj[k],
+	        media: k
+	      });
+	      return;
+	    }
+
+	    // normal rule, insert into main one
+	    mainStyle.value[k] = styleObj[k];
+	  });
+
+	  return styles;
+	}
+
+	function insertStyle(className, styleObj) {
+	  var styles = parseStyles(className, styleObj);
+	  var styleStr = styles.map(styleToCSS).join('');
+	  styleTag.innerHTML += styleStr;
+	}
+
+	var RCSS = {
+	  merge: function(a, b, c, d, e) {
+	    return assign({}, a, b, c, d, e);
+	  },
+
+	  createClass: function(styleObj) {
+	    var styleId = JSON.stringify(styleObj);
+	    var className;
+
+	    if (existingClasses[styleId]) {
+	      // already exists, use the existing className
+	      className = existingClasses[styleId];
+	    } else {
+	      // generate a new class and insert it
+	      className = generateValidCSSClassName();
+	      existingClasses[styleId] = className;
+	      insertStyle(className, styleObj);
+	    }
+
+	    styleObj.className = className;
+	    return styleObj;
+	  }
+	};
+
+	module.exports = RCSS;
+
+
+/***/ },
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -30457,139 +30590,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 104 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var assign = __webpack_require__(108);
-
-	var styleRuleValidator = __webpack_require__(105);
-	var styleRuleConverter = __webpack_require__(106);
-	var mediaQueryValidator = __webpack_require__(107);
-
-	var existingClasses = {};
-	var styleTag = createStyleTag();
-
-	var classNameId = 0;
-	var randomSuffix = Math.random().toString(36).slice(-5);
-
-	function generateValidCSSClassName() {
-	  // CSS classNames can't start with a number.
-	  return 'c' + (classNameId++) + '-' + randomSuffix;
-	}
-
-	function objToCSS(style) {
-	  var serialized = '';
-	  for (var propName in style) {
-	    // we put that ourselves
-	    if (propName == 'className') continue;
-
-	    var cssPropName = styleRuleConverter.hyphenateProp(propName);
-	    if (!styleRuleValidator.isValidProp(cssPropName)) {
-	      console.warn(
-	        '%s (transformed into %s) is not a valid CSS property name.', propName, cssPropName
-	      );
-	      continue;
-	    }
-
-	    var styleValue = style[propName];
-	    if (!styleRuleValidator.isValidValue(styleValue)) continue;
-
-	    if (styleValue !== null) {
-	      serialized += cssPropName + ':';
-	      serialized += styleRuleConverter.escapeValueForProp(styleValue,
-	        cssPropName) + ';';
-	    }
-	  }
-	  return serialized || null;
-	}
-
-	function createStyleTag() {
-	  var tag = document.createElement('style');
-	  document.getElementsByTagName('head')[0].appendChild(tag);
-	  return tag;
-	}
-
-	function styleToCSS(style) {
-	  var styleStr = '.' + style.className + '{';
-	  styleStr += objToCSS(style.value);
-	  styleStr += '}';
-
-	  if (style.media) {
-	    if (!mediaQueryValidator(style.media)) {
-	      console.log('%s is not a valid media query.', style.media);
-	    }
-	    styleStr = style.media + '{' + styleStr + '}';
-	  }
-
-	  return styleStr;
-	}
-
-	// TODO: support media queries
-	function parseStyles(className, styleObj) {
-	  var mainStyle = {
-	    className: className,
-	    value: {}
-	  };
-	  var styles = [mainStyle];
-
-	  Object.keys(styleObj).forEach(function(k){
-	    // pseudo-selector, insert a new rule
-	    if (k[0] === ':') {
-	      styles.push({
-	        className: className+k,
-	        value: styleObj[k]
-	      });
-	      return;
-	    } else if (k.substring(0, 6) === '@media') {
-	      styles.push({
-	        className: className,
-	        value: styleObj[k],
-	        media: k
-	      });
-	      return;
-	    }
-
-	    // normal rule, insert into main one
-	    mainStyle.value[k] = styleObj[k];
-	  });
-
-	  return styles;
-	}
-
-	function insertStyle(className, styleObj) {
-	  var styles = parseStyles(className, styleObj);
-	  var styleStr = styles.map(styleToCSS).join('');
-	  styleTag.innerHTML += styleStr;
-	}
-
-	var RCSS = {
-	  merge: function(a, b, c, d, e) {
-	    return assign({}, a, b, c, d, e);
-	  },
-
-	  createClass: function(styleObj) {
-	    var styleId = JSON.stringify(styleObj);
-	    var className;
-
-	    if (existingClasses[styleId]) {
-	      // already exists, use the existing className
-	      className = existingClasses[styleId];
-	    } else {
-	      // generate a new class and insert it
-	      className = generateValidCSSClassName();
-	      existingClasses[styleId] = className;
-	      insertStyle(className, styleObj);
-	    }
-
-	    styleObj.className = className;
-	    return styleObj;
-	  }
-	};
-
-	module.exports = RCSS;
-
-
-/***/ },
 /* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -30637,6 +30637,82 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 107 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
+	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
+	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
+	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
+	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	 * Available under MIT license <http://lodash.com/license>
+	 */
+	var baseCreateCallback = __webpack_require__(111),
+	    keys = __webpack_require__(112),
+	    objectTypes = __webpack_require__(113);
+
+	/**
+	 * Assigns own enumerable properties of source object(s) to the destination
+	 * object. Subsequent sources will overwrite property assignments of previous
+	 * sources. If a callback is provided it will be executed to produce the
+	 * assigned values. The callback is bound to `thisArg` and invoked with two
+	 * arguments; (objectValue, sourceValue).
+	 *
+	 * @static
+	 * @memberOf _
+	 * @type Function
+	 * @alias extend
+	 * @category Objects
+	 * @param {Object} object The destination object.
+	 * @param {...Object} [source] The source objects.
+	 * @param {Function} [callback] The function to customize assigning values.
+	 * @param {*} [thisArg] The `this` binding of `callback`.
+	 * @returns {Object} Returns the destination object.
+	 * @example
+	 *
+	 * _.assign({ 'name': 'fred' }, { 'employer': 'slate' });
+	 * // => { 'name': 'fred', 'employer': 'slate' }
+	 *
+	 * var defaults = _.partialRight(_.assign, function(a, b) {
+	 *   return typeof a == 'undefined' ? b : a;
+	 * });
+	 *
+	 * var object = { 'name': 'barney' };
+	 * defaults(object, { 'name': 'fred', 'employer': 'slate' });
+	 * // => { 'name': 'barney', 'employer': 'slate' }
+	 */
+	var assign = function(object, source, guard) {
+	  var index, iterable = object, result = iterable;
+	  if (!iterable) return result;
+	  var args = arguments,
+	      argsIndex = 0,
+	      argsLength = typeof guard == 'number' ? 2 : args.length;
+	  if (argsLength > 3 && typeof args[argsLength - 2] == 'function') {
+	    var callback = baseCreateCallback(args[--argsLength - 1], args[argsLength--], 2);
+	  } else if (argsLength > 2 && typeof args[argsLength - 1] == 'function') {
+	    callback = args[--argsLength];
+	  }
+	  while (++argsIndex < argsLength) {
+	    iterable = args[argsIndex];
+	    if (iterable && objectTypes[typeof iterable]) {
+	    var ownIndex = -1,
+	        ownProps = objectTypes[typeof iterable] && keys(iterable),
+	        length = ownProps ? ownProps.length : 0;
+
+	    while (++ownIndex < length) {
+	      index = ownProps[ownIndex];
+	      result[index] = callback ? callback(result[index], iterable[index]) : iterable[index];
+	    }
+	    }
+	  }
+	  return result
+	};
+
+	module.exports = assign;
+
+
+/***/ },
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var every = __webpack_require__(114);
@@ -30838,82 +30914,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 	module.exports = isValidMediaQueryList
-
-
-/***/ },
-/* 108 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
-	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
-	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
-	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
-	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-	 * Available under MIT license <http://lodash.com/license>
-	 */
-	var baseCreateCallback = __webpack_require__(111),
-	    keys = __webpack_require__(112),
-	    objectTypes = __webpack_require__(113);
-
-	/**
-	 * Assigns own enumerable properties of source object(s) to the destination
-	 * object. Subsequent sources will overwrite property assignments of previous
-	 * sources. If a callback is provided it will be executed to produce the
-	 * assigned values. The callback is bound to `thisArg` and invoked with two
-	 * arguments; (objectValue, sourceValue).
-	 *
-	 * @static
-	 * @memberOf _
-	 * @type Function
-	 * @alias extend
-	 * @category Objects
-	 * @param {Object} object The destination object.
-	 * @param {...Object} [source] The source objects.
-	 * @param {Function} [callback] The function to customize assigning values.
-	 * @param {*} [thisArg] The `this` binding of `callback`.
-	 * @returns {Object} Returns the destination object.
-	 * @example
-	 *
-	 * _.assign({ 'name': 'fred' }, { 'employer': 'slate' });
-	 * // => { 'name': 'fred', 'employer': 'slate' }
-	 *
-	 * var defaults = _.partialRight(_.assign, function(a, b) {
-	 *   return typeof a == 'undefined' ? b : a;
-	 * });
-	 *
-	 * var object = { 'name': 'barney' };
-	 * defaults(object, { 'name': 'fred', 'employer': 'slate' });
-	 * // => { 'name': 'barney', 'employer': 'slate' }
-	 */
-	var assign = function(object, source, guard) {
-	  var index, iterable = object, result = iterable;
-	  if (!iterable) return result;
-	  var args = arguments,
-	      argsIndex = 0,
-	      argsLength = typeof guard == 'number' ? 2 : args.length;
-	  if (argsLength > 3 && typeof args[argsLength - 2] == 'function') {
-	    var callback = baseCreateCallback(args[--argsLength - 1], args[argsLength--], 2);
-	  } else if (argsLength > 2 && typeof args[argsLength - 1] == 'function') {
-	    callback = args[--argsLength];
-	  }
-	  while (++argsIndex < argsLength) {
-	    iterable = args[argsIndex];
-	    if (iterable && objectTypes[typeof iterable]) {
-	    var ownIndex = -1,
-	        ownProps = objectTypes[typeof iterable] && keys(iterable),
-	        length = ownProps ? ownProps.length : 0;
-
-	    while (++ownIndex < length) {
-	      index = ownProps[ownIndex];
-	      result[index] = callback ? callback(result[index], iterable[index]) : iterable[index];
-	    }
-	    }
-	  }
-	  return result
-	};
-
-	module.exports = assign;
 
 
 /***/ },
@@ -31460,7 +31460,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var htmlEscapes = __webpack_require__(130);
+	var htmlEscapes = __webpack_require__(127);
 
 	/**
 	 * Used by `escape` to convert characters to HTML entities.
@@ -31488,9 +31488,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var isNative = __webpack_require__(127),
-	    isObject = __webpack_require__(128),
-	    shimKeys = __webpack_require__(129);
+	var isNative = __webpack_require__(128),
+	    isObject = __webpack_require__(129),
+	    shimKeys = __webpack_require__(130);
 
 	/* Native method shortcuts for methods with the same name as other `lodash` methods */
 	var nativeKeys = isNative(nativeKeys = Object.keys) && nativeKeys;
@@ -31631,8 +31631,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var isNative = __webpack_require__(135),
-	    noop = __webpack_require__(136);
+	var isNative = __webpack_require__(134),
+	    noop = __webpack_require__(135);
 
 	/** Used as the property descriptor for `__bindData__` */
 	var descriptor = {
@@ -31680,7 +31680,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var isNative = __webpack_require__(134);
+	var isNative = __webpack_require__(136);
 
 	/** Used to detect functions containing a `this` reference */
 	var reThis = /\bthis\b/;
@@ -31859,8 +31859,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	var baseCreateCallback = __webpack_require__(137),
 	    baseIsEqual = __webpack_require__(138),
 	    isObject = __webpack_require__(139),
-	    keys = __webpack_require__(140),
-	    property = __webpack_require__(141);
+	    keys = __webpack_require__(141),
+	    property = __webpack_require__(140);
 
 	/**
 	 * Produces a callback bound to an optional `thisArg`. If `func` is a property
@@ -32000,6 +32000,38 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Available under MIT license <http://lodash.com/license>
 	 */
 
+	/**
+	 * Used to convert characters to HTML entities:
+	 *
+	 * Though the `>` character is escaped for symmetry, characters like `>` and `/`
+	 * don't require escaping in HTML and have no special meaning unless they're part
+	 * of a tag or an unquoted attribute value.
+	 * http://mathiasbynens.be/notes/ambiguous-ampersands (under "semi-related fun fact")
+	 */
+	var htmlEscapes = {
+	  '&': '&amp;',
+	  '<': '&lt;',
+	  '>': '&gt;',
+	  '"': '&quot;',
+	  "'": '&#39;'
+	};
+
+	module.exports = htmlEscapes;
+
+
+/***/ },
+/* 128 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
+	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
+	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
+	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
+	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	 * Available under MIT license <http://lodash.com/license>
+	 */
+
 	/** Used for native method references */
 	var objectProto = Object.prototype;
 
@@ -32028,7 +32060,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 128 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -32039,7 +32071,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var objectTypes = __webpack_require__(146);
+	var objectTypes = __webpack_require__(145);
 
 	/**
 	 * Checks if `value` is the language type of Object.
@@ -32073,7 +32105,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 129 */
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -32084,7 +32116,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var objectTypes = __webpack_require__(145);
+	var objectTypes = __webpack_require__(146);
 
 	/** Used for native method references */
 	var objectProto = Object.prototype;
@@ -32114,38 +32146,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 	module.exports = shimKeys;
-
-
-/***/ },
-/* 130 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
-	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
-	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
-	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
-	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-	 * Available under MIT license <http://lodash.com/license>
-	 */
-
-	/**
-	 * Used to convert characters to HTML entities:
-	 *
-	 * Though the `>` character is escaped for symmetry, characters like `>` and `/`
-	 * don't require escaping in HTML and have no special meaning unless they're part
-	 * of a tag or an unquoted attribute value.
-	 * http://mathiasbynens.be/notes/ambiguous-ampersands (under "semi-related fun fact")
-	 */
-	var htmlEscapes = {
-	  '&': '&amp;',
-	  '<': '&lt;',
-	  '>': '&gt;',
-	  '"': '&quot;',
-	  "'": '&#39;'
-	};
-
-	module.exports = htmlEscapes;
 
 
 /***/ },
@@ -32389,6 +32389,38 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Available under MIT license <http://lodash.com/license>
 	 */
 
+	/**
+	 * A no-operation function.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Utilities
+	 * @example
+	 *
+	 * var object = { 'name': 'fred' };
+	 * _.noop(object) === undefined;
+	 * // => true
+	 */
+	function noop() {
+	  // no operation performed
+	}
+
+	module.exports = noop;
+
+
+/***/ },
+/* 136 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
+	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
+	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
+	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
+	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	 * Available under MIT license <http://lodash.com/license>
+	 */
+
 	/** Used for native method references */
 	var objectProto = Object.prototype;
 
@@ -32414,38 +32446,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 	module.exports = isNative;
-
-
-/***/ },
-/* 136 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
-	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
-	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
-	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
-	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-	 * Available under MIT license <http://lodash.com/license>
-	 */
-
-	/**
-	 * A no-operation function.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Utilities
-	 * @example
-	 *
-	 * var object = { 'name': 'fred' };
-	 * _.noop(object) === undefined;
-	 * // => true
-	 */
-	function noop() {
-	  // no operation performed
-	}
-
-	module.exports = noop;
 
 
 /***/ },
@@ -32546,11 +32546,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var forIn = __webpack_require__(154),
-	    getArray = __webpack_require__(155),
-	    isFunction = __webpack_require__(156),
-	    objectTypes = __webpack_require__(157),
-	    releaseArray = __webpack_require__(158);
+	var forIn = __webpack_require__(155),
+	    getArray = __webpack_require__(156),
+	    isFunction = __webpack_require__(157),
+	    objectTypes = __webpack_require__(158),
+	    releaseArray = __webpack_require__(159);
 
 	/** `Object#toString` result shortcuts */
 	var argsClass = '[object Arguments]',
@@ -32761,7 +32761,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var objectTypes = __webpack_require__(159);
+	var objectTypes = __webpack_require__(154);
 
 	/**
 	 * Checks if `value` is the language type of Object.
@@ -32796,48 +32796,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 140 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
-	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
-	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
-	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
-	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-	 * Available under MIT license <http://lodash.com/license>
-	 */
-	var isNative = __webpack_require__(160),
-	    isObject = __webpack_require__(139),
-	    shimKeys = __webpack_require__(161);
-
-	/* Native method shortcuts for methods with the same name as other `lodash` methods */
-	var nativeKeys = isNative(nativeKeys = Object.keys) && nativeKeys;
-
-	/**
-	 * Creates an array composed of the own enumerable property names of an object.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Objects
-	 * @param {Object} object The object to inspect.
-	 * @returns {Array} Returns an array of property names.
-	 * @example
-	 *
-	 * _.keys({ 'one': 1, 'two': 2, 'three': 3 });
-	 * // => ['one', 'two', 'three'] (property order is not guaranteed across environments)
-	 */
-	var keys = !nativeKeys ? shimKeys : function(object) {
-	  if (!isObject(object)) {
-	    return [];
-	  }
-	  return nativeKeys(object);
-	};
-
-	module.exports = keys;
-
-
-/***/ },
-/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -32883,6 +32841,48 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
+/* 141 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
+	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
+	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
+	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
+	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	 * Available under MIT license <http://lodash.com/license>
+	 */
+	var isNative = __webpack_require__(160),
+	    isObject = __webpack_require__(139),
+	    shimKeys = __webpack_require__(161);
+
+	/* Native method shortcuts for methods with the same name as other `lodash` methods */
+	var nativeKeys = isNative(nativeKeys = Object.keys) && nativeKeys;
+
+	/**
+	 * Creates an array composed of the own enumerable property names of an object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Objects
+	 * @param {Object} object The object to inspect.
+	 * @returns {Array} Returns an array of property names.
+	 * @example
+	 *
+	 * _.keys({ 'one': 1, 'two': 2, 'three': 3 });
+	 * // => ['one', 'two', 'three'] (property order is not guaranteed across environments)
+	 */
+	var keys = !nativeKeys ? shimKeys : function(object) {
+	  if (!isObject(object)) {
+	    return [];
+	  }
+	  return nativeKeys(object);
+	};
+
+	module.exports = keys;
+
+
+/***/ },
 /* 142 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -32895,9 +32895,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Available under MIT license <http://lodash.com/license>
 	 */
 	var bind = __webpack_require__(162),
-	    identity = __webpack_require__(165),
-	    setBindData = __webpack_require__(163),
-	    support = __webpack_require__(164);
+	    identity = __webpack_require__(163),
+	    setBindData = __webpack_require__(164),
+	    support = __webpack_require__(165);
 
 	/** Used to detected named functions */
 	var reFuncName = /^\s*function[ \n\r\t]+\w/;
@@ -32981,8 +32981,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Available under MIT license <http://lodash.com/license>
 	 */
 	var isNative = __webpack_require__(166),
-	    isObject = __webpack_require__(167),
-	    shimKeys = __webpack_require__(168);
+	    isObject = __webpack_require__(168),
+	    shimKeys = __webpack_require__(167);
 
 	/* Native method shortcuts for methods with the same name as other `lodash` methods */
 	var nativeKeys = isNative(nativeKeys = Object.keys) && nativeKeys;
@@ -33285,8 +33285,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var createWrapper = __webpack_require__(173),
-	    slice = __webpack_require__(174);
+	var createWrapper = __webpack_require__(175),
+	    slice = __webpack_require__(176);
 
 	/**
 	 * Creates a function that, when called, invokes `func` with the `this`
@@ -33365,8 +33365,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var isNative = __webpack_require__(175),
-	    noop = __webpack_require__(176);
+	var isNative = __webpack_require__(173),
+	    noop = __webpack_require__(174);
 
 	/** Used as the property descriptor for `__bindData__` */
 	var descriptor = {
@@ -33461,8 +33461,34 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
+
+	/** Used to determine if values are of the language type Object */
+	var objectTypes = {
+	  'boolean': false,
+	  'function': true,
+	  'object': true,
+	  'number': false,
+	  'string': false,
+	  'undefined': false
+	};
+
+	module.exports = objectTypes;
+
+
+/***/ },
+/* 155 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
+	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
+	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
+	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
+	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	 * Available under MIT license <http://lodash.com/license>
+	 */
 	var baseCreateCallback = __webpack_require__(137),
-	    objectTypes = __webpack_require__(157);
+	    objectTypes = __webpack_require__(158);
 
 	/**
 	 * Iterates over own and inherited enumerable properties of an object,
@@ -33510,7 +33536,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 155 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -33521,7 +33547,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var arrayPool = __webpack_require__(178);
+	var arrayPool = __webpack_require__(179);
 
 	/**
 	 * Gets an array from the array pool or creates a new one if the pool is empty.
@@ -33537,7 +33563,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 156 */
+/* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -33570,7 +33596,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 157 */
+/* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -33596,7 +33622,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 158 */
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -33607,7 +33633,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var arrayPool = __webpack_require__(179),
+	var arrayPool = __webpack_require__(178),
 	    maxPoolSize = __webpack_require__(180);
 
 	/**
@@ -33624,32 +33650,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 	module.exports = releaseArray;
-
-
-/***/ },
-/* 159 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
-	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
-	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
-	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
-	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-	 * Available under MIT license <http://lodash.com/license>
-	 */
-
-	/** Used to determine if values are of the language type Object */
-	var objectTypes = {
-	  'boolean': false,
-	  'function': true,
-	  'object': true,
-	  'number': false,
-	  'string': false,
-	  'undefined': false
-	};
-
-	module.exports = objectTypes;
 
 
 /***/ },
@@ -33794,7 +33794,41 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var isNative = __webpack_require__(184),
+
+	/**
+	 * This method returns the first argument provided to it.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Utilities
+	 * @param {*} value Any value.
+	 * @returns {*} Returns `value`.
+	 * @example
+	 *
+	 * var object = { 'name': 'fred' };
+	 * _.identity(object) === object;
+	 * // => true
+	 */
+	function identity(value) {
+	  return value;
+	}
+
+	module.exports = identity;
+
+
+/***/ },
+/* 164 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
+	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
+	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
+	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
+	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	 * Available under MIT license <http://lodash.com/license>
+	 */
+	var isNative = __webpack_require__(186),
 	    noop = __webpack_require__(185);
 
 	/** Used as the property descriptor for `__bindData__` */
@@ -33832,7 +33866,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 164 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -33843,7 +33877,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var isNative = __webpack_require__(186);
+	var isNative = __webpack_require__(184);
 
 	/** Used to detect functions containing a `this` reference */
 	var reThis = /\bthis\b/;
@@ -33877,40 +33911,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = support;
 	
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-/* 165 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
-	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
-	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
-	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
-	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-	 * Available under MIT license <http://lodash.com/license>
-	 */
-
-	/**
-	 * This method returns the first argument provided to it.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Utilities
-	 * @param {*} value Any value.
-	 * @returns {*} Returns `value`.
-	 * @example
-	 *
-	 * var object = { 'name': 'fred' };
-	 * _.identity(object) === object;
-	 * // => true
-	 */
-	function identity(value) {
-	  return value;
-	}
-
-	module.exports = identity;
-
 
 /***/ },
 /* 166 */
@@ -33966,6 +33966,50 @@ return /******/ (function(modules) { // webpackBootstrap
 	 */
 	var objectTypes = __webpack_require__(144);
 
+	/** Used for native method references */
+	var objectProto = Object.prototype;
+
+	/** Native method shortcuts */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+
+	/**
+	 * A fallback implementation of `Object.keys` which produces an array of the
+	 * given object's own enumerable property names.
+	 *
+	 * @private
+	 * @type Function
+	 * @param {Object} object The object to inspect.
+	 * @returns {Array} Returns an array of property names.
+	 */
+	var shimKeys = function(object) {
+	  var index, iterable = object, result = [];
+	  if (!iterable) return result;
+	  if (!(objectTypes[typeof object])) return result;
+	    for (index in iterable) {
+	      if (hasOwnProperty.call(iterable, index)) {
+	        result.push(index);
+	      }
+	    }
+	  return result
+	};
+
+	module.exports = shimKeys;
+
+
+/***/ },
+/* 168 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
+	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
+	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
+	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
+	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	 * Available under MIT license <http://lodash.com/license>
+	 */
+	var objectTypes = __webpack_require__(144);
+
 	/**
 	 * Checks if `value` is the language type of Object.
 	 * (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
@@ -33998,50 +34042,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 168 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
-	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
-	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
-	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
-	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-	 * Available under MIT license <http://lodash.com/license>
-	 */
-	var objectTypes = __webpack_require__(144);
-
-	/** Used for native method references */
-	var objectProto = Object.prototype;
-
-	/** Native method shortcuts */
-	var hasOwnProperty = objectProto.hasOwnProperty;
-
-	/**
-	 * A fallback implementation of `Object.keys` which produces an array of the
-	 * given object's own enumerable property names.
-	 *
-	 * @private
-	 * @type Function
-	 * @param {Object} object The object to inspect.
-	 * @returns {Array} Returns an array of property names.
-	 */
-	var shimKeys = function(object) {
-	  var index, iterable = object, result = [];
-	  if (!iterable) return result;
-	  if (!(objectTypes[typeof object])) return result;
-	    for (index in iterable) {
-	      if (hasOwnProperty.call(iterable, index)) {
-	        result.push(index);
-	      }
-	    }
-	  return result
-	};
-
-	module.exports = shimKeys;
-
-
-/***/ },
 /* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -34053,9 +34053,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var isNative = __webpack_require__(189),
+	var isNative = __webpack_require__(187),
 	    isObject = __webpack_require__(170),
-	    noop = __webpack_require__(190);
+	    noop = __webpack_require__(188);
 
 	/* Native method shortcuts for methods with the same name as other `lodash` methods */
 	var nativeCreate = isNative(nativeCreate = Object.create) && nativeCreate;
@@ -34147,9 +34147,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var isNative = __webpack_require__(187),
+	var isNative = __webpack_require__(189),
 	    isObject = __webpack_require__(172),
-	    noop = __webpack_require__(188);
+	    noop = __webpack_require__(190);
 
 	/* Native method shortcuts for methods with the same name as other `lodash` methods */
 	var nativeCreate = isNative(nativeCreate = Object.create) && nativeCreate;
@@ -34241,10 +34241,82 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
+
+	/** Used for native method references */
+	var objectProto = Object.prototype;
+
+	/** Used to resolve the internal [[Class]] of values */
+	var toString = objectProto.toString;
+
+	/** Used to detect if a method is native */
+	var reNative = RegExp('^' +
+	  String(toString)
+	    .replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+	    .replace(/toString| for [^\]]+/g, '.*?') + '$'
+	);
+
+	/**
+	 * Checks if `value` is a native function.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if the `value` is a native function, else `false`.
+	 */
+	function isNative(value) {
+	  return typeof value == 'function' && reNative.test(value);
+	}
+
+	module.exports = isNative;
+
+
+/***/ },
+/* 174 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
+	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
+	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
+	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
+	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	 * Available under MIT license <http://lodash.com/license>
+	 */
+
+	/**
+	 * A no-operation function.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Utilities
+	 * @example
+	 *
+	 * var object = { 'name': 'fred' };
+	 * _.noop(object) === undefined;
+	 * // => true
+	 */
+	function noop() {
+	  // no operation performed
+	}
+
+	module.exports = noop;
+
+
+/***/ },
+/* 175 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
+	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
+	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
+	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
+	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	 * Available under MIT license <http://lodash.com/license>
+	 */
 	var baseBind = __webpack_require__(191),
 	    baseCreateWrapper = __webpack_require__(192),
 	    isFunction = __webpack_require__(193),
-	    slice = __webpack_require__(174);
+	    slice = __webpack_require__(176);
 
 	/**
 	 * Used for `Array` method references.
@@ -34342,7 +34414,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 174 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -34383,78 +34455,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 	module.exports = slice;
-
-
-/***/ },
-/* 175 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
-	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
-	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
-	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
-	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-	 * Available under MIT license <http://lodash.com/license>
-	 */
-
-	/** Used for native method references */
-	var objectProto = Object.prototype;
-
-	/** Used to resolve the internal [[Class]] of values */
-	var toString = objectProto.toString;
-
-	/** Used to detect if a method is native */
-	var reNative = RegExp('^' +
-	  String(toString)
-	    .replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-	    .replace(/toString| for [^\]]+/g, '.*?') + '$'
-	);
-
-	/**
-	 * Checks if `value` is a native function.
-	 *
-	 * @private
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if the `value` is a native function, else `false`.
-	 */
-	function isNative(value) {
-	  return typeof value == 'function' && reNative.test(value);
-	}
-
-	module.exports = isNative;
-
-
-/***/ },
-/* 176 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
-	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
-	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
-	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
-	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-	 * Available under MIT license <http://lodash.com/license>
-	 */
-
-	/**
-	 * A no-operation function.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Utilities
-	 * @example
-	 *
-	 * var object = { 'name': 'fred' };
-	 * _.noop(object) === undefined;
-	 * // => true
-	 */
-	function noop() {
-	  // no operation performed
-	}
-
-	module.exports = noop;
 
 
 /***/ },
@@ -35007,7 +35007,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var baseCreate = __webpack_require__(197),
 	    isObject = __webpack_require__(139),
 	    setBindData = __webpack_require__(152),
-	    slice = __webpack_require__(174);
+	    slice = __webpack_require__(176);
 
 	/**
 	 * Used for `Array` method references.
@@ -35072,10 +35072,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var baseCreate = __webpack_require__(199),
+	var baseCreate = __webpack_require__(198),
 	    isObject = __webpack_require__(139),
 	    setBindData = __webpack_require__(152),
-	    slice = __webpack_require__(174);
+	    slice = __webpack_require__(176);
 
 	/**
 	 * Used for `Array` method references.
@@ -35189,9 +35189,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var baseCreate = __webpack_require__(200),
-	    isObject = __webpack_require__(198),
-	    setBindData = __webpack_require__(163),
+	var baseCreate = __webpack_require__(199),
+	    isObject = __webpack_require__(200),
+	    setBindData = __webpack_require__(164),
 	    slice = __webpack_require__(183);
 
 	/**
@@ -35259,7 +35259,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 */
 	var baseCreate = __webpack_require__(201),
 	    isObject = __webpack_require__(202),
-	    setBindData = __webpack_require__(163),
+	    setBindData = __webpack_require__(164),
 	    slice = __webpack_require__(183);
 
 	/**
@@ -35374,9 +35374,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <http://lodash.com/license>
 	 */
-	var isNative = __webpack_require__(203),
+	var isNative = __webpack_require__(205),
 	    isObject = __webpack_require__(139),
-	    noop = __webpack_require__(204);
+	    noop = __webpack_require__(206);
 
 	/* Native method shortcuts for methods with the same name as other `lodash` methods */
 	var nativeCreate = isNative(nativeCreate = Object.create) && nativeCreate;
@@ -35413,6 +35413,104 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 198 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
+	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
+	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
+	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
+	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	 * Available under MIT license <http://lodash.com/license>
+	 */
+	var isNative = __webpack_require__(207),
+	    isObject = __webpack_require__(139),
+	    noop = __webpack_require__(208);
+
+	/* Native method shortcuts for methods with the same name as other `lodash` methods */
+	var nativeCreate = isNative(nativeCreate = Object.create) && nativeCreate;
+
+	/**
+	 * The base implementation of `_.create` without support for assigning
+	 * properties to the created object.
+	 *
+	 * @private
+	 * @param {Object} prototype The object to inherit from.
+	 * @returns {Object} Returns the new object.
+	 */
+	function baseCreate(prototype, properties) {
+	  return isObject(prototype) ? nativeCreate(prototype) : {};
+	}
+	// fallback for browsers without `Object.create`
+	if (!nativeCreate) {
+	  baseCreate = (function() {
+	    function Object() {}
+	    return function(prototype) {
+	      if (isObject(prototype)) {
+	        Object.prototype = prototype;
+	        var result = new Object;
+	        Object.prototype = null;
+	      }
+	      return result || global.Object();
+	    };
+	  }());
+	}
+
+	module.exports = baseCreate;
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 199 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
+	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
+	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
+	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
+	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	 * Available under MIT license <http://lodash.com/license>
+	 */
+	var isNative = __webpack_require__(203),
+	    isObject = __webpack_require__(200),
+	    noop = __webpack_require__(204);
+
+	/* Native method shortcuts for methods with the same name as other `lodash` methods */
+	var nativeCreate = isNative(nativeCreate = Object.create) && nativeCreate;
+
+	/**
+	 * The base implementation of `_.create` without support for assigning
+	 * properties to the created object.
+	 *
+	 * @private
+	 * @param {Object} prototype The object to inherit from.
+	 * @returns {Object} Returns the new object.
+	 */
+	function baseCreate(prototype, properties) {
+	  return isObject(prototype) ? nativeCreate(prototype) : {};
+	}
+	// fallback for browsers without `Object.create`
+	if (!nativeCreate) {
+	  baseCreate = (function() {
+	    function Object() {}
+	    return function(prototype) {
+	      if (isObject(prototype)) {
+	        Object.prototype = prototype;
+	        var result = new Object;
+	        Object.prototype = null;
+	      }
+	      return result || global.Object();
+	    };
+	  }());
+	}
+
+	module.exports = baseCreate;
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -35455,104 +35553,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	module.exports = isObject;
 
-
-/***/ },
-/* 199 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {/**
-	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
-	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
-	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
-	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
-	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-	 * Available under MIT license <http://lodash.com/license>
-	 */
-	var isNative = __webpack_require__(205),
-	    isObject = __webpack_require__(139),
-	    noop = __webpack_require__(206);
-
-	/* Native method shortcuts for methods with the same name as other `lodash` methods */
-	var nativeCreate = isNative(nativeCreate = Object.create) && nativeCreate;
-
-	/**
-	 * The base implementation of `_.create` without support for assigning
-	 * properties to the created object.
-	 *
-	 * @private
-	 * @param {Object} prototype The object to inherit from.
-	 * @returns {Object} Returns the new object.
-	 */
-	function baseCreate(prototype, properties) {
-	  return isObject(prototype) ? nativeCreate(prototype) : {};
-	}
-	// fallback for browsers without `Object.create`
-	if (!nativeCreate) {
-	  baseCreate = (function() {
-	    function Object() {}
-	    return function(prototype) {
-	      if (isObject(prototype)) {
-	        Object.prototype = prototype;
-	        var result = new Object;
-	        Object.prototype = null;
-	      }
-	      return result || global.Object();
-	    };
-	  }());
-	}
-
-	module.exports = baseCreate;
-	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-/* 200 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {/**
-	 * Lo-Dash 2.4.1 (Custom Build) <http://lodash.com/>
-	 * Build: `lodash modularize modern exports="npm" -o ./npm/`
-	 * Copyright 2012-2013 The Dojo Foundation <http://dojofoundation.org/>
-	 * Based on Underscore.js 1.5.2 <http://underscorejs.org/LICENSE>
-	 * Copyright 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-	 * Available under MIT license <http://lodash.com/license>
-	 */
-	var isNative = __webpack_require__(207),
-	    isObject = __webpack_require__(198),
-	    noop = __webpack_require__(208);
-
-	/* Native method shortcuts for methods with the same name as other `lodash` methods */
-	var nativeCreate = isNative(nativeCreate = Object.create) && nativeCreate;
-
-	/**
-	 * The base implementation of `_.create` without support for assigning
-	 * properties to the created object.
-	 *
-	 * @private
-	 * @param {Object} prototype The object to inherit from.
-	 * @returns {Object} Returns the new object.
-	 */
-	function baseCreate(prototype, properties) {
-	  return isObject(prototype) ? nativeCreate(prototype) : {};
-	}
-	// fallback for browsers without `Object.create`
-	if (!nativeCreate) {
-	  baseCreate = (function() {
-	    function Object() {}
-	    return function(prototype) {
-	      if (isObject(prototype)) {
-	        Object.prototype = prototype;
-	        var result = new Object;
-	        Object.prototype = null;
-	      }
-	      return result || global.Object();
-	    };
-	  }());
-	}
-
-	module.exports = baseCreate;
-	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
 /* 201 */
