@@ -29,22 +29,21 @@
 .questions {
 	
 }
+#score {
+	padding-top: 0px;
+	padding-bottom: 3px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
 .button_default_color {
 	color: #333 !important;
 }
 .problem_area {
 	border: 1px solid #efefef;
 	border-radius: 4px;
-	height: 416px;
 	margin-top: 20px;
 }
-.answer_area {
-	border: 1px solid #efefef;
-	border-radius: 4px;
-	background-color: #eee;
-	height: 150px;
-	margin-top: 20px;
-}
+
 .primary {
 	color: #fbfbfb !important;
 	border: 1px solid #869b3f;

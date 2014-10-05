@@ -8,7 +8,7 @@ block content
           span.khan Khan
           span.questions Questions
         p Try to answer the question below. Like it? Give it a thumbs up!
-        a.list_button(href="#", class="btn btn-default") Create Question
+        a.button_default_color.list_button(href="#", class="btn btn-default") Create Question
         div.list_button.btn-group
           button(type="button", class="btn btn-default") New
           button(type="button", class="btn btn-default") Trending
@@ -31,9 +31,9 @@ block content
               div(id="anwsercontent")
                 div(id="solutionarea")
         div(style="clear; both;")
-      div(id="extras")
-        button(id="score") Score
-        span(id="examples-show" style="display: none;") Acceptable Formats
+        div(id="extras")
+          button.list_button.btn.primary.btn-default(href="#", id="score") Check Answer
+          span(id="examples-show" style="display: none;") Acceptable Formats
   div.container
     div.footer
       | This site makes us of Khanacademy's MIT Licensed open source.
