@@ -1,7 +1,33 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.list_button {
+	float:left;
+	margin-right: 10px;
 }
-a {
-  color: #00b7ff;
+.header {
+	padding: 10px 20px 50px;
+	font-family: Avenir;
+	background-color: #eee;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.header h1 {
+	text-transform: uppercase;
+}
+.tree {
+	color: #96ab4f;
+}
+.khan {
+	font-weight: bold;
+}
+.questions {
+	
+}
+.primary {
+	color: #efefef;
+	border: 1px solid #869b3f;
+	background-color: #96ab4f;
+}
+.primary:hover {
+	color: #efefef;
+	border: 1px solid #869b3f;
+	background-color: #869b3f;
 }
