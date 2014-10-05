@@ -18,7 +18,26 @@ block content
             | 41 
             span.glyphicon.glyphicon-thumbs-up
         a.pull-left.btn.btn-info.btn-default(href="#") Next Question
-
+  div.container
+    div.header
+      h1.heading
+        span.tree.glyphicon.glyphicon.glyphicon-tree-deciduous
+        span.khan Khan
+        span.questions Questions
+      p Try to answer the question below. Like it? Give it a thumbs up!
+      a.list_button(href="#", class="btn btn-default") Create Question
+      div.list_button.btn-group
+        button(type="button", class="btn btn-default") New
+        button(type="button", class="btn btn-default") Trending
+        button(type="button", class="btn btn-default") Good
+      div.list_button.btn-group
+        button.btn.btn-default(type="button", style="color:#DA4848;")
+          | 3 
+          span.glyphicon.glyphicon-thumbs-down(style="position:relative;top:3px;")
+        button.btn.btn-default(type="button", style="color:#86cb3f;")
+          | 41 
+          span.glyphicon.glyphicon-thumbs-up
+      a.list_button.btn.primary.btn-default(href="#") Next Question
     div(id="problem-and-answer" class="framework-perseus" style="width: 797px;")
       div(id="problemarea")
           div(id="workarea")
@@ -34,9 +53,9 @@ block content
         Score
       span(id="examples-show" style="display: none;")
         Acceptable Formats
-
-    div(id="perseus-container")
-      | This site makes us of Khanacademy's open source under MIT License
-    != "<script>"
+  div.container
+    div.footer
+      | This site makes us of Khanacademy's MIT Licensed open source.
+  != "<script>"
       include ../public/javascripts/khanquestion.js
-    != "</script>"
+  != "</script>"

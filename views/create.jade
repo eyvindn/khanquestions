@@ -1,28 +1,25 @@
 extends layout
 block content
-  body
-    div.container
-      div.jumbotron
-        h1 KhanQuestions
-        p Try to answer the question below. Like it? Give it a thumbs up!
-        a.pull-left(href="#", class="btn btn-default") Create Question
-        div.pull-left.btn-group
-          button(type="button", class="btn btn-default") New
-          button(type="button", class="btn btn-default") Trending
-          button(type="button", class="btn btn-default") Good
-        div.pull-left.btn-grp
-          button.btn.btn-default(type="button", style="color:red;")
-            | 3 
-            span.glyphicon.glyphicon-thumbs-down(style="position:relative;top:3px;")
-          button.btn.btn-default(type="button", style="color:green;")
-            | 41 
-            span.glyphicon.glyphicon-thumbs-up
-        a.pull-left.btn.btn-info.btn-default(href="#") Next Question
+  div.container
+    div.header
+      h1.heading
+        span.tree.glyphicon.glyphicon.glyphicon-tree-deciduous
+        span.khan Khan
+        span.questions Questions
+      p Try to answer the question below. Like it? Give it a thumbs up!
+      a.list_button(href="#", class="btn btn-default") Answer Questions
+      a.list_button.btn.primary.btn-default(href="#") Submit Question Suggestion
+  div.container
+    div.row
+      div.col-xs-12
+        p Create a question here.
     div(id="extras")
       button(id="submit")
-        | submit
+         submit
     div(id="perseus-container")
-      | This site makes us of Khanacademy's open source under MIT License
-    != "<script>"
-      include ../public/javascripts/khanedit.js
-    != "</script>"
+  div.container
+    div.footer
+        | This site makes us of Khanacademy's open source under MIT License
+      != "<script>"
+        include ../public/javascripts/khanedit.js
+      != "</script>"
