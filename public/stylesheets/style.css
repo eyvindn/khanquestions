@@ -29,6 +29,9 @@
 .questions {
 	
 }
+.button_default_color {
+	color: #333 !important;
+}
 .problem_area {
 	border: 1px solid #efefef;
 	border-radius: 4px;
@@ -43,12 +46,12 @@
 	margin-top: 20px;
 }
 .primary {
-	color: #fbfbfb;
+	color: #fbfbfb !important;
 	border: 1px solid #869b3f;
 	background-color: #96ab4f;
 }
 .primary:hover {
-	color: #efefef;
+	color: #efefef !important;
 	border: 1px solid #869b3f;
 	background-color: #869b3f;
 }
