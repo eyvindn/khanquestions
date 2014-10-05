@@ -1,4 +1,4 @@
-
+var currentid = "";
     var KhanUtil = {
         debugLog: function() {}
     };
@@ -32,8 +32,39 @@ $('#score').on('click', function() {
     console.log(zk.scoreInput());
 });
 
+
+
 function initPerseus(Perseus) {
 
+$('#upvotebutton').on('click', function(e) {
+    console.log("SUBMITTING")
+
+    $.ajax({
+            url: 'upvote/' + currentid,
+            type: 'POST',
+             //dataType: "json",
+            success: function(response) {
+                $('#upvotebutton').html(Number($('#upvotebutton').text())+1 + ' <span class="glyphicon glyphicon-thumbs-up"></span>');
+            }   
+        });
+
+    e.preventDefault();
+});
+
+$('#downvotebutton').on('click', function(e) {
+    console.log("SUBMITTING")
+
+    $.ajax({
+            url: 'downvote/' + currentid,
+            type: 'POST',
+             //dataType: "json",
+            success: function(response) {
+                $('#downvotebutton').html(Number($('#downvotebutton').text())+1 + ' <span class="glyphicon glyphicon-thumbs-down"></span>');
+            }   
+        });
+
+    e.preventDefault();
+});
 
 
 
@@ -205,6 +236,12 @@ var seedContent = {
 };
 
 $.getJSON( "getquestion", function( data ) {
+    currentid = data._id;
+    console.log(currentid);
+    $( "#upvotebutton" )
+    .html( data.upvotes + ' <span class="glyphicon glyphicon-thumbs-up"></span>' );
+    $( "#downvotebutton" )
+    .html( data.downvotes + ' <span class="glyphicon glyphicon-thumbs-down"></span>' );
     Perseus.init({}).then(function() {
         var itemMountNode = document.createElement("div");
         zk = React.renderComponent(Perseus.ItemRenderer({

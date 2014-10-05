@@ -17,9 +17,10 @@ block content
       button(id="submit")
          submit
     div(id="perseus-container")
+  != "<script>"
+    include ../public/javascripts/khanedit.js
+  != "</script>"
   div.container
     div.footer
         | This site makes us of Khanacademy's open source under MIT License
-      != "<script>"
-        include ../public/javascripts/khanedit.js
-      != "</script>"
+

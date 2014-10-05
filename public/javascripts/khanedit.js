@@ -66,11 +66,20 @@ $('#scorePreview').on('click', function() {
 });
 $('#submit').on('click', function(e) {
     console.log("SUBMITTING")
-    $.post( "create", JSON.stringify(editor), function( data ) {
-        console.log(data);
-    });
+
+    $.ajax({
+            url: 'create',
+            type: 'POST',
+             //dataType: "json",
+        contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(editor.serialize()), // Some data e.g. Valid JSON as a string
+            success: function(response) {
+            }   
+        });
+
     e.preventDefault();
 });
+
 
 $('#problemNum').text(problemNum);
 $('#enabledFeatures').html(_.map(enabledFeatures, function(enabled, feature) {
@@ -78,16 +87,74 @@ $('#enabledFeatures').html(_.map(enabledFeatures, function(enabled, feature) {
             (enabled ? "#aaffaa" : "#ffcccc") + ';">' + feature + '</span>';
 }).join(''));
 
+var defaultQuestion = {
+    "question": {
+        "content": "[[☃ example-graphie-widget 1]]",
+        "widgets": {
+            "example-graphie-widget 1": {
+                "type": "example-graphie-widget",
+                "graded": true,
+                "options": {
+                    "correct": [
+                        -1,
+                        -3
+                    ],
+                    "graph": {
+                        "box": [
+                            340,
+                            340
+                        ],
+                        "labels": [
+                            "x",
+                            "y"
+                        ],
+                        "range": [
+                            [
+                                -10,
+                                10
+                            ],
+                            [
+                                -10,
+                                10
+                            ]
+                        ],
+                        "step": [
+                            1,
+                            1
+                        ],
+                        "gridStep": [
+                            1,
+                            1
+                        ],
+                        "valid": true,
+                        "backgroundImage": null,
+                        "markings": "grid",
+                        "showProtractor": false
+                    }
+                }
+            }
+        }
+    },
+    "answerArea": {
+        "type": "multiple",
+        "options": {
+            "content": "",
+            "widgets": {}
+        },
+        "calculator": false
+    },
+    "hints": []
+};
+
+
 var query = Perseus.Util.parseQueryString(window.location.hash.substring(1));
 var question = query.content ? JSON.parse(query.content) : defaultQuestion;
 
 
 
-$.getJSON( "getquestion", function( data ) {
-
     Perseus.init({skipMathJax: false}).then(function() {
 
-    var editorProps = _.extend({question: data}, {
+    var editorProps = _.extend(question, {
         problemNum: problemNum,
         enabledFeatures: enabledFeatures,
         developerMode: true,
@@ -121,8 +188,6 @@ $.getJSON( "getquestion", function( data ) {
         console.error(err);
     });
 
-
-});
 
 
 }

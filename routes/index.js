@@ -40,5 +40,41 @@ router.get('/create', function(req, res) {
     res.render('create', { title: 'Express' });
 });
 
+router.post('/create', function(req, res, next) {
+    var db = req.db;
+    req.body.time = Date.now();
+    req.body.upvotes = 0;
+    req.body.downvotes = 0;
+    req.body.user = 1337;
+    console.log(req.body);
+    db.collection('questions').insert(req.body, function(err) {
+        if(err) {
+            return console.log('inser error', err);
+        }
+        res.send("INSERTED");
+    });
+
+});
+
+router.post('/upvote/:id', function(req, res, next) {
+    var db = req.db;
+    console.log(req.params.id);
+    db.collection('questions').updateById(req.params.id, {$inc: {upvotes: 1}},
+        function (err) {
+            res.send("UPVOTED");
+    }); 
+
+});
+
+router.post('/downvote/:id', function(req, res, next) {
+    var db = req.db;
+    console.log(req.params.id);
+    db.collection('questions').updateById(req.params.id, {$inc: {downvotes: 1}},
+        function (err) {
+            res.send("DOWNVOTED");
+    }); 
+
+});
+
 
 module.exports = router;
