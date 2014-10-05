@@ -19,22 +19,26 @@ router.get('/', function(req, res) {
   
 });
 
+
 router.get('/getquestion', function(req, res) {
     var db = req.db;
     
    // Math.floor((Math.random() * db.collection('khanquestions').count()) + 1);
     db.collection('questions').find().toArray(function (err, items) {
-    	var item = items[Math.floor(Math.random()*items.length)];
+        var item = items[Math.floor(Math.random()*items.length)];
         res.json(item);
     });
 
     //db.collection('khanquestions')..next(
-   // 	function(err, cursor){
-    //		res.json(cursor.question);
-    //	}
+   //   function(err, cursor){
+    //      res.json(cursor.question);
+    //  }
     //);
   
 });
+
+
+
 
 router.get('/create', function(req, res) {
     res.render('create', { title: 'Express' });
@@ -47,11 +51,11 @@ router.post('/create', function(req, res, next) {
     req.body.downvotes = 0;
     req.body.user = 1337;
     console.log(req.body);
-    db.collection('questions').insert(req.body, function(err) {
+    db.collection('questions').insert(req.body, function(err, docsinsert) {
         if(err) {
             return console.log('inser error', err);
         }
-        res.send("INSERTED");
+        res.send(docsinsert[0]._id);
     });
 
 });
@@ -74,6 +78,22 @@ router.post('/downvote/:id', function(req, res, next) {
             res.send("DOWNVOTED");
     }); 
 
+});
+
+router.get('/:id', function(req, res) {
+    var db = req.db;
+
+    db.collection('questions').findById(req.params.id, function (err, cursor) {
+        res.json(cursor);
+    });
+
+
+    //db.collection('khanquestions')..next(
+   //   function(err, cursor){
+    //      res.json(cursor.question);
+    //  }
+    //);
+  
 });
 
 

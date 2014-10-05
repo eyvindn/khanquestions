@@ -74,6 +74,7 @@ $('#submit').on('click', function(e) {
         contentType: "application/json; charset=utf-8",
             data: JSON.stringify(editor.serialize()), // Some data e.g. Valid JSON as a string
             success: function(response) {
+                window.location.href = "/#" + response;
             }   
         });
 

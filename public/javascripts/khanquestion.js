@@ -30,8 +30,12 @@ require(["/perseus/ke-deps.js"], function() {
 
 $('#score').on('click', function() {
     console.log(zk.scoreInput());
+    if(zk.scoreInput().correct == true){
+        $('#score').text("Correct!")
+    } else {
+        $('#score').text("Inorrect!")
+    }
 });
-
 
 
 function initPerseus(Perseus) {
@@ -235,7 +239,8 @@ var seedContent = {
     ]
 };
 
-$.getJSON( "getquestion", function( data ) {
+var idtoopen = location.hash ? location.hash.substring(1) : "getquestion";
+$.getJSON( idtoopen, function( data ) {
     currentid = data._id;
     console.log(currentid);
     $( "#upvotebutton" )
