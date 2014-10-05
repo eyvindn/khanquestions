@@ -1,26 +1,22 @@
 extends layout
 block content
-  div.container
-    div.header
-      h1.heading
-        span.tree.glyphicon.glyphicon.glyphicon-tree-deciduous
-        span.khan Khan
-        span.questions Questions
-      p Try to answer the question below. Like it? Give it a thumbs up!
-      a.list_button(href="#", class="btn btn-default") Answer Questions
-      a.list_button.btn.primary.btn-default(href="#") Submit Question Suggestion
-  div.container
-    div.row
-      div.col-xs-12
-        p Create a question here.
-    div(id="extras")
+  body
+    div.container
+      div.header
+        h1.heading
+          span.tree.glyphicon.glyphicon.glyphicon-tree-deciduous
+          span.khan Khan
+          span.questions Questions
+        p Have an idea for a good question? Share it with others!
+        a.button_default_color.list_button(href="#", class="btn btn-default") Answer Questions
+        a.list_button.btn.primary.btn-default(href="#") Create Question
+      div(id="extras")
       button(id="submit")
          submit
     div(id="perseus-container")
-  != "<script>"
-    include ../public/javascripts/khanedit.js
-  != "</script>"
   div.container
     div.footer
-        | This site makes us of Khanacademy's open source under MIT License
-
+      | This site makes us of Khanacademy's MIT Licensed open source.
+  != "<script>"
+      include ../public/javascripts/khanedit.js
+  != "</script>"
