@@ -8,7 +8,7 @@ router.get('/', function(req, res) {
    // Math.floor((Math.random() * db.collection('khanquestions').count()) + 1);
     db.collection('questions').find().toArray(function (err, items) {
     	var item = items[Math.floor(Math.random()*items.length)];
-        res.render('index', { title: 'Express' });
+        res.render('index', { title: 'Home | Khan Questions' });
     });
 
     //db.collection('khanquestions')..next(
@@ -41,7 +41,7 @@ router.get('/getquestion', function(req, res) {
 
 
 router.get('/create', function(req, res) {
-    res.render('create', { title: 'Express' });
+    res.render('create', { title: 'Create | Khan Questions' });
 });
 
 router.post('/create', function(req, res, next) {

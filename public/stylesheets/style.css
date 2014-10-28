@@ -1,8 +1,9 @@
+a:hover {
+	text-decoration: none;
+}
 .perseus-answer-container {
 	width: 200px;
 }
-
-
 .list_button {
 	float:left;
 	margin-right: 10px;
@@ -17,8 +18,12 @@
 .header h1 {
 	text-transform: uppercase;
 }
+h2 {
+	margin:0px;
+	padding:0px 0px 10px;
+}
 .footer {
-	margin-top: 20px;
+	margin-top: 50px;
 	padding: 10px 20px 20px;
 	font-family: Avenir;
 	background-color: #eee;
@@ -31,8 +36,11 @@
 .khan {
 	font-weight: bold;
 }
-.questions {
-	
+.perseus-editor-right-cell {
+	padding: 0px !important;
+}
+#perseus {
+	margin: 0px !important;
 }
 #score {
 	padding-top: 0px;
@@ -58,4 +66,14 @@
 	color: #efefef !important;
 	border: 1px solid #869b3f;
 	background-color: #869b3f;
+}
+.primary:focus {
+	background-color: #96ab4f !important;
+}
+.perseus-hints-container .perseus-editor-right-cell {
+	background-color: #fff !important;
+}
+#solutionarea {
+	margin-left: 0px !important;
+	border-bottom-width: 0px !important;
 }

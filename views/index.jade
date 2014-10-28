@@ -3,10 +3,11 @@ block content
   body
     div.container
       div.header
-        h1.heading
-          span.tree.glyphicon.glyphicon.glyphicon-tree-deciduous
-          span.khan Khan
-          span.questions Questions
+        a(href="/")
+          h1.heading
+            span.tree.glyphicon.glyphicon.glyphicon-tree-deciduous
+            span.khan Khan
+            span.questions Questions
         p Try to answer the question below. Like it? Give it a thumbs up!
         a.button_default_color.list_button(href="/create", class="btn btn-default") Create Question
         div.list_button.btn-group
@@ -15,13 +16,17 @@ block content
           button(type="button", class="btn btn-default") Good
         div.list_button.btn-group
           button.btn.btn-default(id="downvotebutton", type="button", style="color:#DA4848;")
-            | 3 
+            span(id="downvotenumber")
+              | 0
+            | 
             span.glyphicon.glyphicon-thumbs-down(style="position:relative;top:3px;")
           button.btn.btn-default(id="upvotebutton", type="button", style="color:#86cb3f;")
-            | 41 
+            span(id="upvotenumber")
+              | 0
+            | 
             span.glyphicon.glyphicon-thumbs-up
-        a.list_button.btn.primary.btn-default(href="/") Next Question
-      div(id="problem-and-answer" class="framework-perseus" style="width: 797px;")
+        a.list_button.btn.primary.btn-default(href="/") New Question
+      div(id="problem-and-answer" class="framework-perseus" style="width: 797px; min-height: 600px;")
         div(id="problemarea")
           div(id="workarea")
           div(id="hintsarea")
@@ -35,10 +40,9 @@ block content
           button.list_button.btn.primary.btn-default(href="#", id="score") 
             | Check Answer
           span(id="examples-show" style="display: none;") Acceptable Formats
-  div.container
-    div.footer
-      | This site makes us of Khanacademy's MIT Licensed open source. Like this question? Give back by: 
-      != '<a class="coinbase-button" data-code="4d4b84bbad4508b64b61d372ea394dad" href="https://coinbase.com/checkouts/4d4b84bbad4508b64b61d372ea394dad">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>'
-  != "<script>"
-      include ../public/javascripts/khanquestion.js
-  != "</script>"
+    div.container
+      div.footer
+        | This site makes us of Khanacademy's MIT Licensed open source.
+    != "<script>"
+        include ../public/javascripts/khanquestion.js
+    != "</script>"

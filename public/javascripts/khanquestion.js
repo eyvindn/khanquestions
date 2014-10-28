@@ -31,9 +31,9 @@ require(["/perseus/ke-deps.js"], function() {
 $('#score').on('click', function() {
     console.log(zk.scoreInput());
     if(zk.scoreInput().correct == true){
-        $('#score').text("Correct!")
+        $('#score').text("Correct. Good job!")
     } else {
-        $('#score').text("Inorrect!")
+        $('#score').text("Inorrect. Try again!")
     }
 });
 
@@ -48,7 +48,7 @@ $('#upvotebutton').on('click', function(e) {
             type: 'POST',
              //dataType: "json",
             success: function(response) {
-                $('#upvotebutton').html(Number($('#upvotebutton').text())+1 + ' <span class="glyphicon glyphicon-thumbs-up"></span>');
+                $('#upvotenumber').html(Number($('#upvotenumber').text())+1);
             }   
         });
 
@@ -63,7 +63,7 @@ $('#downvotebutton').on('click', function(e) {
             type: 'POST',
              //dataType: "json",
             success: function(response) {
-                $('#downvotebutton').html(Number($('#downvotebutton').text())+1 + ' <span class="glyphicon glyphicon-thumbs-down"></span>');
+                $('#downvotenumber').html(Number($('#downvotenumber').text())+1);
             }   
         });
 
@@ -243,10 +243,10 @@ var idtoopen = location.hash ? location.hash.substring(1) : "getquestion";
 $.getJSON( idtoopen, function( data ) {
     currentid = data._id;
     console.log(currentid);
-    $( "#upvotebutton" )
-    .html( data.upvotes + ' <span class="glyphicon glyphicon-thumbs-up"></span>' );
-    $( "#downvotebutton" )
-    .html( data.downvotes + ' <span class="glyphicon glyphicon-thumbs-down"></span>' );
+    $( "#upvotenumber" )
+    .html( data.upvotes );
+    $( "#downvotenumber" )
+    .html( data.downvotes );
     Perseus.init({}).then(function() {
         var itemMountNode = document.createElement("div");
         zk = React.renderComponent(Perseus.ItemRenderer({
