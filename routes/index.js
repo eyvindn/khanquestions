@@ -73,10 +73,17 @@ router.post('/upvote/:id', function(req, res, next) {
 router.post('/downvote/:id', function(req, res, next) {
     var db = req.db;
     console.log(req.params.id);
-    db.collection('questions').updateById(req.params.id, {$inc: {downvotes: 1}},
+    db.collection('questions').findById(req.params.id, function (err, cursor) {
+        if (cursor.upvotes - cursor.downvotes) < (-10) {
+        db.collection('questions').deleteById(req.params.id, function (err) { return });
+        } else {
+        db.collection('questions').updateById(req.params.id, {$inc: {downvotes: 1}},
         function (err) {
             res.send("DOWNVOTED");
-    }); 
+        }); 
+        }
+    });
+    
 
 });
 
