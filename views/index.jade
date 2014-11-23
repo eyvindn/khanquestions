@@ -10,11 +10,12 @@ block content
             span.questions Questions
         p Try to answer the question below. Like it? Give it a thumbs up!
         a.button_default_color.list_button(href="/create", class="btn btn-default") Create Question
-        div.list_button.btn-group
-          button(type="button", class="btn btn-default") New
-          button(type="button", class="btn btn-default") Trending
-          button(type="button", class="btn btn-default") Good
-        div.list_button.btn-group
+        block question-modes
+          div.list_button.btn-group
+            a.btn.btn-default.button_default_color(href="/new", type="button") New
+            a.btn.btn-default.button_default_color(href="/trending", type="button") Trending
+            a.btn.btn-default.button_default_color.current(href="/", type="button") Good
+        div.list_button.btn-group(id="votebuttons")
           button.btn.btn-default(id="downvotebutton", type="button", style="color:#DA4848;")
             span(id="downvotenumber")
               | 0
@@ -25,7 +26,7 @@ block content
               | 0
             | 
             span.glyphicon.glyphicon-thumbs-up
-        a.list_button.btn.primary.btn-default(href="/") New Question
+        a.list_button.btn.primary.btn-default(href="/") Next Question
       div(id="problem-and-answer" class="framework-perseus" style="width: 797px; min-height: 600px;")
         div(id="problemarea")
           div(id="workarea")

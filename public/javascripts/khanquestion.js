@@ -41,6 +41,8 @@ $('#score').on('click', function() {
 function initPerseus(Perseus) {
 
 $('#upvotebutton').on('click', function(e) {
+    $('#upvotebutton').addClass( "button_disabled button_clicked" );
+    $('#downvotebutton').addClass( "button_disabled" );
     console.log("SUBMITTING")
 
     $.ajax({
@@ -56,6 +58,8 @@ $('#upvotebutton').on('click', function(e) {
 });
 
 $('#downvotebutton').on('click', function(e) {
+    $('#upvotebutton').addClass( "button_disabled" );
+    $('#downvotebutton').addClass( "button_disabled button_clicked" );
     console.log("SUBMITTING")
 
     $.ajax({
