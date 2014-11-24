@@ -2,13 +2,25 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res) {
+router.get(['/', '/trending', '/new'], function(req, res) {
     var db = req.db;
     
    // Math.floor((Math.random() * db.collection('khanquestions').count()) + 1);
     db.collection('questions').find().toArray(function (err, items) {
     	var item = items[Math.floor(Math.random()*items.length)];
-        res.render('index', { title: 'Home | Khan Questions' });
+        path_to_render = 'index';
+        title = 'Home';
+        if(req.path == '/trending') {
+            path_to_render = 'trending';
+            title = "Trending Questions";
+        } else if (req.path == '/new') {
+            path_to_render = 'new';
+            title = "Latest Questions";
+        }
+
+        has_voted = (req.session.voted_questions) ? (req.session.voted_questions.indexOf(item._id) > -1) : false;
+
+        res.render(path_to_render, { title: title + ' | Khan Questions', voted_bool: has_voted });
     });
 
     //db.collection('khanquestions')..next(
@@ -20,14 +32,21 @@ router.get('/', function(req, res) {
 });
 
 
-router.get('/getquestion', function(req, res) {
+router.get(['/getquestion', '/trending/getquestion', '/new/getquestion'], function(req, res) {
     var db = req.db;
     
-   // Math.floor((Math.random() * db.collection('khanquestions').count()) + 1);
-    db.collection('questions').find().toArray(function (err, items) {
+    recursive_find_question = function (err, items) {
         var item = items[Math.floor(Math.random()*items.length)];
-        res.json(item);
-    });
+        if ((item.upvotes - item.downvotes) < -10) {
+            recursive_find_question(err, items);
+        } else {
+            has_voted = (req.session.voted_questions) ? (req.session.voted_questions.indexOf(item._id) > -1) : false;
+            item.has_voted = has_voted;
+            res.json(item);
+        }
+    }
+   // Math.floor((Math.random() * db.collection('khanquestions').count()) + 1);
+    db.collection('questions').find().toArray(recursive_find_question);
 
     //db.collection('khanquestions')..next(
    //   function(err, cursor){
@@ -63,28 +82,43 @@ router.post('/create', function(req, res, next) {
 router.post('/upvote/:id', function(req, res, next) {
     var db = req.db;
     console.log(req.params.id);
-    db.collection('questions').updateById(req.params.id, {$inc: {upvotes: 1}},
+
+    if(!req.session.voted_questions){
+        req.session.voted_questions = [];
+    }
+
+    if (req.session.voted_questions.indexOf(req.params.id) > -1) { 
+        res.send("FAIL");
+    } else {
+        db.collection('questions').updateById(req.params.id, {$inc: {upvotes: 1}},
         function (err) {
+            req.session.voted_questions.push(req.params.id);
             res.send("UPVOTED");
-    }); 
+        }); 
+    }
+   
 
 });
 
 router.post('/downvote/:id', function(req, res, next) {
     var db = req.db;
     console.log(req.params.id);
-    db.collection('questions').findById(req.params.id, function (err, cursor) {
-        if ((cursor.upvotes - cursor.downvotes) < (-10)) {
-        db.collection('questions').deleteById(req.params.id, function (err) { 
-            res.send("DELETED!");
+
+    if(!req.session.voted_questions){
+        req.session.voted_questions = [];
+    }
+
+    if (req.session.voted_questions.indexOf(req.params.id) > -1) { 
+        res.send("FAIL");
+    } else {
+        db.collection('questions').findById(req.params.id, function (err, cursor) {
+            db.collection('questions').updateById(req.params.id, {$inc: {downvotes: 1}},
+            function (err) {
+                req.session.voted_questions.push(req.params.id);
+                res.send("DOWNVOTED");
+            }); 
         });
-        } else {
-        db.collection('questions').updateById(req.params.id, {$inc: {downvotes: 1}},
-        function (err) {
-            res.send("DOWNVOTED");
-        }); 
-        }
-    });
+    }
     
 
 });
@@ -93,6 +127,7 @@ router.get('/:id', function(req, res) {
     var db = req.db;
 
     db.collection('questions').findById(req.params.id, function (err, cursor) {
+        cursor.has_voted = ((req.session.voted_questions) ? (req.session.voted_questions.indexOf(req.params.id) > -1) : false);
         res.json(cursor);
     });
 

@@ -41,6 +41,8 @@ $('#score').on('click', function() {
 function initPerseus(Perseus) {
 
 $('#upvotebutton').on('click', function(e) {
+    $('#upvotebutton').addClass( "button_disabled button_clicked" );
+    $('#downvotebutton').addClass( "button_disabled" );
     console.log("SUBMITTING")
 
     $.ajax({
@@ -56,6 +58,8 @@ $('#upvotebutton').on('click', function(e) {
 });
 
 $('#downvotebutton').on('click', function(e) {
+    $('#upvotebutton').addClass( "button_disabled" );
+    $('#downvotebutton').addClass( "button_disabled button_clicked" );
     console.log("SUBMITTING")
 
     $.ajax({
@@ -239,14 +243,21 @@ var seedContent = {
     ]
 };
 
-var idtoopen = location.hash ? location.hash.substring(1) : "getquestion";
+var idtoopen = location.hash ? location.hash.substring(1) : window.location.href + "/getquestion";
 $.getJSON( idtoopen, function( data ) {
     currentid = data._id;
     console.log(currentid);
+    location.hash = currentid;
     $( "#upvotenumber" )
     .html( data.upvotes );
     $( "#downvotenumber" )
     .html( data.downvotes );
+
+    if(data.has_voted){
+        $('#upvotebutton').addClass( "button_disabled" );
+        $('#downvotebutton').addClass( "button_disabled" );
+    }
+
     Perseus.init({}).then(function() {
         var itemMountNode = document.createElement("div");
         zk = React.renderComponent(Perseus.ItemRenderer({

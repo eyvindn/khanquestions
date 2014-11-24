@@ -8,6 +8,19 @@ a:hover {
 	float:left;
 	margin-right: 10px;
 }
+.button_clicked, .button_clicked:hover {
+	background-color: #e6e6e6 !important;
+	cursor: default;
+}
+.button_disabled, .button_disabled:hover, .button_disabled:focus {
+	background-color: #efefef;
+	cursor: default;
+	border-color: #cccccc;
+}
+
+.button_default_color {
+	color: #333 !important;
+}
 .header {
 	padding: 10px 20px 50px;
 	font-family: Avenir;
@@ -21,6 +34,9 @@ a:hover {
 h2 {
 	margin:0px;
 	padding:0px 0px 10px;
+}
+.current {
+	background-color: #e6e6e6 !important;
 }
 .footer {
 	margin-top: 50px;
@@ -47,9 +63,6 @@ h2 {
 	padding-bottom: 3px;
 	padding-left: 30px;
 	padding-right: 30px;
-}
-.button_default_color {
-	color: #333 !important;
 }
 .problem_area {
 	border: 1px solid #efefef;
