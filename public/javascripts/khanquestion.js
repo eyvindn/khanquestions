@@ -41,37 +41,41 @@ $('#score').on('click', function() {
 function initPerseus(Perseus) {
 
 $('#upvotebutton').on('click', function(e) {
-    $('#upvotebutton').addClass( "button_disabled button_clicked" );
-    $('#downvotebutton').addClass( "button_disabled" );
-    console.log("SUBMITTING")
+    if (! $('#upvotebutton').hasClass("button_disabled")) {
+        $('#upvotebutton').addClass( "button_disabled button_clicked" );
+        $('#downvotebutton').addClass( "button_disabled" );
+        console.log("SUBMITTING")
 
-    $.ajax({
-            url: 'upvote/' + currentid,
-            type: 'POST',
-             //dataType: "json",
-            success: function(response) {
-                $('#upvotenumber').html(Number($('#upvotenumber').text())+1);
-            }   
-        });
+        $.ajax({
+                url: 'upvote/' + currentid,
+                type: 'POST',
+                 //dataType: "json",
+                success: function(response) {
+                    $('#upvotenumber').html(Number($('#upvotenumber').text())+1);
+                }   
+            });
 
-    e.preventDefault();
+        e.preventDefault();
+    }
 });
 
 $('#downvotebutton').on('click', function(e) {
-    $('#upvotebutton').addClass( "button_disabled" );
-    $('#downvotebutton').addClass( "button_disabled button_clicked" );
-    console.log("SUBMITTING")
+    if (! $('#upvotebutton').hasClass("button_disabled")) {
+        $('#upvotebutton').addClass( "button_disabled" );
+        $('#downvotebutton').addClass( "button_disabled button_clicked" );
+        console.log("SUBMITTING")
 
-    $.ajax({
-            url: 'downvote/' + currentid,
-            type: 'POST',
-             //dataType: "json",
-            success: function(response) {
-                $('#downvotenumber').html(Number($('#downvotenumber').text())+1);
-            }   
-        });
+        $.ajax({
+                url: 'downvote/' + currentid,
+                type: 'POST',
+                 //dataType: "json",
+                success: function(response) {
+                    $('#downvotenumber').html(Number($('#downvotenumber').text())+1);
+                }   
+            });
 
-    e.preventDefault();
+        e.preventDefault();
+    }
 });
 
 
