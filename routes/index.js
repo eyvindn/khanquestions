@@ -18,7 +18,7 @@ router.get(['/', '/trending', '/new'], function(req, res) {
             title = "Latest Questions";
         }
 
-        has_voted = (req.session.voted_questions) ? (req.session.voted_questions.indexOf(item._id) > -1) : false;
+//        has_voted = (req.session.voted_questions) ? (req.session.voted_questions.indexOf(item._id) > -1) : false;
 
         res.render(path_to_render, { title: title + ' | Khan Questions', voted_bool: has_voted });
     });
@@ -40,8 +40,8 @@ router.get(['/getquestion', '/trending/getquestion', '/new/getquestion'], functi
         if ((item.upvotes - item.downvotes) < -10) {
             recursive_find_question(err, items);
         } else {
-            has_voted = (req.session.voted_questions) ? (req.session.voted_questions.indexOf(item._id) > -1) : false;
-            item.has_voted = has_voted;
+            item.has_voted_up = (req.session.upvoted_questions) ? (req.session.upvoted_questions.indexOf(item._id) > -1) : false;
+            item.has_voted_down = (req.session.downvoted_questions) ? (req.session.downvoted_questions.indexOf(item._id) > -1) : false;
             res.json(item);
         }
     }
@@ -83,16 +83,16 @@ router.post('/upvote/:id', function(req, res, next) {
     var db = req.db;
     console.log(req.params.id);
 
-    if(!req.session.voted_questions){
-        req.session.voted_questions = [];
+    if(!req.session.upvoted_questions){
+        req.session.upvoted_questions = [];
     }
 
-    if (req.session.voted_questions.indexOf(req.params.id) > -1) { 
+    if (req.session.upvoted_questions.indexOf(req.params.id) > -1) { 
         res.send("FAIL");
     } else {
         db.collection('questions').updateById(req.params.id, {$inc: {upvotes: 1}},
         function (err) {
-            req.session.voted_questions.push(req.params.id);
+            req.session.upvoted_questions.push(req.params.id);
             res.send("UPVOTED");
         }); 
     }
@@ -104,17 +104,17 @@ router.post('/downvote/:id', function(req, res, next) {
     var db = req.db;
     console.log(req.params.id);
 
-    if(!req.session.voted_questions){
-        req.session.voted_questions = [];
+    if(!req.session.downvoted_questions){
+        req.session.downvoted_questions = [];
     }
 
-    if (req.session.voted_questions.indexOf(req.params.id) > -1) { 
+    if (req.session.downvoted_questions.indexOf(req.params.id) > -1) { 
         res.send("FAIL");
     } else {
         db.collection('questions').findById(req.params.id, function (err, cursor) {
             db.collection('questions').updateById(req.params.id, {$inc: {downvotes: 1}},
             function (err) {
-                req.session.voted_questions.push(req.params.id);
+                req.session.downvoted_questions.push(req.params.id);
                 res.send("DOWNVOTED");
             }); 
         });
@@ -127,7 +127,8 @@ router.get('/:id', function(req, res) {
     var db = req.db;
 
     db.collection('questions').findById(req.params.id, function (err, cursor) {
-        cursor.has_voted = ((req.session.voted_questions) ? (req.session.voted_questions.indexOf(req.params.id) > -1) : false);
+        cursor.has_voted_up = (req.session.upvoted_questions) ? (req.session.upvoted_questions.indexOf(item._id) > -1) : false;
+        cursor.has_voted_down = (req.session.downvoted_questions) ? (req.session.downvoted_questions.indexOf(item._id) > -1) : false;
         res.json(cursor);
     });
 
