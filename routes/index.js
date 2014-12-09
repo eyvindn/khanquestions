@@ -20,7 +20,7 @@ router.get(['/', '/trending', '/new'], function(req, res) {
 
 //        has_voted = (req.session.voted_questions) ? (req.session.voted_questions.indexOf(item._id) > -1) : false;
 
-        res.render(path_to_render, { title: title + ' | Khan Questions', voted_bool: has_voted });
+        res.render(path_to_render, { title: title + ' | Khan Questions', voted_bool: false });
     });
 
     //db.collection('khanquestions')..next(
