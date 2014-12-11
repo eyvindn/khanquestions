@@ -127,8 +127,8 @@ router.get('/:id', function(req, res) {
     var db = req.db;
 
     db.collection('questions').findById(req.params.id, function (err, cursor) {
-        cursor.has_voted_up = (req.session.upvoted_questions) ? (req.session.upvoted_questions.indexOf(item._id) > -1) : false;
-        cursor.has_voted_down = (req.session.downvoted_questions) ? (req.session.downvoted_questions.indexOf(item._id) > -1) : false;
+        cursor.has_voted_up = (req.session.upvoted_questions) ? (req.session.upvoted_questions.indexOf(req.params.id) > -1) : false;
+        cursor.has_voted_down = (req.session.downvoted_questions) ? (req.session.downvoted_questions.indexOf(req.params.id) > -1) : false;
         res.json(cursor);
     });
 
