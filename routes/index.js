@@ -123,7 +123,7 @@ router.post('/downvote/:id', function(req, res, next) {
 
 });
 
-router.get('/:id', function(req, res) {
+router.get('/get/:id', function(req, res) {
     var db = req.db;
 
     db.collection('questions').findById(req.params.id, function (err, cursor) {

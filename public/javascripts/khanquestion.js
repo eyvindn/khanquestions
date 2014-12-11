@@ -247,7 +247,7 @@ var seedContent = {
     ]
 };
 
-var idtoopen = location.hash ? location.hash.substring(1) : window.location.href + "/getquestion";
+var idtoopen = location.hash ? "get/" + location.hash.substring(1) : window.location.href + ((window.location.pathname == "/") ? "getquestion" : "/getquestion");
 $.getJSON( idtoopen, function( data ) {
     currentid = data._id;
     console.log(currentid);
