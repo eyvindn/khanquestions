@@ -257,9 +257,15 @@ $.getJSON( idtoopen, function( data ) {
     $( "#downvotenumber" )
     .html( data.downvotes );
 
-    if(data.has_voted){
+    if(data.has_voted_up){
+        $('#upvotebutton').addClass( "button_disabled" );
+        $('#upvotebutton').addClass( "button_clicked" );
+        $('#downvotebutton').addClass( "button_disabled" );
+    }
+    if(data.has_voted_down){
         $('#upvotebutton').addClass( "button_disabled" );
         $('#downvotebutton').addClass( "button_disabled" );
+        $('#downvotebutton').addClass( "button_clicked" );
     }
 
     Perseus.init({}).then(function() {
