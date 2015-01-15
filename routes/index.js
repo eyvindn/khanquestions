@@ -40,8 +40,8 @@ router.get(['/getquestion', '/trending/getquestion', '/new/getquestion'], functi
         if ((item.upvotes - item.downvotes) < -10) {
             recursive_find_question(err, items);
         } else {
-            item.has_voted_up = (req.session.upvoted_questions) ? (req.session.upvoted_questions.indexOf(item._id) > -1) : false;
-            item.has_voted_down = (req.session.downvoted_questions) ? (req.session.downvoted_questions.indexOf(item._id) > -1) : false;
+            item.has_voted_up = (req.session.upvoted_questions) ? (req.session.upvoted_questions.indexOf(String(item._id)) > -1) : false;
+            item.has_voted_down = (req.session.downvoted_questions) ? (req.session.downvoted_questions.indexOf(String(item._id)) > -1) : false;
             res.json(item);
         }
     }
